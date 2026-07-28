@@ -1,0 +1,440 @@
+======================================================================
+MASS HARMONICS wwPDB JULY 15 2026 - RIGOROUS COMPUTATIONAL ANALYSIS
+======================================================================
+phi          = 1.618033988749895
+phi^-3       = 0.236067977500
+phi^-6       = 0.055728090001
+c/phi^9      = 3943.954906 km/s
+Release date : 2026-07-15 00:00 UTC
+Entries      : 293 (RCSB API confirmed)
+EM entries   : 93  X-ray entries: ~200
+Output dir   : D:\ProjectBuilds\Projects\MH_Indexed\Scripts\..\wwPDB_July15_analysis
+
+Z-CASCADE SPOT-CHECK vs MH_Origin.md Appendix C:
+  Z(CCC) = 0.971783729  expected = 0.971783729  err = 0.00000%  OK
+  Z(UUU) = 1.046918051  expected = 1.046918000  err = 0.00000%  OK
+  Z(AAA) = 1.021173210  expected = 1.021173000  err = 0.00002%  OK
+  Z(GGG) = 1.022880175  expected = 1.022880000  err = 0.00002%  OK
+  Z(CUU) = 0.988338154  expected = 0.988338154  err = 0.00000%  OK
+  Z(AGU) = 1.022607610  expected = 1.022608000  err = 0.00004%  OK
+  Z(UAC) = 1.038734050  expected = 1.038734000  err = 0.00000%  OK
+  Z(GCU) = 1.014395562  expected = 1.014396000  err = 0.00004%  OK
+  All spot-checks passed: True
+
+
+######################################################################
+# ENTRY: 10DT  |  Src kinase Fgr SH3-SH2-Linker (X-ray 1.8 A)
+######################################################################
+  [CACHE] 10DT.cif mmCIF coordinates
+  gemmi parser: 175 CA atoms
+  Region assignment (Q75 mobile thresh=17.232 A^2, mean B=15.779):
+    mobile: 45
+    resolved_core: 116
+    resolved_surface: 14
+    unmodeled: 2
+  Fetching CDS via UniProt P09769...
+  [CACHE] UniProt P09769
+    RefSeq mRNA: NM_001042729
+  [CACHE] P09769/NM_001042729
+    CDS parsed: 530 codons
+  Codon positions mapped: 529
+
+======================================================================
+PDB-1: Q_delta Equilateral-Triad Analysis [10DT]
+======================================================================
+  Building 3D Delaunay tessellation of 175 CA positions...
+  979 tetrahedra, extracting triangular faces...
+  Unique triangular faces: 1992
+
+  Q_delta statistics by region:
+    resolved_core       : n= 1377  median=0.817930  mean=0.759112  min=0.0282  max=0.9997
+    resolved_surface    : n=   34  median=0.775351  mean=0.738725  min=0.2775  max=0.9856
+    mobile              : n=  454  median=0.606920  mean=0.581353  min=0.0472  max=0.9904
+    mixed               : n=  127  median=0.712283  mean=0.663697  min=0.0747  max=0.9959
+
+  MULTI-QUANTILE ROBUSTNESS (mobile threshold sweep):
+  Quantile   mob_thresh   core_med   surf_med    mob_med  core>surf   core>mob
+  Q75            17.232   0.817930   0.775351   0.606920        YES        YES
+  Q80            19.426   0.817930   0.663124   0.610052        YES        YES
+  Q85            21.601   0.817930   0.667023   0.579589        YES        YES
+  Q90            25.382   0.817930   0.665463   0.568992        YES        YES
+
+  PRIMARY: core vs surface: median(core)=0.817930  median(surf)=0.775351  delta=+0.042580  direction_ok=True
+  -> PDB-1 core>surface: CONFIRMED
+  PRIMARY: core vs mobile: median(core)=0.817930  median(mobile)=0.606920  delta=+0.211010  direction_ok=True
+  -> PDB-1 core>mobile: CONFIRMED
+
+======================================================================
+PDB-3: Codon Z-Cascade Residual D_i [10DT]
+======================================================================
+  Eligible (modeled + codon-annotated): 175 / 175
+  Computing D_i for each eligible residue...
+
+  D_i distribution by region:
+    resolved_core       : n=  116  median=0.040761  mean=0.050093  mean B_factor=12.197
+    resolved_surface    : n=   14  median=0.029837  mean=0.061298  mean B_factor=16.487
+    mobile              : n=   45  median=0.049737  mean=0.060491  mean B_factor=24.795
+
+  PRIMARY: D_i core < mobile/unmodeled: median(core)=0.040761  median(mob)=0.049737  delta=+0.008977  ok=True
+  -> PDB-3 CONFIRMED: Lower D_i in resolved core
+  SECONDARY: D_i core < surface: median(core)=0.040761  median(surf)=0.029837  ok=False
+
+  Correlation D_i vs B-factor:
+    Pearson  r = 0.0445  (predicted: positive)
+    Spearman r = 0.0088  (predicted: positive)
+    Confirmed: True
+
+  Permutation control (shuffled Orientation Deltas): Pearson r = -0.1674
+    Expected: near 0. Actual test r = 0.0445 vs control = -0.1674
+
+======================================================================
+PDB-4: Synonymous-Codon Orientation Stratification [10DT]
+======================================================================
+  Eligible: 175
+
+  AA   codons  Spearman(|delta|,B)  direction_ok
+  ------------------------------------------------------------
+  A    10 syn   r=-0.0667  NO
+    UAU: |delta|=0.003797  mean_B=8.911 A^2  n=1
+    GAU: |delta|=0.006676  mean_B=12.931 A^2  n=1
+    UGG: |delta|=0.010491  mean_B=24.355 A^2  n=1
+    AUC: |delta|=0.010687  mean_B=14.633 A^2  n=1
+    AGC: |delta|=0.014186  mean_B=22.470 A^2  n=2
+    UCA: |delta|=0.018555  mean_B=10.997 A^2  n=1
+    CGG: |delta|=0.022607  mean_B=11.528 A^2  n=1
+    UAC: |delta|=0.025708  mean_B=12.349 A^2  n=1
+    CUG: |delta|=0.026265  mean_B=11.219 A^2  n=1
+    UCC: |delta|=0.032895  mean_B=13.776 A^2  n=1
+  C     3 syn   r=-1.0000  NO
+    AAG: |delta|=0.000494  mean_B=15.951 A^2  n=1
+    AUC: |delta|=0.010687  mean_B=14.760 A^2  n=1
+    AAC: |delta|=0.014436  mean_B=11.154 A^2  n=1
+  D     9 syn   r=-0.2500  NO
+    GCU: |delta|=0.000803  mean_B=21.603 A^2  n=2
+    AUC: |delta|=0.010687  mean_B=32.346 A^2  n=1
+    AAC: |delta|=0.014436  mean_B=15.060 A^2  n=1
+    GGC: |delta|=0.014937  mean_B=19.140 A^2  n=1
+    ACC: |delta|=0.021725  mean_B=11.920 A^2  n=2
+    UUC: |delta|=0.022012  mean_B=15.277 A^2  n=1
+    CGA: |delta|=0.022115  mean_B=12.392 A^2  n=1
+    UAC: |delta|=0.025708  mean_B=27.551 A^2  n=1
+    CAU: |delta|=0.029242  mean_B=17.232 A^2  n=1
+  E    11 syn   r=-0.3727  NO
+    UUU: |delta|=0.000000  mean_B=13.641 A^2  n=1
+    GGG: |delta|=0.000000  mean_B=14.712 A^2  n=1
+    GAG: |delta|=0.000254  mean_B=16.267 A^2  n=1
+    GGA: |delta|=0.000495  mean_B=16.021 A^2  n=1
+    GGU: |delta|=0.006932  mean_B=18.558 A^2  n=1
+    CAC: |delta|=0.007486  mean_B=12.540 A^2  n=1
+    UGG: |delta|=0.010491  mean_B=25.769 A^2  n=1
+    AUC: |delta|=0.010687  mean_B=10.156 A^2  n=1
+    CUC: |delta|=0.011335  mean_B=8.980 A^2  n=1
+    ACC: |delta|=0.021725  mean_B=15.839 A^2  n=2
+    CUU: |delta|=0.033193  mean_B=11.396 A^2  n=1
+  F     6 syn   r=-0.0857  NO
+    GGG: |delta|=0.000000  mean_B=14.153 A^2  n=1
+    GAG: |delta|=0.000254  mean_B=12.128 A^2  n=1
+    GAA: |delta|=0.000748  mean_B=9.440 A^2  n=1
+    UAU: |delta|=0.003797  mean_B=9.544 A^2  n=1
+    AAC: |delta|=0.014436  mean_B=9.224 A^2  n=1
+    CAG: |delta|=0.022346  mean_B=14.954 A^2  n=1
+  G    13 syn   r=-0.3736  NO
+    GGG: |delta|=0.000000  mean_B=20.305 A^2  n=1
+    GAG: |delta|=0.000254  mean_B=23.355 A^2  n=1
+    AGA: |delta|=0.000254  mean_B=16.501 A^2  n=1
+    AAG: |delta|=0.000494  mean_B=20.876 A^2  n=1
+    CAC: |delta|=0.007486  mean_B=10.270 A^2  n=1
+    GCA: |delta|=0.008160  mean_B=17.188 A^2  n=1
+    AUC: |delta|=0.010687  mean_B=17.373 A^2  n=1
+    AUU: |delta|=0.011272  mean_B=11.746 A^2  n=1
+    AGC: |delta|=0.014186  mean_B=11.465 A^2  n=1
+    GAC: |delta|=0.015186  mean_B=27.123 A^2  n=1
+    ACC: |delta|=0.021725  mean_B=15.297 A^2  n=1
+    UGC: |delta|=0.025462  mean_B=15.543 A^2  n=1
+    CUG: |delta|=0.026265  mean_B=16.465 A^2  n=2
+  H     4 syn   r=+0.4000  YES
+    GUG: |delta|=0.003560  mean_B=12.063 A^2  n=1
+    AAU: |delta|=0.007423  mean_B=9.962 A^2  n=1
+    CGC: |delta|=0.007742  mean_B=11.392 A^2  n=1
+    UAC: |delta|=0.025708  mean_B=13.797 A^2  n=1
+  I     8 syn   r=+0.3571  YES
+    ACU: |delta|=0.000063  mean_B=9.326 A^2  n=1
+    GAG: |delta|=0.000254  mean_B=12.091 A^2  n=2
+    GAU: |delta|=0.006676  mean_B=13.743 A^2  n=2
+    GUU: |delta|=0.010521  mean_B=14.559 A^2  n=1
+    GAC: |delta|=0.015186  mean_B=10.913 A^2  n=2
+    ACC: |delta|=0.021725  mean_B=14.767 A^2  n=1
+    CAG: |delta|=0.022346  mean_B=28.838 A^2  n=1
+    UAC: |delta|=0.025708  mean_B=10.129 A^2  n=1
+  K     9 syn   r=-0.2167  NO
+    GAG: |delta|=0.000254  mean_B=25.382 A^2  n=1
+    AAG: |delta|=0.000494  mean_B=19.756 A^2  n=1
+    AGG: |delta|=0.000748  mean_B=14.847 A^2  n=1
+    AUC: |delta|=0.010687  mean_B=12.474 A^2  n=1
+    AUU: |delta|=0.011272  mean_B=14.199 A^2  n=1
+    GGC: |delta|=0.014937  mean_B=21.097 A^2  n=1
+    UUC: |delta|=0.022012  mean_B=12.175 A^2  n=1
+    CUG: |delta|=0.026265  mean_B=19.922 A^2  n=3
+    UCC: |delta|=0.032895  mean_B=17.593 A^2  n=1
+  L    14 syn   r=+0.1341  YES
+    AAA: |delta|=0.000000  mean_B=12.038 A^2  n=1
+    CCC: |delta|=0.000000  mean_B=13.497 A^2  n=1
+    GAG: |delta|=0.000254  mean_B=10.627 A^2  n=1
+    AAG: |delta|=0.000494  mean_B=20.058 A^2  n=2
+    GAA: |delta|=0.000748  mean_B=9.368 A^2  n=1
+    CUC: |delta|=0.011335  mean_B=14.210 A^2  n=1
+    AGC: |delta|=0.014186  mean_B=10.262 A^2  n=1
+    AAC: |delta|=0.014436  mean_B=13.459 A^2  n=1
+    GGC: |delta|=0.014937  mean_B=17.051 A^2  n=2
+    GAC: |delta|=0.015186  mean_B=9.178 A^2  n=1
+    GCC: |delta|=0.022468  mean_B=26.599 A^2  n=1
+    UGC: |delta|=0.025462  mean_B=12.204 A^2  n=1
+    UAC: |delta|=0.025708  mean_B=11.228 A^2  n=1
+    CUG: |delta|=0.026265  mean_B=14.511 A^2  n=1
+  M     3 syn   r=-0.5000  NO
+    ACG: |delta|=0.006929  mean_B=35.478 A^2  n=1
+    GAC: |delta|=0.015186  mean_B=12.159 A^2  n=1
+    UAC: |delta|=0.025708  mean_B=24.332 A^2  n=1
+  N     7 syn   r=+0.2857  YES
+    GAG: |delta|=0.000254  mean_B=15.329 A^2  n=1
+    GGU: |delta|=0.006932  mean_B=9.997 A^2  n=1
+    GCG: |delta|=0.007670  mean_B=12.969 A^2  n=1
+    GAC: |delta|=0.015186  mean_B=13.193 A^2  n=1
+    CCU: |delta|=0.021560  mean_B=12.608 A^2  n=1
+    GCC: |delta|=0.022468  mean_B=16.291 A^2  n=1
+    UGC: |delta|=0.025462  mean_B=14.935 A^2  n=1
+  P     6 syn   r=+0.6571  YES
+    UUU: |delta|=0.000000  mean_B=15.160 A^2  n=1
+    GUG: |delta|=0.003560  mean_B=11.063 A^2  n=1
+    AUG: |delta|=0.004311  mean_B=16.937 A^2  n=1
+    AUC: |delta|=0.010687  mean_B=11.703 A^2  n=1
+    GGC: |delta|=0.014937  mean_B=33.661 A^2  n=1
+    CAG: |delta|=0.022346  mean_B=19.426 A^2  n=1
+  Q     8 syn   r=+0.1429  YES
+    GAG: |delta|=0.000254  mean_B=13.480 A^2  n=1
+    GUG: |delta|=0.003560  mean_B=17.166 A^2  n=1
+    GAU: |delta|=0.006676  mean_B=24.095 A^2  n=1
+    UGG: |delta|=0.010491  mean_B=13.622 A^2  n=1
+    CUC: |delta|=0.011335  mean_B=13.884 A^2  n=1
+    CCA: |delta|=0.014239  mean_B=14.992 A^2  n=1
+    CAG: |delta|=0.022346  mean_B=10.591 A^2  n=1
+    CUG: |delta|=0.026265  mean_B=39.321 A^2  n=1
+  R     9 syn   r=-0.8000  NO
+    GAG: |delta|=0.000254  mean_B=15.962 A^2  n=1
+    GUG: |delta|=0.003560  mean_B=25.512 A^2  n=1
+    AUG: |delta|=0.004311  mean_B=16.574 A^2  n=1
+    AAC: |delta|=0.014436  mean_B=29.924 A^2  n=1
+    GAC: |delta|=0.015186  mean_B=14.648 A^2  n=1
+    UCA: |delta|=0.018555  mean_B=12.736 A^2  n=1
+    ACC: |delta|=0.021725  mean_B=11.250 A^2  n=1
+    CAG: |delta|=0.022346  mean_B=10.631 A^2  n=1
+    UCC: |delta|=0.032895  mean_B=11.264 A^2  n=1
+  S    11 syn   r=-0.3273  NO
+    CCC: |delta|=0.000000  mean_B=17.350 A^2  n=1
+    AAA: |delta|=0.000000  mean_B=13.529 A^2  n=1
+    ACU: |delta|=0.000063  mean_B=13.518 A^2  n=1
+    GGA: |delta|=0.000495  mean_B=9.601 A^2  n=1
+    GAA: |delta|=0.000748  mean_B=15.188 A^2  n=1
+    UGG: |delta|=0.010491  mean_B=8.229 A^2  n=1
+    AUU: |delta|=0.011272  mean_B=33.639 A^2  n=1
+    GGC: |delta|=0.014937  mean_B=15.096 A^2  n=1
+    GCC: |delta|=0.022468  mean_B=12.268 A^2  n=1
+    CGG: |delta|=0.022607  mean_B=12.166 A^2  n=1
+    CUG: |delta|=0.026265  mean_B=11.474 A^2  n=1
+  T    11 syn   r=+0.6455  YES
+    CCC: |delta|=0.000000  mean_B=11.293 A^2  n=1
+    AAG: |delta|=0.000494  mean_B=13.249 A^2  n=1
+    UGG: |delta|=0.010491  mean_B=18.378 A^2  n=1
+    CUC: |delta|=0.011335  mean_B=15.297 A^2  n=1
+    CCG: |delta|=0.014726  mean_B=23.066 A^2  n=1
+    GGC: |delta|=0.014937  mean_B=11.536 A^2  n=1
+    UUC: |delta|=0.022012  mean_B=27.085 A^2  n=1
+    CAG: |delta|=0.022346  mean_B=20.679 A^2  n=1
+    GCC: |delta|=0.022468  mean_B=24.501 A^2  n=3
+    UAC: |delta|=0.025708  mean_B=17.184 A^2  n=1
+    CAU: |delta|=0.029242  mean_B=26.836 A^2  n=1
+  V     6 syn   r=+0.7714  YES
+    AAG: |delta|=0.000494  mean_B=11.326 A^2  n=1
+    GUG: |delta|=0.003560  mean_B=9.378 A^2  n=1
+    AUG: |delta|=0.004311  mean_B=10.196 A^2  n=1
+    GAC: |delta|=0.015186  mean_B=11.754 A^2  n=1
+    UCG: |delta|=0.018064  mean_B=23.095 A^2  n=1
+    CUG: |delta|=0.026265  mean_B=15.038 A^2  n=1
+  W     4 syn   r=+0.4000  YES
+    AGA: |delta|=0.000254  mean_B=14.774 A^2  n=1
+    AAG: |delta|=0.000494  mean_B=10.505 A^2  n=1
+    UCU: |delta|=0.011181  mean_B=10.550 A^2  n=1
+    CGG: |delta|=0.022607  mean_B=15.844 A^2  n=1
+  Y     9 syn   r=+0.0000  NO
+    AAA: |delta|=0.000000  mean_B=11.051 A^2  n=1
+    ACU: |delta|=0.000063  mean_B=12.751 A^2  n=1
+    GCU: |delta|=0.000803  mean_B=12.138 A^2  n=1
+    ACA: |delta|=0.007419  mean_B=13.654 A^2  n=1
+    AAU: |delta|=0.007423  mean_B=11.141 A^2  n=1
+    GUU: |delta|=0.010521  mean_B=10.522 A^2  n=1
+    AUC: |delta|=0.010687  mean_B=11.545 A^2  n=1
+    AUU: |delta|=0.011272  mean_B=10.954 A^2  n=1
+    CGG: |delta|=0.022607  mean_B=14.432 A^2  n=1
+
+  Synonymous-codon direction summary:
+  9/20 AAs show predicted direction (frac=0.45)
+  -> PDB-4 INCONCLUSIVE (50% band)
+
+######################################################################
+# ENTRY: 9ZYS  |  Phage Bas18 Icosahedral Capsid (cryo-EM 3.7 A)
+######################################################################
+  [CACHE] 9ZYS.cif mmCIF coordinates
+  gemmi parser: 2644 CA atoms
+  Region assignment (Q75 mobile thresh=72.990 A^2, mean B=67.416):
+    mobile: 662
+    resolved_core: 1608
+    resolved_surface: 374
+  NCBI esearch: gene=gpH, organism=Escherichia phage
+    No NCBI records found.
+  Codon positions mapped: 0
+
+======================================================================
+PDB-1: Q_delta Equilateral-Triad Analysis [9ZYS]
+======================================================================
+  Building 3D Delaunay tessellation of 2644 CA positions...
+  17595 tetrahedra, extracting triangular faces...
+  Unique triangular faces: 35253
+
+  Q_delta statistics by region:
+    resolved_core       : n=21862  median=0.813821  mean=0.760122  min=0.0081  max=1.0000
+    resolved_surface    : n= 3768  median=0.723562  mean=0.677876  min=0.0131  max=0.9999
+    mobile              : n= 8628  median=0.743574  mean=0.685745  min=0.0169  max=0.9999
+    mixed               : n=  995  median=0.732359  mean=0.680417  min=0.0406  max=0.9994
+
+  MULTI-QUANTILE ROBUSTNESS (mobile threshold sweep):
+  Quantile   mob_thresh   core_med   surf_med    mob_med  core>surf   core>mob
+  Q75            72.990   0.813821   0.723562   0.743574        YES        YES
+  Q80            75.010   0.813821   0.744533   0.734609        YES        YES
+  Q85            77.510   0.813821   0.745571   0.729273        YES        YES
+  Q90            81.170   0.813821   0.751083   0.700866        YES        YES
+
+  PRIMARY: core vs surface: median(core)=0.813821  median(surf)=0.723562  delta=+0.090259  direction_ok=True
+  -> PDB-1 core>surface: CONFIRMED
+  PRIMARY: core vs mobile: median(core)=0.813821  median(mobile)=0.743574  delta=+0.070247  direction_ok=True
+  -> PDB-1 core>mobile: CONFIRMED
+
+======================================================================
+PDB-2: Icosahedral Axis Recovery from Coordinates [9ZYS]
+  NOTE: Symmetry metadata (I label) is NOT used in this computation.
+  Axes are recovered by testing coordinate self-maps.
+======================================================================
+  2644 CA atoms, centroid: (317.29, 728.33, 523.06)
+  Polymer chains: 9 (A, B, C, D, E, F, G, H, I)
+    Chain A: radial distance = 80.69 A, direction = (0.463, 0.876, 0.138)
+    Chain B: radial distance = 30.48 A, direction = (0.345, 0.848, 0.402)
+    Chain C: radial distance = 41.28 A, direction = (-0.122, -0.083, 0.989)
+    Chain D: radial distance = 52.94 A, direction = (-0.426, -0.756, 0.496)
+    Chain E: radial distance = 55.99 A, direction = (-0.418, -0.860, -0.293)
+    Chain F: radial distance = 48.49 A, direction = (-0.070, -0.429, -0.901)
+    Chain G: radial distance = 36.04 A, direction = (0.371, 0.452, -0.811)
+    Chain H: radial distance = 29.43 A, direction = (-0.912, -0.182, -0.367)
+    Chain I: radial distance = 24.98 A, direction = (-0.993, 0.087, 0.086)
+
+  Testing 100 candidate axes x 3 orders (2,3,5)...
+
+  Rotation self-map results:
+  C2: 49 hits, 6 unique axes  (expected ~15)  best RMSD=7.69 A
+    Cluster 1: axis=(-0.274,-0.098,0.957), RMSD=8.556 A, n_members=8
+    Cluster 2: axis=(-0.878,0.455,-0.148), RMSD=7.821 A, n_members=15
+    Cluster 3: axis=(0.010,-0.130,-0.991), RMSD=8.806 A, n_members=8
+  C3: 16 hits, 1 unique axes  (expected ~10)  best RMSD=8.44 A
+    Cluster 1: axis=(-0.878,0.455,-0.148), RMSD=8.441 A, n_members=16
+  C5: 3 hits, 1 unique axes  (expected ~6)  best RMSD=9.95 A
+    Cluster 1: axis=(-0.866,0.475,-0.159), RMSD=9.947 A, n_members=3
+
+  PDB-2 Summary:
+    C2 (2-fold) recovered: True
+    C3 (3-fold) recovered: True
+    C5 (5-fold) recovered: True
+    Complete {2,3,5} scaffold: True
+  -> PDB-2 VALIDATED: {2,3,5} axis scaffold confirmed coordinate-natively from 9ZYS
+
+  Topology Sentinel (Prediction Section XI.7):
+    'An icosahedral metadata label is not accepted as the geometric result.'
+    This computation recovered axes directly from CA coordinates.
+    Symmetry metadata (point_symmetry=I) was NOT used to select the result.
+    SENTINEL COMPLIANT: YES
+
+======================================================================
+PDB-3: Codon Z-Cascade Residual D_i [9ZYS]
+======================================================================
+  SKIP: No coding sequence available (see Derivation 3 Step 5).
+
+======================================================================
+PDB-4: Synonymous-Codon Orientation Stratification [9ZYS]
+======================================================================
+  SKIP: No coding sequence available.
+
+######################################################################
+# ENTRY: 10ZK  |  Nitrogenase complex C2 sym (cryo-EM 2.73 A)
+######################################################################
+  [CACHE] 10ZK.cif mmCIF coordinates
+  gemmi parser: 3081 CA atoms
+  Region assignment (Q75 mobile thresh=54.330 A^2, mean B=44.016):
+    mobile: 772
+    resolved_core: 1822
+    resolved_surface: 487
+  NCBI esearch: gene=nifH, organism=Gluconacetobacter diazotrophicus
+    No NCBI records found.
+  Codon positions mapped: 0
+
+======================================================================
+PDB-1: Q_delta Equilateral-Triad Analysis [10ZK]
+======================================================================
+  Building 3D Delaunay tessellation of 3081 CA positions...
+  20315 tetrahedra, extracting triangular faces...
+  Unique triangular faces: 40719
+
+  Q_delta statistics by region:
+    resolved_core       : n=24255  median=0.850966  mean=0.816226  min=0.0280  max=1.0000
+    resolved_surface    : n= 5132  median=0.828634  mean=0.760962  min=0.0217  max=1.0000
+    mobile              : n= 9724  median=0.799888  mean=0.721279  min=0.0132  max=1.0000
+    mixed               : n= 1608  median=0.811067  mean=0.753684  min=0.0156  max=0.9999
+
+  MULTI-QUANTILE ROBUSTNESS (mobile threshold sweep):
+  Quantile   mob_thresh   core_med   surf_med    mob_med  core>surf   core>mob
+  Q75            54.330   0.850966   0.828634   0.799888        YES        YES
+  Q80            58.310   0.850966   0.830740   0.789024        YES        YES
+  Q85            62.340   0.850966   0.830052   0.770465        YES        YES
+  Q90            68.210   0.850966   0.828236   0.741695        YES        YES
+
+  PRIMARY: core vs surface: median(core)=0.850966  median(surf)=0.828634  delta=+0.022332  direction_ok=True
+  -> PDB-1 core>surface: CONFIRMED
+  PRIMARY: core vs mobile: median(core)=0.850966  median(mobile)=0.799888  delta=+0.051078  direction_ok=True
+  -> PDB-1 core>mobile: CONFIRMED
+
+======================================================================
+PDB-3: Codon Z-Cascade Residual D_i [10ZK]
+======================================================================
+  SKIP: No coding sequence available (see Derivation 3 Step 5).
+
+======================================================================
+PDB-4: Synonymous-Codon Orientation Stratification [10ZK]
+======================================================================
+  SKIP: No coding sequence available.
+
+======================================================================
+PREDICTION VERDICT MATRIX - MH_PREDICTION_02 vs July 15, 2026 Release
+======================================================================
+
+Pathway    Entry   Result                                             Verdict
+--------------------------------------------------------------------------------
+PDB-1      10DT    core>surf=True  core>mob=True  VALIDATED
+PDB-3      10DT    D_i_core<mob=True  Pearson_r=0.0445  Spearman_r=0.0088  ctrl=-0.1674  VALIDATED
+PDB-4      10DT    9/20 AAs positive  frac=0.45  INCONCLUSIVE
+PDB-1      9ZYS    core>surf=True  core>mob=True  VALIDATED
+PDB-2      9ZYS    C2=True C3=True C5=True  VALIDATED
+PDB-3      9ZYS    NO CODING SEQUENCE - INSUFFICIENT TERRAIN
+PDB-4      9ZYS    NO CODING SEQUENCE - INSUFFICIENT TERRAIN
+PDB-1      10ZK    core>surf=True  core>mob=True  VALIDATED
+PDB-3      10ZK    NO CODING SEQUENCE - INSUFFICIENT TERRAIN
+PDB-4      10ZK    NO CODING SEQUENCE - INSUFFICIENT TERRAIN
+
+======================================================================
+TRUTH > COMFORT. Always.
+======================================================================

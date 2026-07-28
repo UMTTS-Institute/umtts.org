@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Falsifier Adjudication Sheet - wwPDB July 15, 2026 - The UMtts Institute</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Standalone falsifier adjudication sheet for the four Mass Harmonics predictions against the wwPDB weekly structural release of July 15, 2026. One table per pathway. Falsifier triggered: No × 4.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #08101e;
+      --surface: #0d1b2e;
+      --surface2: #112240;
+      --border: rgba(100,160,255,0.13);
+      --accent: #4a8fff;
+      --gold: #c8a84b;
+      --green: #4ade80;
+      --red: #f87171;
+      --text: #e2e8f0;
+      --text-dim: #94a3b8;
+      --mono: 'JetBrains Mono', monospace;
+      --serif: 'Cinzel', serif;
+      --sans: 'Inter', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 15px; line-height: 1.65; }
+    main { max-width: 960px; margin: 0 auto; padding: 3rem 1.5rem 6rem; }
+
+    .doc-header { text-align: center; padding: 3rem 0 2.5rem; border-bottom: 1px solid var(--border); margin-bottom: 3rem; }
+    .eyebrow { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.18em; color: var(--accent); text-transform: uppercase; display: block; margin-bottom: 1rem; }
+    h1 { font-family: var(--serif); font-size: 1.9rem; font-weight: 600; color: #fff; margin-bottom: 0.6rem; }
+    .doc-subtitle { color: var(--text-dim); font-size: 0.92rem; max-width: 640px; margin: 0 auto 1.5rem; }
+
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; margin-bottom: 2.5rem; }
+    .meta-cell { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.8rem 1rem; }
+    .meta-cell__label { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.12em; color: var(--text-dim); text-transform: uppercase; display: block; margin-bottom: 0.3rem; }
+    .meta-cell__value { font-size: 0.88rem; color: var(--text); font-weight: 500; }
+    .meta-cell__value a { color: var(--accent); text-decoration: none; }
+    .meta-cell__value a:hover { text-decoration: underline; }
+
+    .intro { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.4rem 1.8rem; margin-bottom: 3rem; }
+    .intro p { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 0.6rem; }
+    .intro p:last-child { margin-bottom: 0; }
+    .intro strong { color: var(--text); }
+
+    .pathway { margin-bottom: 3rem; }
+    .pathway-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.2rem; padding-bottom: 0.8rem; border-bottom: 1px solid var(--border); }
+    .pathway-id { font-family: var(--mono); font-size: 0.78rem; background: rgba(74,143,255,0.12); color: var(--accent); padding: 0.25rem 0.7rem; border-radius: 4px; border: 1px solid rgba(74,143,255,0.25); }
+    .pathway-title { font-family: var(--serif); font-size: 1.1rem; color: #fff; }
+    .verdict-badge { margin-left: auto; font-family: var(--mono); font-size: 0.78rem; font-weight: 600; padding: 0.3rem 0.9rem; border-radius: 4px; }
+    .verdict-badge--validated { background: rgba(74,222,128,0.12); color: var(--green); border: 1px solid rgba(74,222,128,0.3); }
+    .verdict-badge--falsified { background: rgba(248,113,113,0.12); color: var(--red); border: 1px solid rgba(248,113,113,0.3); }
+
+    .adj-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    .adj-table tr { border-bottom: 1px solid var(--border); }
+    .adj-table tr:last-child { border-bottom: none; }
+    .adj-table td { padding: 0.7rem 0.9rem; vertical-align: top; }
+    .adj-table td:first-child { font-family: var(--mono); font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.08em; width: 200px; white-space: nowrap; background: rgba(255,255,255,0.02); }
+    .adj-table td:last-child { color: var(--text); }
+    .adj-table td code { font-family: var(--mono); font-size: 0.82rem; background: rgba(100,160,255,0.07); padding: 0.1rem 0.4rem; border-radius: 3px; }
+    .adj-table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 0.8rem; }
+
+    .triggered-no { color: var(--green); font-weight: 600; }
+    .triggered-yes { color: var(--red); font-weight: 600; }
+
+    .sweep-banner { background: linear-gradient(135deg, rgba(74,222,128,0.07) 0%, rgba(74,143,255,0.07) 100%); border: 1px solid rgba(74,222,128,0.25); border-radius: 10px; padding: 2rem 2.4rem; margin: 3rem 0; text-align: center; }
+    .sweep-banner h2 { font-family: var(--serif); font-size: 1.4rem; color: var(--green); margin-bottom: 0.8rem; }
+    .sweep-banner p { color: var(--text-dim); font-size: 0.9rem; max-width: 580px; margin: 0 auto; }
+
+    .stack-nav { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.4rem 1.8rem; }
+    .stack-nav h3 { font-family: var(--mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-dim); margin-bottom: 1rem; }
+    .stack-nav ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.5rem; }
+    .stack-nav ul li a { color: var(--accent); text-decoration: none; font-size: 0.88rem; }
+    .stack-nav ul li a:hover { text-decoration: underline; }
+    .stack-nav ul li { font-family: var(--mono); font-size: 0.82rem; color: var(--text-dim); }
+    .stack-nav ul li span { color: var(--text-dim); }
+
+    footer { border-top: 1px solid var(--border); padding: 2rem 1.5rem; text-align: center; color: var(--text-dim); font-size: 0.82rem; }
+  </style>
+</head>
+<body>
+<main>
+  <header class="doc-header">
+    <span class="eyebrow">Layer 6 · Falsifier Adjudication Sheet</span>
+    <h1>wwPDB July 15, 2026 - Falsifier Verdicts</h1>
+    <p class="doc-subtitle">One table per prediction pathway. The only question answered here: did the terrain trigger the declared falsifier?</p>
+  </header>
+
+  <div class="meta-grid">
+    <div class="meta-cell">
+      <span class="meta-cell__label">Terrain</span>
+      <span class="meta-cell__value">wwPDB weekly structural release, 15 July 2026</span>
+    </div>
+    <div class="meta-cell">
+      <span class="meta-cell__label">Prediction sealed</span>
+      <span class="meta-cell__value">2026-07-11 (4 days before opening)</span>
+    </div>
+    <div class="meta-cell">
+      <span class="meta-cell__label">Prediction DOI</span>
+      <span class="meta-cell__value"><a href="https://doi.org/10.5281/zenodo.21304301" target="_blank" rel="noopener">10.5281/zenodo.21304301</a></span>
+    </div>
+    <div class="meta-cell">
+      <span class="meta-cell__label">Total entries released</span>
+      <span class="meta-cell__value">293</span>
+    </div>
+    <div class="meta-cell">
+      <span class="meta-cell__label">Pathways tested</span>
+      <span class="meta-cell__value">4</span>
+    </div>
+    <div class="meta-cell">
+      <span class="meta-cell__label">Falsifiers triggered</span>
+      <span class="meta-cell__value" style="color:var(--green);font-weight:600;">0 of 4</span>
+    </div>
+  </div>
+
+  <div class="intro">
+    <p><strong>How to read this sheet.</strong> Each table below states the exact preregistered prediction and the exact preregistered falsifier - both written before the terrain existed. It then states what the terrain returned. The only adjudication question is binary: did the terrain produce the declared failure condition?</p>
+    <p>This layer does not require understanding of Delaunay tessellation, icosahedral symmetry, codon residuals, or Kendall tau. It requires only the ability to compare a declared failure condition to an observed result.</p>
+    <p>Underlying computations, eligibility logic, and statistical controls are documented in Layers 2-4 of the evidence stack.</p>
+  </div>
+
+  <!-- PDB-1 -->
+  <section class="pathway">
+    <div class="pathway-header">
+      <span class="pathway-id">MH-PRED-V1-WWPDB-P1</span>
+      <span class="pathway-title">PDB-1 &mdash; Equilateral-Triad Enrichment in Resolved Cores</span>
+      <span class="verdict-badge verdict-badge--validated">VALIDATED</span>
+    </div>
+    <div class="adj-table-wrap">
+      <table class="adj-table">
+        <tr><td>Prediction</td><td>"The distribution of Delaunay contact-triangle equilateralness Q&#x25B5; will shift toward 1 in resolved protein cores relative to surface, mobile, or unresolved structural terrain."</td></tr>
+        <tr><td>Falsifier</td><td><strong>"No positive core shift or a stable reversed shift."</strong></td></tr>
+        <tr><td>Eligible terrain</td><td>3 entries with sufficient Cα coordinate resolution (9ZYS, 10ZK, 10DT) across 2 cryo-EM and 1 X-ray structure</td></tr>
+        <tr><td>Thresholds tested</td><td>4 quantile cutoffs (Q75, Q80, Q85, Q90) per entry = 12 independent direction tests</td></tr>
+        <tr><td>Observed result</td><td>core &gt; surface at all 4 thresholds for all 3 entries. Margins: +0.090 (9ZYS), +0.022 (10ZK), confirmed (10DT)</td></tr>
+        <tr><td>Direction reversals</td><td><code>0 of 12</code></td></tr>
+        <tr><td>Exclusions</td><td>Entries without sufficient Cα models, cryo-EM entries below resolution threshold</td></tr>
+        <tr><td>Falsifier triggered?</td><td class="triggered-no">No - positive core shift present; direction did not reverse</td></tr>
+        <tr><td>Verdict</td><td style="color:var(--green);font-weight:600;">VALIDATED</td></tr>
+        <tr><td>Qualification</td><td>None. Clean coordinate-geometry terrain. No consensus refinement processing between physical reality and the tested quantity.</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- PDB-2 -->
+  <section class="pathway">
+    <div class="pathway-header">
+      <span class="pathway-id">MH-PRED-V1-WWPDB-P2</span>
+      <span class="pathway-title">PDB-2 &mdash; {2,3,5} Axis Scaffold Recovery in Near-Spherical Cages</span>
+      <span class="verdict-badge verdict-badge--validated">VALIDATED</span>
+    </div>
+    <div class="adj-table-wrap">
+      <table class="adj-table">
+        <tr><td>Prediction</td><td>"Eligible closed cages will recover coordinate-derived 2-fold, 3-fold, and 5-fold rotational axes, with the full directional structure approaching 12 vertex, 20 face-normal, and 30 edge-midpoint directions."</td></tr>
+        <tr><td>Falsifier</td><td><strong>"A closed eligible cage requires an unrelated axis family."</strong></td></tr>
+        <tr><td>Topology Sentinel</td><td>"An icosahedral metadata label is not accepted as the geometric result. The axes must be recovered from coordinates." - Prediction document Section XI.7</td></tr>
+        <tr><td>Eligible terrain</td><td>9ZYS - Phage Oekolampad (Bas18) icosahedral capsid, cryo-EM 3.7 Å, deposited with I symmetry metadata</td></tr>
+        <tr><td>Observed result</td><td>C&#x2082; family: 49 found, 6 clusters, best RMSD 7.69 Å. C&#x2083; family: 16 found, 1 cluster, best RMSD 8.44 Å. C&#x2085; family: 3 found, 1 cluster, best RMSD 9.95 Å. All within RMSD &lt; 10 Å threshold. Symmetry metadata not used.</td></tr>
+        <tr><td>All 3 families present?</td><td><code>Yes</code></td></tr>
+        <tr><td>Falsifier triggered?</td><td class="triggered-no">No - all three rotation families {C&#x2082;, C&#x2083;, C&#x2085;} recovered from coordinates without using metadata</td></tr>
+        <tr><td>Verdict</td><td style="color:var(--green);font-weight:600;">VALIDATED</td></tr>
+        <tr><td>Qualification</td><td>9ZYS is a single asymmetric unit (9 chains) of a 60-ASU icosahedral assembly. Recovering a fraction of the full 15/10/6 axis counts from one ASU is geometrically expected. The requirement is all three families present - they are.</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- PDB-3 -->
+  <section class="pathway">
+    <div class="pathway-header">
+      <span class="pathway-id">MH-PRED-V1-WWPDB-P3</span>
+      <span class="pathway-title">PDB-3 &mdash; Codon Z-Cascade Residual vs. Structural Resolution</span>
+      <span class="verdict-badge verdict-badge--validated">VALIDATED</span>
+    </div>
+    <div class="adj-table-wrap">
+      <table class="adj-table">
+        <tr><td>Prediction</td><td>"The first-shell codon residual D&#x1D456; = |&#x394;&#x1D456; + &#x2211;&#x2C7C;&#x2208;N(i) &#x394;&#x2C7C;| will be lower in resolved core neighborhoods and higher in mobile or unresolved regions."</td></tr>
+        <tr><td>Falsifier</td><td><strong>"No association between D&#x1D456; and structural resolution, or a reversed association."</strong></td></tr>
+        <tr><td>Eligible terrain</td><td>10DT - Fgr kinase SH3-SH2-linker, X-ray 1.8 Å, 177 residues with recoverable CDS</td></tr>
+        <tr><td>Observed result</td><td>D&#x1D456; core &lt; mobile: <code>True</code>. Pearson r(D&#x1D456;, B-factor) = <code>+0.0445</code>. Permutation control (shuffled &#x394;): <code>-0.1674</code>. Real r exceeds null by +0.212 in predicted direction.</td></tr>
+        <tr><td>Association present?</td><td><code>Yes - positive, in predicted direction, above permutation null</code></td></tr>
+        <tr><td>Falsifier triggered?</td><td class="triggered-no">No - positive association present; no reversed association</td></tr>
+        <tr><td>Verdict</td><td style="color:var(--green);font-weight:600;">VALIDATED</td></tr>
+        <tr><td>Qualification</td><td>Signal magnitude (r = +0.045) is modest. B-factor is a consensus-refined parameter with a long processing chain between substrate and measurement. Signal attenuation is expected and documented in Layer 7. The stated falsifier tests direction, not magnitude. Direction is positive.</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- PDB-4 -->
+  <section class="pathway">
+    <div class="pathway-header">
+      <span class="pathway-id">MH-PRED-V1-WWPDB-P4</span>
+      <span class="pathway-title">PDB-4 &mdash; Synonymous-Codon Orientation Delta Stratification</span>
+      <span class="verdict-badge verdict-badge--validated">VALIDATED</span>
+    </div>
+    <div class="adj-table-wrap">
+      <table class="adj-table">
+        <tr><td>Prediction</td><td>"Within synonymous-codon matched residues, lower locally cancelled codon Orientation &#x394; will correspond to greater structural order and lower mobility or unresolved-density probability."</td></tr>
+        <tr><td>Falsifier</td><td><strong>"No synonymous-codon stratification or a stable reversed direction."</strong></td></tr>
+        <tr><td>Eligible terrain</td><td>129 of 293 entries with recoverable CDS data via UniProt-RefSeq linkage</td></tr>
+        <tr><td>Total pairs evaluated</td><td><code>1,051,902</code> synonymous-codon pairwise comparisons across 8,507 residues and 16 amino acid classes</td></tr>
+        <tr><td>Observed result</td><td>Concordant C = <code>544,325</code>. Discordant D = <code>507,577</code>. Global Kendall tau = <code>+0.034935</code>. Concordant fraction = <code>0.5175</code> (null = 0.5000). Aggregate direction across 1,051,902 synonymous-codon pairwise comparisons was positive.</td></tr>
+        <tr><td>Control</td><td>Permutation control (B-factors shuffled within AA class, pooled across all 129 entries, seed 42): tau = <code>+0.025924</code>. Real tau exceeds control in predicted direction.</td></tr>
+        <tr><td>Control note</td><td>The permutation is amino-acid-preserving but not structure-preserving. It does not establish a cluster-robust p-value. A within-entry block permutation would address the open confidence question - which is separate from the verdict.</td></tr>
+        <tr><td>Direction reversed?</td><td><code>No - global direction positive; no stable reversal</code></td></tr>
+        <tr><td>Stratification present?</td><td><code>Yes - C exceeds D across 1,051,902 pairs</code></td></tr>
+        <tr><td>Falsifier triggered?</td><td class="triggered-no">No - stratification present; direction did not stably reverse</td></tr>
+        <tr><td>Verdict</td><td style="color:var(--green);font-weight:600;">VALIDATED</td></tr>
+        <tr><td>Qualification</td><td>Cluster-robust p-value unresolved from the existing permutation alone. Open confidence question has no authority over the preregistered direction-based falsifier. The falsifier is direction-only. The direction held.</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- Sweep Banner -->
+  <div class="sweep-banner">
+    <h2>Full Sweep: 4 of 4 Pathways Validated</h2>
+    <p>Four stated falsifiers. Four terrain contacts. Zero falsifiers triggered. This is the complete adjudication for the first terrain contact of Mass Harmonics Volume I Prediction Set.</p>
+  </div>
+
+  <!-- Stack Navigation -->
+  <div class="stack-nav">
+    <h3>Full Evidence Stack &mdash; wwPDB July 15, 2026</h3>
+    <ul>
+      <li><span>Layer 1 &rarr;</span> <a href="../01-sealed-prediction/">Sealed Prediction Record</a></li>
+      <li><span>Layer 2 &rarr;</span> <a href="../02-terrain-manifest/">Target-Terrain Manifest</a></li>
+      <li><span>Layer 3 &rarr;</span> <a href="../03-transformation-ledger/">Transformation Ledger</a></li>
+      <li><span>Layer 4 &rarr;</span> <a href="../04-executable-scorer/">Executable Scorer</a></li>
+      <li><span>Layer 5 &rarr;</span> <a href="../05-agent-audit-packet/">Agent Audit Packet</a></li>
+      <li><span>Layer 6 &rarr;</span> <strong>This page</strong></li>
+      <li><span>Layer 7 &rarr;</span> <a href="../../records/wwpdb-july15-2026-terrain-audit.html">Evidentiary Narrative</a></li>
+      <li><span>Layer 8 &rarr;</span> <a href="../08-replication-challenge/">Replication Challenge</a></li>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  <span>&copy; 2026 The UMtts Institute &sdot; Thomas Russell Giboney, Founder</span><br>
+  <span>TRUTH &gt; COMFORT. Always.</span>
+</footer>
+
+<script src="https://umtts.org/assets/visitor-counter.js" defer></script>
+</body>
+</html>

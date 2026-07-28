@@ -1,0 +1,231 @@
+name,R_pm,R_fm,f_eV,f_MeV,note,fault_hint
+Hydrogen (H Z=1),31,,13.5984,,Z=1 cov=31pm IE=13.5984eV geo=measured,C1
+Helium (He Z=2),28,,24.5874,,Z=2 cov=28pm IE=24.5874eV geo=measured,C1
+Lithium (Li Z=3),128,,5.3917,,Z=3 cov=128pm IE=5.3917eV geo=measured,C1
+Beryllium (Be Z=4),96,,9.3227,,Z=4 cov=96pm IE=9.3227eV geo=measured,C1
+Boron (B Z=5),84,,8.2980,,Z=5 cov=84pm IE=8.2980eV geo=measured,C1
+Carbon (C Z=6),77,,11.2603,,Z=6 cov=77pm IE=11.2603eV geo=measured,C1
+Nitrogen (N Z=7),71,,14.5341,,Z=7 cov=71pm IE=14.5341eV geo=measured,C1
+Oxygen (O Z=8),66,,13.6181,,Z=8 cov=66pm IE=13.6181eV geo=measured,C1
+Fluorine (F Z=9),57,,17.4228,,Z=9 cov=57pm IE=17.4228eV geo=measured,C1
+Neon (Ne Z=10),58,,21.5645,,Z=10 cov=58pm IE=21.5645eV geo=measured,C1
+Sodium (Na Z=11),166,,5.1391,,Z=11 cov=166pm IE=5.1391eV geo=measured,C1
+Magnesium (Mg Z=12),141,,7.6462,,Z=12 cov=141pm IE=7.6462eV geo=measured,C1
+Aluminum (Al Z=13),121,,5.9858,,Z=13 cov=121pm IE=5.9858eV geo=measured,C1
+Silicon (Si Z=14),111,,8.1517,,Z=14 cov=111pm IE=8.1517eV geo=measured,C1
+Phosphorus (P Z=15),107,,10.4867,,Z=15 cov=107pm IE=10.4867eV geo=measured,C1
+Sulfur (S Z=16),105,,10.3600,,Z=16 cov=105pm IE=10.3600eV geo=measured,C1
+Chlorine (Cl Z=17),102,,12.9676,,Z=17 cov=102pm IE=12.9676eV geo=measured,C1
+Argon (Ar Z=18),106,,15.7596,,Z=18 cov=106pm IE=15.7596eV geo=measured,C1
+Potassium (K Z=19),203,,4.3407,,Z=19 cov=203pm IE=4.3407eV geo=measured,C1
+Calcium (Ca Z=20),176,,6.1132,,Z=20 cov=176pm IE=6.1132eV geo=measured,C1
+Scandium (Sc Z=21),170,,6.5615,,Z=21 cov=170pm IE=6.5615eV geo=measured,C1
+Titanium (Ti Z=22),160,,6.8281,,Z=22 cov=160pm IE=6.8281eV geo=measured,C1
+Vanadium (V Z=23),153,,6.7462,,Z=23 cov=153pm IE=6.7462eV geo=measured,C1
+Chromium (Cr Z=24),139,,6.7665,,Z=24 cov=139pm IE=6.7665eV geo=measured,C1
+Manganese (Mn Z=25),139,,7.4340,,Z=25 cov=139pm IE=7.4340eV geo=measured,C1
+Iron (Fe Z=26),132,,7.9024,,Z=26 cov=132pm IE=7.9024eV geo=measured,C1
+Cobalt (Co Z=27),126,,7.8810,,Z=27 cov=126pm IE=7.8810eV geo=measured,C1
+Nickel (Ni Z=28),124,,7.6398,,Z=28 cov=124pm IE=7.6398eV geo=measured,C1
+Copper (Cu Z=29),132,,7.7264,,Z=29 cov=132pm IE=7.7264eV geo=measured,C1
+Zinc (Zn Z=30),122,,9.3942,,Z=30 cov=122pm IE=9.3942eV geo=measured,C1
+Gallium (Ga Z=31),122,,5.9993,,Z=31 cov=122pm IE=5.9993eV geo=measured,C1
+Germanium (Ge Z=32),120,,7.8994,,Z=32 cov=120pm IE=7.8994eV geo=measured,C1
+Arsenic (As Z=33),119,,9.7886,,Z=33 cov=119pm IE=9.7886eV geo=measured,C1
+Selenium (Se Z=34),120,,9.7524,,Z=34 cov=120pm IE=9.7524eV geo=measured,C1
+Bromine (Br Z=35),120,,11.8138,,Z=35 cov=120pm IE=11.8138eV geo=measured,C1
+Krypton (Kr Z=36),116,,13.9996,,Z=36 cov=116pm IE=13.9996eV geo=measured,C1
+Rubidium (Rb Z=37),220,,4.1771,,Z=37 cov=220pm IE=4.1771eV geo=measured,C1
+Strontium (Sr Z=38),195,,5.6949,,Z=38 cov=195pm IE=5.6949eV geo=measured,C1
+Yttrium (Y Z=39),190,,6.2171,,Z=39 cov=190pm IE=6.2171eV geo=measured,C1
+Zirconium (Zr Z=40),175,,6.6339,,Z=40 cov=175pm IE=6.6339eV geo=measured,C1
+Niobium (Nb Z=41),164,,6.7589,,Z=41 cov=164pm IE=6.7589eV geo=measured,C1
+Molybdenum (Mo Z=42),154,,7.0924,,Z=42 cov=154pm IE=7.0924eV geo=measured,C1
+Technetium (Tc Z=43),147,,7.28,,Z=43 cov=147pm IE=7.28eV geo=measured,C1
+Ruthenium (Ru Z=44),146,,7.3605,,Z=44 cov=146pm IE=7.3605eV geo=measured,C1
+Rhodium (Rh Z=45),142,,7.4589,,Z=45 cov=142pm IE=7.4589eV geo=measured,C1
+Palladium (Pd Z=46),139,,8.3369,,Z=46 cov=139pm IE=8.3369eV geo=measured,C1
+Silver (Ag Z=47),145,,7.5762,,Z=47 cov=145pm IE=7.5762eV geo=measured,C1
+Cadmium (Cd Z=48),144,,8.9938,,Z=48 cov=144pm IE=8.9938eV geo=measured,C1
+Indium (In Z=49),142,,5.7864,,Z=49 cov=142pm IE=5.7864eV geo=measured,C1
+Tin (Sn Z=50),139,,7.3439,,Z=50 cov=139pm IE=7.3439eV geo=measured,C1
+Antimony (Sb Z=51),139,,8.6084,,Z=51 cov=139pm IE=8.6084eV geo=measured,C1
+Tellurium (Te Z=52),138,,9.0096,,Z=52 cov=138pm IE=9.0096eV geo=measured,C1
+Iodine (I Z=53),139,,10.4513,,Z=53 cov=139pm IE=10.4513eV geo=measured,C1
+Xenon (Xe Z=54),140,,12.1298,,Z=54 cov=140pm IE=12.1298eV geo=measured,C1
+Cesium (Cs Z=55),244,,3.8939,,Z=55 cov=244pm IE=3.8939eV geo=measured,C1
+Barium (Ba Z=56),215,,5.2117,,Z=56 cov=215pm IE=5.2117eV geo=measured,C1
+Lanthanum (La Z=57),207,,5.5769,,Z=57 cov=207pm IE=5.5769eV geo=measured,C1
+Cerium (Ce Z=58),204,,5.5387,,Z=58 cov=204pm IE=5.5387eV geo=measured,C1
+Praseodymium (Pr Z=59),203,,5.473,,Z=59 cov=203pm IE=5.473eV geo=measured,C1
+Neodymium (Nd Z=60),201,,5.5250,,Z=60 cov=201pm IE=5.5250eV geo=measured,C1
+Promethium (Pm Z=61),199,,5.582,,Z=61 cov=199pm IE=5.582eV geo=measured,C1
+Samarium (Sm Z=62),198,,5.6437,,Z=62 cov=198pm IE=5.6437eV geo=measured,C1
+Europium (Eu Z=63),198,,5.6704,,Z=63 cov=198pm IE=5.6704eV geo=measured,C1
+Gadolinium (Gd Z=64),196,,6.1498,,Z=64 cov=196pm IE=6.1498eV geo=measured,C1
+Terbium (Tb Z=65),194,,5.8638,,Z=65 cov=194pm IE=5.8638eV geo=measured,C1
+Dysprosium (Dy Z=66),192,,5.9389,,Z=66 cov=192pm IE=5.9389eV geo=measured,C1
+Holmium (Ho Z=67),192,,6.0215,,Z=67 cov=192pm IE=6.0215eV geo=measured,C1
+Erbium (Er Z=68),189,,6.1077,,Z=68 cov=189pm IE=6.1077eV geo=measured,C1
+Thulium (Tm Z=69),190,,6.1843,,Z=69 cov=190pm IE=6.1843eV geo=measured,C1
+Ytterbium (Yb Z=70),187,,6.2542,,Z=70 cov=187pm IE=6.2542eV geo=measured,C1
+Lutetium (Lu Z=71),187,,5.4259,,Z=71 cov=187pm IE=5.4259eV geo=measured,C1
+Hafnium (Hf Z=72),175,,6.8251,,Z=72 cov=175pm IE=6.8251eV geo=measured,C1
+Tantalum (Ta Z=73),170,,7.5496,,Z=73 cov=170pm IE=7.5496eV geo=measured,C1
+Tungsten (W Z=74),162,,7.8640,,Z=74 cov=162pm IE=7.8640eV geo=measured,C1
+Rhenium (Re Z=75),151,,7.8335,,Z=75 cov=151pm IE=7.8335eV geo=measured,C1
+Osmium (Os Z=76),144,,8.4382,,Z=76 cov=144pm IE=8.4382eV geo=measured,C1
+Iridium (Ir Z=77),141,,8.9670,,Z=77 cov=141pm IE=8.9670eV geo=measured,C1
+Platinum (Pt Z=78),136,,8.9587,,Z=78 cov=136pm IE=8.9587eV geo=measured,C1
+Gold (Au Z=79),136,,9.2255,,Z=79 cov=136pm IE=9.2255eV geo=measured,C1
+Mercury (Hg Z=80),132,,10.4375,,Z=80 cov=132pm IE=10.4375eV geo=measured,C1
+Thallium (Tl Z=81),145,,6.1082,,Z=81 cov=145pm IE=6.1082eV geo=measured,C1
+Lead (Pb Z=82),146,,7.4167,,Z=82 cov=146pm IE=7.4167eV geo=measured,C1
+Bismuth (Bi Z=83),148,,7.2856,,Z=83 cov=148pm IE=7.2856eV geo=measured,C1
+Polonium (Po Z=84),140,,8.414,,Z=84 cov=140pm IE=8.414eV geo=measured,C1
+Astatine (At Z=85),150,,9.317,,Z=85 cov=150pm IE=9.317eV geo=measured,C1
+Radon (Rn Z=86),150,,10.7485,,Z=86 cov=150pm IE=10.7485eV geo=measured,C1
+Francium (Fr Z=87),260,,4.0727,,Z=87 cov=260pm IE=4.0727eV geo=measured,C1
+Radium (Ra Z=88),221,,5.2784,,Z=88 cov=221pm IE=5.2784eV geo=measured,C1
+Actinium (Ac Z=89),215,,5.17,,Z=89 cov=215pm IE=5.17eV geo=measured,C1
+Thorium (Th Z=90),206,,6.3067,,Z=90 cov=206pm IE=6.3067eV geo=measured,C1
+Protactinium (Pa Z=91),200,,5.89,,Z=91 cov=200pm IE=5.89eV geo=measured,C1
+Uranium (U Z=92),196,,6.1941,,Z=92 cov=196pm IE=6.1941eV geo=measured,C1
+Neptunium (Np Z=93),190,,6.2657,,Z=93 cov=190pm IE=6.2657eV geo=measured,C1
+Plutonium (Pu Z=94),187,,6.0260,,Z=94 cov=187pm IE=6.0260eV geo=measured,C1
+Americium (Am Z=95),180,,5.9738,,Z=95 cov=180pm IE=5.9738eV geo=measured,C1
+Curium (Cm Z=96),169,,5.9915,,Z=96 cov=169pm IE=5.9915eV geo=measured,C1
+Berkelium (Bk Z=97),168,,6.1979,,Z=97 cov=168pm IE=6.1979eV geo=measured,C1
+Californium (Cf Z=98),168,,6.2817,,Z=98 cov=168pm IE=6.2817eV geo=measured,C1
+Einsteinium (Es Z=99),165,,6.3676,,Z=99 cov=165pm IE=6.3676eV geo=measured,C1
+Fermium (Fm Z=100),167,,6.50,,Z=100 cov=167pm IE=6.50eV geo=measured,C1
+Mendelevium (Md Z=101),173,,6.58,,Z=101 cov=173pm IE=6.58eV geo=measured,C1
+Nobelium (No Z=102),176,,6.65,,Z=102 cov=176pm IE=6.65eV geo=measured,C1
+Lawrencium (Lr Z=103),161,,4.96,,Z=103 cov=161pm IE=4.96eV geo=measured,C1
+Rutherfordium (Rf Z=104),157,,6.02,,Z=104 cov=157pm IE=6.02eV geo=theoretical Pyykko2012,C1+G1
+Dubnium (Db Z=105),149,,6.8,,Z=105 cov=149pm IE=6.8eV geo=theoretical Pyykko2012,C1+G1
+Seaborgium (Sg Z=106),143,,7.8,,Z=106 cov=143pm IE=7.8eV geo=theoretical Pyykko2012,C1+G1
+Bohrium (Bh Z=107),141,,7.7,,Z=107 cov=141pm IE=7.7eV geo=theoretical Pyykko2012,C1+G1
+Hassium (Hs Z=108),134,,7.6,,Z=108 cov=134pm IE=7.6eV geo=theoretical Pyykko2012,C1+G1
+Meitnerium (Mt Z=109),129,,8.7,,Z=109 cov=129pm IE=8.7eV geo=theoretical Pyykko2012,C1+G1
+Darmstadtium (Ds Z=110),128,,9.3,,Z=110 cov=128pm IE=9.3eV geo=theoretical Pyykko2012,C1+G1
+Roentgenium (Rg Z=111),121,,10.6,,Z=111 cov=121pm IE=10.6eV geo=theoretical Pyykko2012,C1+G1
+Copernicium (Cn Z=112),122,,12.0,,Z=112 cov=122pm IE=12.0eV geo=theoretical Pyykko2012,C1+G1
+Nihonium (Nh Z=113),136,,7.3,,Z=113 cov=136pm IE=7.3eV geo=theoretical Pyykko2012,C1+G1
+Flerovium (Fl Z=114),143,,8.6,,Z=114 cov=143pm IE=8.6eV geo=theoretical Pyykko2012,C1+G1
+Moscovium (Mc Z=115),162,,5.8,,Z=115 cov=162pm IE=5.8eV geo=theoretical Pyykko2012,C1+G1
+Livermorium (Lv Z=116),175,,7.2,,Z=116 cov=175pm IE=7.2eV geo=theoretical Pyykko2012,C1+G1
+Tennessine (Ts Z=117),165,,7.7,,Z=117 cov=165pm IE=7.7eV geo=theoretical Pyykko2012,C1+G1
+Oganesson (Og Z=118),157,,8.9,,Z=118 cov=157pm IE=8.9eV geo=theoretical Pyykko2012,C1+G1
+Hydrogen-1 (Z=1 A=1),,0.8783,,938.272,Z=1 A=1 Rc=0.8783fm BE=938.272MeV src=Angeli2013,C1
+Deuterium (Z=1 A=2),,2.1421,,2.2246,Z=1 A=2 Rc=2.1421fm BE=2.2246MeV src=Angeli2013,C1
+Helium-3 (Z=2 A=3),,1.9661,,7.7181,Z=2 A=3 Rc=1.9661fm BE=7.7181MeV src=Angeli2013,C1
+Helium-4 (Z=2 A=4),,1.6755,,28.2957,Z=2 A=4 Rc=1.6755fm BE=28.2957MeV src=Angeli2013,C1
+Lithium-6 (Z=3 A=6),,2.5890,,31.9946,Z=3 A=6 Rc=2.5890fm BE=31.9946MeV src=Angeli2013,C1
+Lithium-7 (Z=3 A=7),,2.4440,,39.2441,Z=3 A=7 Rc=2.4440fm BE=39.2441MeV src=Angeli2013,C1
+Beryllium-9 (Z=4 A=9),,2.5190,,58.1651,Z=4 A=9 Rc=2.5190fm BE=58.1651MeV src=Angeli2013,C1
+Boron-10 (Z=5 A=10),,2.4277,,64.7508,Z=5 A=10 Rc=2.4277fm BE=64.7508MeV src=Angeli2013,C1
+Boron-11 (Z=5 A=11),,2.4050,,76.2048,Z=5 A=11 Rc=2.4050fm BE=76.2048MeV src=Angeli2013,C1
+Carbon-12 (Z=6 A=12),,2.4702,,92.1617,Z=6 A=12 Rc=2.4702fm BE=92.1617MeV src=Angeli2013,C1
+Carbon-13 (Z=6 A=13),,2.4614,,97.1082,Z=6 A=13 Rc=2.4614fm BE=97.1082MeV src=Angeli2013,C1
+Nitrogen-14 (Z=7 A=14),,2.5582,,104.659,Z=7 A=14 Rc=2.5582fm BE=104.659MeV src=Angeli2013,C1
+Nitrogen-15 (Z=7 A=15),,2.6010,,115.492,Z=7 A=15 Rc=2.6010fm BE=115.492MeV src=Angeli2013,C1
+Oxygen-16 (Z=8 A=16),,2.6991,,127.619,Z=8 A=16 Rc=2.6991fm BE=127.619MeV src=Angeli2013,C1
+Oxygen-17 (Z=8 A=17),,2.6931,,131.763,Z=8 A=17 Rc=2.6931fm BE=131.763MeV src=Angeli2013,C1
+Oxygen-18 (Z=8 A=18),,2.7726,,139.808,Z=8 A=18 Rc=2.7726fm BE=139.808MeV src=Angeli2013,C1
+Fluorine-19 (Z=9 A=19),,2.8976,,147.801,Z=9 A=19 Rc=2.8976fm BE=147.801MeV src=Angeli2013,C1
+Neon-20 (Z=10 A=20),,2.9936,,160.645,Z=10 A=20 Rc=2.9936fm BE=160.645MeV src=Angeli2013,C1
+Neon-21 (Z=10 A=21),,2.9587,,167.406,Z=10 A=21 Rc=2.9587fm BE=167.406MeV src=Angeli2013,C1
+Neon-22 (Z=10 A=22),,3.0055,,177.770,Z=10 A=22 Rc=3.0055fm BE=177.770MeV src=Angeli2013,C1
+Sodium-23 (Z=11 A=23),,2.9936,,186.564,Z=11 A=23 Rc=2.9936fm BE=186.564MeV src=Angeli2013,C1
+Magnesium-24 (Z=12 A=24),,3.0570,,198.257,Z=12 A=24 Rc=3.0570fm BE=198.257MeV src=Angeli2013,C1
+Magnesium-25 (Z=12 A=25),,3.0364,,205.588,Z=12 A=25 Rc=3.0364fm BE=205.588MeV src=Angeli2013,C1
+Magnesium-26 (Z=12 A=26),,3.0341,,216.683,Z=12 A=26 Rc=3.0341fm BE=216.683MeV src=Angeli2013,C1
+Aluminum-27 (Z=13 A=27),,3.0610,,224.952,Z=13 A=27 Rc=3.0610fm BE=224.952MeV src=Angeli2013,C1
+Silicon-28 (Z=14 A=28),,3.1224,,236.537,Z=14 A=28 Rc=3.1224fm BE=236.537MeV src=Angeli2013,C1
+Silicon-29 (Z=14 A=29),,3.1040,,245.010,Z=14 A=29 Rc=3.1040fm BE=245.010MeV src=Angeli2013,C1
+Silicon-30 (Z=14 A=30),,3.1336,,255.621,Z=14 A=30 Rc=3.1336fm BE=255.621MeV src=Angeli2013,C1
+Phosphorus-31 (Z=15 A=31),,3.1889,,262.917,Z=15 A=31 Rc=3.1889fm BE=262.917MeV src=Angeli2013,C1
+Sulfur-32 (Z=16 A=32),,3.2611,,271.781,Z=16 A=32 Rc=3.2611fm BE=271.781MeV src=Angeli2013,C1
+Sulfur-33 (Z=16 A=33),,3.2418,,280.423,Z=16 A=33 Rc=3.2418fm BE=280.423MeV src=Angeli2013,C1
+Sulfur-34 (Z=16 A=34),,3.2858,,291.839,Z=16 A=34 Rc=3.2858fm BE=291.839MeV src=Angeli2013,C1
+Sulfur-36 (Z=16 A=36),,3.3000,,308.714,Z=16 A=36 Rc=3.3000fm BE=308.714MeV src=Angeli2013,C1
+Chlorine-35 (Z=17 A=35),,3.3651,,298.210,Z=17 A=35 Rc=3.3651fm BE=298.210MeV src=Angeli2013,C1
+Chlorine-37 (Z=17 A=37),,3.3966,,317.105,Z=17 A=37 Rc=3.3966fm BE=317.105MeV src=Angeli2013,C1
+Argon-36 (Z=18 A=36),,3.4274,,306.716,Z=18 A=36 Rc=3.4274fm BE=306.716MeV src=Angeli2013,C1
+Argon-38 (Z=18 A=38),,3.4030,,327.343,Z=18 A=38 Rc=3.4030fm BE=327.343MeV src=Angeli2013,C1
+Argon-40 (Z=18 A=40),,3.4274,,343.810,Z=18 A=40 Rc=3.4274fm BE=343.810MeV src=Angeli2013,C1
+Potassium-39 (Z=19 A=39),,3.4349,,333.724,Z=19 A=39 Rc=3.4349fm BE=333.724MeV src=Angeli2013,C1
+Potassium-40 (Z=19 A=40),,3.4539,,341.525,Z=19 A=40 Rc=3.4539fm BE=341.525MeV src=Angeli2013,C1
+Potassium-41 (Z=19 A=41),,3.4511,,351.618,Z=19 A=41 Rc=3.4511fm BE=351.618MeV src=Angeli2013,C1
+Calcium-40 (Z=20 A=40),,3.4776,,342.052,Z=20 A=40 Rc=3.4776fm BE=342.052MeV src=Angeli2013,C1
+Calcium-42 (Z=20 A=42),,3.5082,,361.895,Z=20 A=42 Rc=3.5082fm BE=361.895MeV src=Angeli2013,C1
+Calcium-43 (Z=20 A=43),,3.4849,,369.828,Z=20 A=43 Rc=3.4849fm BE=369.828MeV src=Angeli2013,C1
+Calcium-44 (Z=20 A=44),,3.5167,,380.960,Z=20 A=44 Rc=3.5167fm BE=380.960MeV src=Angeli2013,C1
+Calcium-46 (Z=20 A=46),,3.5070,,398.767,Z=20 A=46 Rc=3.5070fm BE=398.767MeV src=Angeli2013,C1
+Calcium-48 (Z=20 A=48),,3.4771,,415.987,Z=20 A=48 Rc=3.4771fm BE=415.987MeV src=Angeli2013,C1
+Titanium-46 (Z=22 A=46),,3.6070,,398.189,Z=22 A=46 Rc=3.6070fm BE=398.189MeV src=Angeli2013,C1
+Titanium-47 (Z=22 A=47),,3.6130,,407.074,Z=22 A=47 Rc=3.6130fm BE=407.074MeV src=Angeli2013,C1
+Titanium-48 (Z=22 A=48),,3.6074,,418.700,Z=22 A=48 Rc=3.6074fm BE=418.700MeV src=Angeli2013,C1
+Titanium-49 (Z=22 A=49),,3.6140,,426.838,Z=22 A=49 Rc=3.6140fm BE=426.838MeV src=Angeli2013,C1
+Titanium-50 (Z=22 A=50),,3.6316,,437.780,Z=22 A=50 Rc=3.6316fm BE=437.780MeV src=Angeli2013,C1
+Chromium-50 (Z=24 A=50),,3.6588,,435.044,Z=24 A=50 Rc=3.6588fm BE=435.044MeV src=Angeli2013,C1
+Chromium-52 (Z=24 A=52),,3.6645,,456.347,Z=24 A=52 Rc=3.6645fm BE=456.347MeV src=Angeli2013,C1
+Chromium-53 (Z=24 A=53),,3.6737,,464.285,Z=24 A=53 Rc=3.6737fm BE=464.285MeV src=Angeli2013,C1
+Chromium-54 (Z=24 A=54),,3.6869,,474.001,Z=24 A=54 Rc=3.6869fm BE=474.001MeV src=Angeli2013,C1
+Iron-54 (Z=26 A=54),,3.6922,,471.764,Z=26 A=54 Rc=3.6922fm BE=471.764MeV src=Angeli2013,C1
+Iron-56 (Z=26 A=56),,3.7377,,492.262,Z=26 A=56 Rc=3.7377fm BE=492.262MeV src=Angeli2013,C1
+Iron-57 (Z=26 A=57),,3.7543,,499.905,Z=26 A=57 Rc=3.7543fm BE=499.905MeV src=Angeli2013,C1
+Iron-58 (Z=26 A=58),,3.7749,,509.946,Z=26 A=58 Rc=3.7749fm BE=509.946MeV src=Angeli2013,C1
+Nickel-58 (Z=28 A=58),,3.7757,,506.457,Z=28 A=58 Rc=3.7757fm BE=506.457MeV src=Angeli2013,C1
+Nickel-60 (Z=28 A=60),,3.8118,,526.845,Z=28 A=60 Rc=3.8118fm BE=526.845MeV src=Angeli2013,C1
+Nickel-61 (Z=28 A=61),,3.8140,,534.656,Z=28 A=61 Rc=3.8140fm BE=534.656MeV src=Angeli2013,C1
+Nickel-62 (Z=28 A=62),,3.8344,,545.260,Z=28 A=62 Rc=3.8344fm BE=545.260MeV src=Angeli2013,C1
+Nickel-64 (Z=28 A=64),,3.8525,,561.756,Z=28 A=64 Rc=3.8525fm BE=561.756MeV src=Angeli2013,C1
+Copper-63 (Z=29 A=63),,3.9022,,551.380,Z=29 A=63 Rc=3.9022fm BE=551.380MeV src=Angeli2013,C1
+Copper-65 (Z=29 A=65),,3.9367,,569.209,Z=29 A=65 Rc=3.9367fm BE=569.209MeV src=Angeli2013,C1
+Zinc-64 (Z=30 A=64),,3.9290,,559.100,Z=30 A=64 Rc=3.9290fm BE=559.100MeV src=Angeli2013,C1
+Zinc-66 (Z=30 A=66),,3.9490,,578.127,Z=30 A=66 Rc=3.9490fm BE=578.127MeV src=Angeli2013,C1
+Zinc-68 (Z=30 A=68),,3.9750,,595.384,Z=30 A=68 Rc=3.9750fm BE=595.384MeV src=Angeli2013,C1
+Zinc-70 (Z=30 A=70),,3.9950,,611.085,Z=30 A=70 Rc=3.9950fm BE=611.085MeV src=Angeli2013,C1
+Germanium-70 (Z=32 A=70),,4.0450,,610.519,Z=32 A=70 Rc=4.0450fm BE=610.519MeV src=Angeli2013,C1
+Germanium-72 (Z=32 A=72),,4.0580,,628.996,Z=32 A=72 Rc=4.0580fm BE=628.996MeV src=Angeli2013,C1
+Germanium-73 (Z=32 A=73),,4.0632,,636.454,Z=32 A=73 Rc=4.0632fm BE=636.454MeV src=Angeli2013,C1
+Germanium-74 (Z=32 A=74),,4.0742,,647.283,Z=32 A=74 Rc=4.0742fm BE=647.283MeV src=Angeli2013,C1
+Germanium-76 (Z=32 A=76),,4.0811,,660.624,Z=32 A=76 Rc=4.0811fm BE=660.624MeV src=Angeli2013,C1
+Selenium-74 (Z=34 A=74),,4.0750,,645.503,Z=34 A=74 Rc=4.0750fm BE=645.503MeV src=Angeli2013,C1
+Selenium-76 (Z=34 A=76),,4.0993,,665.318,Z=34 A=76 Rc=4.0993fm BE=665.318MeV src=Angeli2013,C1
+Selenium-77 (Z=34 A=77),,4.1009,,672.974,Z=34 A=77 Rc=4.1009fm BE=672.974MeV src=Angeli2013,C1
+Selenium-78 (Z=34 A=78),,4.1115,,683.371,Z=34 A=78 Rc=4.1115fm BE=683.371MeV src=Angeli2013,C1
+Selenium-80 (Z=34 A=80),,4.1281,,700.907,Z=34 A=80 Rc=4.1281fm BE=700.907MeV src=Angeli2013,C1
+Selenium-82 (Z=34 A=82),,4.1361,,716.956,Z=34 A=82 Rc=4.1361fm BE=716.956MeV src=Angeli2013,C1
+Krypton-78 (Z=36 A=78),,4.1440,,686.084,Z=36 A=78 Rc=4.1440fm BE=686.084MeV src=Angeli2013,C1
+Krypton-80 (Z=36 A=80),,4.1768,,704.995,Z=36 A=80 Rc=4.1768fm BE=704.995MeV src=Angeli2013,C1
+Krypton-82 (Z=36 A=82),,4.1999,,724.406,Z=36 A=82 Rc=4.1999fm BE=724.406MeV src=Angeli2013,C1
+Krypton-83 (Z=36 A=83),,4.2046,,732.254,Z=36 A=83 Rc=4.2046fm BE=732.254MeV src=Angeli2013,C1
+Krypton-84 (Z=36 A=84),,4.2173,,742.065,Z=36 A=84 Rc=4.2173fm BE=742.065MeV src=Angeli2013,C1
+Krypton-86 (Z=36 A=86),,4.2402,,757.860,Z=36 A=86 Rc=4.2402fm BE=757.860MeV src=Angeli2013,C1
+Tin-112 (Z=50 A=112),,4.5936,,953.529,Z=50 A=112 Rc=4.5936fm BE=953.529MeV src=Angeli2013,C1
+Tin-114 (Z=50 A=114),,4.6099,,971.566,Z=50 A=114 Rc=4.6099fm BE=971.566MeV src=Angeli2013,C1
+Tin-116 (Z=50 A=116),,4.6262,,988.684,Z=50 A=116 Rc=4.6262fm BE=988.684MeV src=Angeli2013,C1
+Tin-117 (Z=50 A=117),,4.6340,,997.795,Z=50 A=117 Rc=4.6340fm BE=997.795MeV src=Angeli2013,C1
+Tin-118 (Z=50 A=118),,4.6418,,1009.152,Z=50 A=118 Rc=4.6418fm BE=1009.152MeV src=Angeli2013,C1
+Tin-119 (Z=50 A=119),,4.6492,,1017.977,Z=50 A=119 Rc=4.6492fm BE=1017.977MeV src=Angeli2013,C1
+Tin-120 (Z=50 A=120),,4.6519,,1020.546,Z=50 A=120 Rc=4.6519fm BE=1020.546MeV src=Angeli2013,C1
+Tin-122 (Z=50 A=122),,4.6592,,1035.529,Z=50 A=122 Rc=4.6592fm BE=1035.529MeV src=Angeli2013,C1
+Tin-124 (Z=50 A=124),,4.6732,,1049.962,Z=50 A=124 Rc=4.6732fm BE=1049.962MeV src=Angeli2013,C1
+Xenon-124 (Z=54 A=124),,4.7716,,1060.743,Z=54 A=124 Rc=4.7716fm BE=1060.743MeV src=Angeli2013,C1
+Xenon-126 (Z=54 A=126),,4.7855,,1076.907,Z=54 A=126 Rc=4.7855fm BE=1076.907MeV src=Angeli2013,C1
+Xenon-128 (Z=54 A=128),,4.7964,,1092.352,Z=54 A=128 Rc=4.7964fm BE=1092.352MeV src=Angeli2013,C1
+Xenon-129 (Z=54 A=129),,4.8013,,1100.437,Z=54 A=129 Rc=4.8013fm BE=1100.437MeV src=Angeli2013,C1
+Xenon-130 (Z=54 A=130),,4.8021,,1110.480,Z=54 A=130 Rc=4.8021fm BE=1110.480MeV src=Angeli2013,C1
+Xenon-131 (Z=54 A=131),,4.8134,,1118.260,Z=54 A=131 Rc=4.8134fm BE=1118.260MeV src=Angeli2013,C1
+Xenon-132 (Z=54 A=132),,4.8157,,1123.280,Z=54 A=132 Rc=4.8157fm BE=1123.280MeV src=Angeli2013,C1
+Xenon-134 (Z=54 A=134),,4.8223,,1133.400,Z=54 A=134 Rc=4.8223fm BE=1133.400MeV src=Angeli2013,C1
+Xenon-136 (Z=54 A=136),,4.8335,,1141.900,Z=54 A=136 Rc=4.8335fm BE=1141.900MeV src=Angeli2013,C1
+Lead-204 (Z=82 A=204),,5.4744,,1607.518,Z=82 A=204 Rc=5.4744fm BE=1607.518MeV src=Angeli2013,C1
+Lead-206 (Z=82 A=206),,5.4939,,1622.327,Z=82 A=206 Rc=5.4939fm BE=1622.327MeV src=Angeli2013,C1
+Lead-207 (Z=82 A=207),,5.4943,,1629.079,Z=82 A=207 Rc=5.4943fm BE=1629.079MeV src=Angeli2013,C1
+Lead-208 (Z=82 A=208),,5.5012,,1636.446,Z=82 A=208 Rc=5.5012fm BE=1636.446MeV src=Angeli2013,C1
+Uranium-235 (Z=92 A=235),,5.8337,,1783.870,Z=92 A=235 Rc=5.8337fm BE=1783.870MeV src=Angeli2013,C1
+Uranium-238 (Z=92 A=238),,5.8571,,1801.697,Z=92 A=238 Rc=5.8571fm BE=1801.697MeV src=Angeli2013,C1

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Replication Challenge - wwPDB July 15, 2026 - The UMtts Institute</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Replication challenge for the Mass Harmonics wwPDB July 15, 2026 terrain contact. Here are the files, the scorer, and the command. Reproduce it, find an error, or trigger the declared falsifier.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #08101e; --surface: #0d1b2e; --surface2: #112240;
+      --border: rgba(100,160,255,0.13); --accent: #4a8fff; --gold: #c8a84b;
+      --green: #4ade80; --red: #f87171; --text: #e2e8f0; --text-dim: #94a3b8;
+      --mono: 'JetBrains Mono', monospace; --serif: 'Cinzel', serif; --sans: 'Inter', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 15px; line-height: 1.65; }
+    main { max-width: 880px; margin: 0 auto; padding: 3rem 1.5rem 6rem; }
+
+    .doc-header { text-align: center; padding: 3rem 0 2.5rem; border-bottom: 1px solid var(--border); margin-bottom: 3rem; }
+    .eyebrow { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.18em; color: var(--accent); text-transform: uppercase; display: block; margin-bottom: 1rem; }
+    h1 { font-family: var(--serif); font-size: 1.9rem; color: #fff; margin-bottom: 0.6rem; }
+    .doc-subtitle { color: var(--text-dim); font-size: 0.92rem; max-width: 600px; margin: 0 auto; }
+
+    h2 { font-family: var(--serif); font-size: 1.15rem; color: #fff; margin: 2.5rem 0 1rem; }
+    h3 { font-family: var(--mono); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin: 2rem 0 0.8rem; }
+    p { color: var(--text-dim); margin-bottom: 1rem; }
+    p strong { color: var(--text); }
+    a { color: var(--accent); }
+
+    .challenge-statement { background: linear-gradient(135deg, rgba(74,143,255,0.08), rgba(74,222,128,0.05)); border: 1px solid rgba(74,143,255,0.25); border-radius: 10px; padding: 2rem 2.4rem; margin-bottom: 3rem; }
+    .challenge-statement p { font-size: 1.05rem; color: var(--text); margin-bottom: 0.5rem; }
+    .challenge-statement p:last-child { margin-bottom: 0; }
+
+    .panel { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.4rem 1.8rem; margin-bottom: 1.5rem; }
+    pre { background: #040d18; border: 1px solid var(--border); border-radius: 6px; padding: 1rem 1.2rem; overflow-x: auto; font-family: var(--mono); font-size: 0.82rem; color: #a8d4ff; margin: 0.8rem 0; }
+    code { font-family: var(--mono); font-size: 0.83rem; background: rgba(74,143,255,0.08); padding: 0.1rem 0.4rem; border-radius: 3px; color: #a8d4ff; }
+
+    .result-table { width: 100%; border-collapse: collapse; font-size: 0.87rem; margin: 1rem 0; }
+    .result-table th { font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-dim); text-align: left; padding: 0.5rem 0.8rem; border-bottom: 1px solid var(--border); }
+    .result-table td { padding: 0.55rem 0.8rem; border-bottom: 1px solid rgba(100,160,255,0.06); }
+    .result-table td:first-child { font-family: var(--mono); font-size: 0.8rem; color: var(--text-dim); }
+    .v { color: var(--green); font-weight: 600; }
+
+    .falsifier-box { background: rgba(74,222,128,0.04); border: 1px solid rgba(74,222,128,0.2); border-radius: 8px; padding: 1.2rem 1.6rem; margin: 1.5rem 0; }
+    .falsifier-box h3 { color: var(--green); margin-top: 0; }
+    .falsifier-box p { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 0.4rem; }
+    .falsifier-box p:last-child { margin-bottom: 0; }
+
+    .contact-box { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.4rem 1.8rem; margin-top: 3rem; }
+
+    footer { border-top: 1px solid var(--border); padding: 2rem 1.5rem; text-align: center; color: var(--text-dim); font-size: 0.82rem; margin-top: 4rem; }
+  </style>
+</head>
+<body>
+<main>
+  <header class="doc-header">
+    <span class="eyebrow">Layer 8 &middot; Replication Challenge</span>
+    <h1>Reproduce the wwPDB July 15, 2026 Result</h1>
+    <p class="doc-subtitle">You are not asked to trust this result. You are asked to reproduce it, find an error, or trigger the declared falsifier.</p>
+  </header>
+
+  <div class="challenge-statement">
+    <p><strong>The challenge is open and standing.</strong></p>
+    <p>Here are the files. Here is the scorer. Here is the command. Here is the expected output.</p>
+    <p>Reproduce it independently, identify a computational error, or trigger one of the four declared falsifiers. If you trigger a falsifier, the verdict changes. That is the protocol.</p>
+  </div>
+
+  <h2>What was sealed before the terrain opened</h2>
+  <div class="panel">
+    <p><strong>Prediction DOI:</strong> <a href="https://doi.org/10.5281/zenodo.21304301" target="_blank" rel="noopener">10.5281/zenodo.21304301</a><br>
+    <strong>Sealed:</strong> 2026-07-11 (4 days before wwPDB released coordinates)<br>
+    <strong>Terrain opened:</strong> 2026-07-15 00:00 UTC<br>
+    <strong>CSV with per-row SHA256 hashes:</strong> <a href="https://github.com/umtts-institute/mh-predictions/blob/main/MH_PRED_V1_02_wwPDB.csv" target="_blank" rel="noopener">MH_PRED_V1_02_wwPDB.csv</a></p>
+    <p>Verify the SHA256 hashes against the Zenodo-archived CSV to confirm no row was altered after sealing.</p>
+  </div>
+
+  <h2>The four declared falsifiers</h2>
+  <div class="panel">
+    <table class="result-table">
+      <thead><tr><th>Pathway</th><th>Falsifier (verbatim, sealed)</th></tr></thead>
+      <tbody>
+        <tr><td>PDB-1</td><td>"No positive core shift or a stable reversed shift."</td></tr>
+        <tr><td>PDB-2</td><td>"A closed eligible cage requires an unrelated axis family."</td></tr>
+        <tr><td>PDB-3</td><td>"No association between D&#x1D456; and structural resolution, or a reversed association."</td></tr>
+        <tr><td>PDB-4</td><td>"No synonymous-codon stratification or a stable reversed direction."</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:0.8rem;font-size:0.87rem;">If your independent run triggers any of these conditions, the verdict for that pathway changes. Submit a documented report to the address below.</p>
+  </div>
+
+  <h2>The scorer</h2>
+
+  <h3>PDB-4 Full Dataset Scorer</h3>
+  <div class="panel">
+    <p><strong>File:</strong> <code>PDB4_FullDataset_Analysis.py</code><br>
+    <strong>Language:</strong> Python 3.10+<br>
+    <strong>Dependencies:</strong> Standard library only (os, sys, json, math, time, collections, itertools, statistics, urllib). No external packages required for core scorer. gemmi optional for faster CIF parsing.<br>
+    <strong>Source:</strong> <a href="../04-executable-scorer/">Layer 4 - Executable Scorer</a></p>
+
+    <h3>Run command</h3>
+    <pre>python PDB4_FullDataset_Analysis.py</pre>
+
+    <p>The script queries RCSB live for the July 15, 2026 release, downloads CIF files and CDS sequences, and computes global Kendall tau. Output is written to <code>../wwPDB_July15_analysis/PDB4_FullDataset_Report.txt</code>.</p>
+
+    <h3>Permutation control note</h3>
+    <p>The built-in permutation control shuffles B-factors within amino-acid class across all pooled entries (seed 42). It is amino-acid-preserving but not structure-preserving. It does not establish a cluster-robust p-value. A within-entry block permutation can be implemented by modifying lines 517-535 to shuffle within each entry's triple subset.</p>
+  </div>
+
+  <h2>Expected output - key quantities</h2>
+  <div class="panel">
+    <table class="result-table">
+      <thead><tr><th>Metric</th><th>Expected value</th><th>Pathway</th></tr></thead>
+      <tbody>
+        <tr><td>PDB-1: core &gt; surface (9ZYS)</td><td class="v">+0.090 (all 4 thresholds)</td><td>PDB-1</td></tr>
+        <tr><td>PDB-1: core &gt; surface (10ZK)</td><td class="v">+0.022 (all 4 thresholds)</td><td>PDB-1</td></tr>
+        <tr><td>PDB-1: direction reversals</td><td class="v">0 of 12</td><td>PDB-1</td></tr>
+        <tr><td>PDB-2: C&#x2082; axes found (9ZYS)</td><td class="v">49 axes, 6 clusters, best RMSD 7.69 &#x212B;</td><td>PDB-2</td></tr>
+        <tr><td>PDB-2: C&#x2083; axes found (9ZYS)</td><td class="v">16 axes, 1 cluster, best RMSD 8.44 &#x212B;</td><td>PDB-2</td></tr>
+        <tr><td>PDB-2: C&#x2085; axes found (9ZYS)</td><td class="v">3 axes, 1 cluster, best RMSD 9.95 &#x212B;</td><td>PDB-2</td></tr>
+        <tr><td>PDB-3: Pearson r(D&#x1D456;, B-factor)</td><td class="v">+0.0445</td><td>PDB-3</td></tr>
+        <tr><td>PDB-3: permutation null r</td><td class="v">-0.1674</td><td>PDB-3</td></tr>
+        <tr><td>PDB-4: Concordant C</td><td class="v">544,325</td><td>PDB-4</td></tr>
+        <tr><td>PDB-4: Discordant D</td><td class="v">507,577</td><td>PDB-4</td></tr>
+        <tr><td>PDB-4: Global Kendall tau</td><td class="v">+0.034935</td><td>PDB-4</td></tr>
+        <tr><td>PDB-4: Permutation control tau</td><td class="v">+0.025924</td><td>PDB-4</td></tr>
+        <tr><td>PDB-4: Total pairs evaluated</td><td class="v">1,051,902</td><td>PDB-4</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="falsifier-box">
+    <h3>How to trigger a falsifier</h3>
+    <p><strong>PDB-1:</strong> Find a July 15, 2026 entry where resolved core Q&#x25B5; does not exceed surface Q&#x25B5;, or where the direction reverses across all tested thresholds.</p>
+    <p><strong>PDB-2:</strong> Find an eligible closed cage from the July 15, 2026 release where axis recovery requires a non-icosahedral family.</p>
+    <p><strong>PDB-3:</strong> Show that D&#x1D456; has no positive association with B-factor, or that the association is negative.</p>
+    <p><strong>PDB-4:</strong> Show that either (a) no synonymous-codon stratification exists in the pooled dataset, or (b) the global direction consistently reverses (D &gt; C across the full dataset).</p>
+    <p>If you trigger a falsifier, the verdict changes. Document your methodology and contact us below.</p>
+  </div>
+
+  <div class="contact-box">
+    <h3>Report a result</h3>
+    <p>To report a successful replication, a identified computational error, or a triggered falsifier:</p>
+    <p><strong>Institute contact:</strong> <a href="mailto:contact@umtts.org">contact@umtts.org</a><br>
+    <strong>Ledger record:</strong> <a href="../../records/wwpdb-july15-2026-terrain-audit.html">Full terrain audit</a><br>
+    <strong>Falsifier adjudication sheet:</strong> <a href="../06-falsifier-adjudication/adjudication-sheet.html">Layer 6</a></p>
+    <p style="margin-top:1rem;font-size:0.88rem;color:var(--text-dim);">TRUTH &gt; COMFORT. Always. The record is only as strong as its willingness to be checked.</p>
+  </div>
+</main>
+<footer>
+  <span>&copy; 2026 The UMtts Institute &sdot; Thomas Russell Giboney, Founder</span><br>
+  <span>TRUTH &gt; COMFORT. Always.</span>
+</footer>
+<script src="https://umtts.org/assets/visitor-counter.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,902 @@
+======================================================================
+PDB-4 FULL DATASET ANALYSIS - wwPDB July 15, 2026 (293 entries)
+======================================================================
+phi = 1.618033988749895
+Ledger: MH_Origin.md Appendix C (source-fixed, 64 codons)
+Test: Global pooled Kendall tau across all synonymous pairs
+Output dir: D:\ProjectBuilds\Projects\MH_Indexed\Scripts\..\wwPDB_July15_analysis
+
+Querying RCSB for all July 15, 2026 release IDs...
+  Total entries: 293, retrieved: 293
+Processing 293 entries...
+
+[  1/293] 10DT
+  UniProt: P09769
+  -> 9 residues, 7 unique AAs with codon annotation
+[  2/293] 10EC
+  UniProt: A0AAE7VWW2
+  -> no CDS (no RefSeq NM_ in UniProt)
+[  3/293] 10FA
+  UniProt: P0A847
+  -> no CDS (no RefSeq NM_ in UniProt)
+[  4/293] 10FB
+  UniProt: P0A847
+  -> no CDS (no RefSeq NM_ in UniProt)
+[  5/293] 10FS
+  UniProt: P09769
+  -> 9 residues, 7 unique AAs with codon annotation
+[  6/293] 10FV
+  UniProt: P09769
+  -> 8 residues, 6 unique AAs with codon annotation
+[  7/293] 10GA
+  UniProt: P09769
+  -> 8 residues, 6 unique AAs with codon annotation
+[  8/293] 10LJ
+  UniProt: A0AAE8B7G6
+  -> no CDS (no RefSeq NM_ in UniProt)
+[  9/293] 10MN
+  UniProt: O15527
+  -> 11 residues, 3 unique AAs with codon annotation
+[ 10/293] 10XW
+  UniProt: A0AAE7VXB5
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 11/293] 10ZK
+  UniProt: A9H5W5
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 12/293] 10ZL
+  UniProt: A9H5W8
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 13/293] 10ZM
+  UniProt: P07328
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 14/293] 10ZN
+  UniProt: A9H5W5
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 15/293] 11MP
+  UniProt: P77522
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 16/293] 12IY
+  UniProt: P34972
+  -> 19 residues, 4 unique AAs with codon annotation
+[ 17/293] 12IZ
+  UniProt: P63096
+  -> 42 residues, 16 unique AAs with codon annotation
+[ 18/293] 12JA
+  UniProt: P63096
+  -> 35 residues, 15 unique AAs with codon annotation
+[ 19/293] 13BF
+  UniProt: P12111
+  -> 28 residues, 12 unique AAs with codon annotation
+[ 20/293] 13BR
+  UniProt: P25311
+  -> 18 residues, 12 unique AAs with codon annotation
+[ 21/293] 13BS
+  UniProt: Q9UBH0
+  -> 29 residues, 12 unique AAs with codon annotation
+[ 22/293] 13CT
+  UniProt: D5AT91
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 23/293] 13JV
+  UniProt: A0A0A0WEU2
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 24/293] 13KK
+  UniProt: P61604
+  -> 28 residues, 2 unique AAs with codon annotation
+[ 25/293] 13KW
+  UniProt: P61604
+  -> 35 residues, 2 unique AAs with codon annotation
+[ 26/293] 21ET
+  -> no UniProt linkage
+[ 27/293] 21ZX
+  UniProt: Q03555
+  -> 56 residues, 9 unique AAs with codon annotation
+[ 28/293] 23EF
+  UniProt: O27818
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 29/293] 23EG
+  UniProt: O27818
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 30/293] 23EI
+  UniProt: O27818
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 31/293] 23EO
+  UniProt: P83820
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 32/293] 23EQ
+  UniProt: P83820
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 33/293] 23GD
+  UniProt: A0AAE7VXB5
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 34/293] 23WI
+  UniProt: P0A7V0
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 35/293] 24FO
+  UniProt: Q57703
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 36/293] 24GZ
+  UniProt: Q57703
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 37/293] 25SU
+  UniProt: Q9NYW5
+  -> 62 residues, 13 unique AAs with codon annotation
+[ 38/293] 26QX
+  UniProt: Q79PF4
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 39/293] 26RC
+  UniProt: Q79PF4
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 40/293] 26RV
+  UniProt: A0A376LC84
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 41/293] 27FM
+  UniProt: P04406
+  -> 68 residues, 8 unique AAs with codon annotation
+[ 42/293] 27GY
+  UniProt: Q9U556
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 43/293] 27GZ
+  UniProt: Q9U556
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 44/293] 27QY
+  UniProt: P04191
+  -> 70 residues, 4 unique AAs with codon annotation
+[ 45/293] 27QZ
+  UniProt: P04191
+  -> 70 residues, 4 unique AAs with codon annotation
+[ 46/293] 27RA
+  UniProt: P04191
+  -> 70 residues, 4 unique AAs with codon annotation
+[ 47/293] 27RB
+  UniProt: P04191
+  -> 70 residues, 4 unique AAs with codon annotation
+[ 48/293] 27RC
+  UniProt: P04191
+  -> 70 residues, 4 unique AAs with codon annotation
+[ 49/293] 27RD
+  UniProt: P04191
+  -> 70 residues, 4 unique AAs with codon annotation
+[ 50/293] 27RE
+  UniProt: P04191
+  -> 70 residues, 4 unique AAs with codon annotation
+[ 51/293] 27RF
+  UniProt: P04191
+  -> 70 residues, 4 unique AAs with codon annotation
+[ 52/293] 28DB
+  UniProt: B2UPV2
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 53/293] 28IL
+  UniProt: A0A411J078
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 54/293] 28IO
+  UniProt: P9WGR1
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 55/293] 28IP
+  UniProt: P9WGR1
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 56/293] 28IQ
+  UniProt: P9WGR1
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 57/293] 28IR
+  UniProt: P9WGR1
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 58/293] 28IS
+  UniProt: P9WGR1
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 59/293] 28IT
+  UniProt: P9WGR1
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 60/293] 28IU
+  UniProt: P9WGR1
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 61/293] 28IV
+  UniProt: P9WGR1
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 62/293] 28IW
+  UniProt: P9WGR1
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 63/293] 28IX
+  UniProt: P9WGR1
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 64/293] 28LL
+  UniProt: P9WGR1
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 65/293] 28LM
+  UniProt: P9WGR1
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 66/293] 28SD
+  UniProt: A9J7B4
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 67/293] 29KM
+  UniProt: P07908
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 68/293] 29TI
+  UniProt: P03303
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 69/293] 29TX
+  UniProt: P03303
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 70/293] 29UB
+  UniProt: P03303
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 71/293] 31AP
+  UniProt: B8XCM9
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 72/293] 32FE
+  UniProt: P36776
+  -> 150 residues, 11 unique AAs with codon annotation
+[ 73/293] 35TE
+  UniProt: A0A0A0WEU2
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 74/293] 36AZ
+  UniProt: P0DTC2
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 75/293] 36BB
+  -> no UniProt linkage
+[ 76/293] 36HU
+  UniProt: P54700
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 77/293] 36HW
+  UniProt: P40729
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 78/293] 36IS
+  UniProt: P54700
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 79/293] 36LX
+  -> no UniProt linkage
+[ 80/293] 36LY
+  -> no UniProt linkage
+[ 81/293] 36MB
+  -> no UniProt linkage
+[ 82/293] 36OF
+  -> no UniProt linkage
+[ 83/293] 36ZF
+  UniProt: Q13UJ9
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 84/293] 43DY
+  UniProt: P25688
+  -> 792 residues, 4 unique AAs with codon annotation
+[ 85/293] 43JX
+  UniProt: Q9P2P5
+  -> 4 residues, 2 unique AAs with codon annotation
+[ 86/293] 9HIG
+  UniProt: Q3IIX4
+  -> no CDS (no RefSeq NM_ in UniProt)
+[ 87/293] 9HVS
+  UniProt: P11172
+  -> 13 residues, 3 unique AAs with codon annotation
+[ 88/293] 9HVT
+  UniProt: P11172
+  -> 11 residues, 3 unique AAs with codon annotation
+[ 89/293] 9HVU
+  UniProt: P11172
+  -> 28 residues, 3 unique AAs with codon annotation
+[ 90/293] 9HVV
+  UniProt: P11172
+  -> 12 residues, 3 unique AAs with codon annotation
+[ 91/293] 9HVZ
+  -> no UniProt linkage
+[ 92/293] 9HW0
+  UniProt: P11172
+  -> 11 residues, 3 unique AAs with codon annotation
+[ 93/293] 9HW1
+  UniProt: P11172
+  -> 13 residues, 3 unique AAs with codon annotation
+[ 94/293] 9HW2
+  UniProt: P11172
+  -> 22 residues, 3 unique AAs with codon annotation
+[ 95/293] 9HW3
+  UniProt: P11172
+  -> 28 residues, 3 unique AAs with codon annotation
+[ 96/293] 9HW4
+  UniProt: P11172
+  -> 13 residues, 3 unique AAs with codon annotation
+[ 97/293] 9HW5
+  UniProt: P11172
+  -> 13 residues, 3 unique AAs with codon annotation
+[ 98/293] 9HW7
+  UniProt: P11172
+  -> 9 residues, 3 unique AAs with codon annotation
+[ 99/293] 9HW8
+  UniProt: P11172
+  -> 32 residues, 4 unique AAs with codon annotation
+[100/293] 9HWE
+  UniProt: Q13485
+  -> 11 residues, 4 unique AAs with codon annotation
+[101/293] 9HWH
+  -> no UniProt linkage
+[102/293] 9HWI
+  -> no UniProt linkage
+[103/293] 9IA1
+  UniProt: A0A562ETV5
+  -> no CDS (no RefSeq NM_ in UniProt)
+[104/293] 9K91
+  UniProt: Q9UBN7
+  -> 36 residues, 4 unique AAs with codon annotation
+[105/293] 9L0A
+  -> no UniProt linkage
+[106/293] 9L9C
+  UniProt: I3R0V8
+  -> no CDS (no RefSeq NM_ in UniProt)
+[107/293] 9LDN
+  UniProt: G0Y276
+  -> no CDS (no RefSeq NM_ in UniProt)
+[108/293] 9LE9
+  UniProt: P0DTC2
+  -> no CDS (no RefSeq NM_ in UniProt)
+[109/293] 9LF4
+  UniProt: P0DTC2
+  -> no CDS (no RefSeq NM_ in UniProt)
+[110/293] 9LF5
+  UniProt: P0DTC2
+  -> no CDS (no RefSeq NM_ in UniProt)
+[111/293] 9LFO
+  UniProt: P0DTC2
+  -> no CDS (no RefSeq NM_ in UniProt)
+[112/293] 9LFP
+  UniProt: P0DTC2
+  -> no CDS (no RefSeq NM_ in UniProt)
+[113/293] 9LJE
+  -> no UniProt linkage
+[114/293] 9LJF
+  -> no UniProt linkage
+[115/293] 9LWE
+  UniProt: A0A142I751
+  -> no CDS (no RefSeq NM_ in UniProt)
+[116/293] 9N29
+  UniProt: P54311
+  -> 56 residues, 15 unique AAs with codon annotation
+[117/293] 9O6R
+  UniProt: P12004
+  -> 74 residues, 4 unique AAs with codon annotation
+[118/293] 9PH8
+  UniProt: P0DTD1
+  -> no CDS (no RefSeq NM_ in UniProt)
+[119/293] 9PH9
+  UniProt: P0DTD1
+  -> no CDS (no RefSeq NM_ in UniProt)
+[120/293] 9PHJ
+  -> no UniProt linkage
+[121/293] 9PIC
+  UniProt: A0A7C2Z7G5
+  -> no CDS (no RefSeq NM_ in UniProt)
+[122/293] 9PID
+  UniProt: A0A7C2Z7G5
+  -> no CDS (no RefSeq NM_ in UniProt)
+[123/293] 9PIR
+  UniProt: A0A7C2Z7G5
+  -> no CDS (no RefSeq NM_ in UniProt)
+[124/293] 9PJB
+  -> no UniProt linkage
+[125/293] 9PKB
+  UniProt: Q8NC51
+  -> 546 residues, 19 unique AAs with codon annotation
+[126/293] 9PKD
+  UniProt: P20290
+  -> 507 residues, 20 unique AAs with codon annotation
+[127/293] 9PL3
+  UniProt: Q8DYG3
+  -> no CDS (no RefSeq NM_ in UniProt)
+[128/293] 9PL4
+  UniProt: Q8DYG3
+  -> no CDS (no RefSeq NM_ in UniProt)
+[129/293] 9PL6
+  UniProt: Q8DYG3
+  -> no CDS (no RefSeq NM_ in UniProt)
+[130/293] 9PVL
+  -> no UniProt linkage
+[131/293] 9Q07
+  -> no UniProt linkage
+[132/293] 9RHH
+  UniProt: Q9BQI3
+  -> 38 residues, 9 unique AAs with codon annotation
+[133/293] 9RSE
+  UniProt: P15813
+  -> 36 residues, 10 unique AAs with codon annotation
+[134/293] 9RSF
+  UniProt: F6TR81
+  -> no CDS (no RefSeq NM_ in UniProt)
+[135/293] 9RSY
+  UniProt: W1NXW4
+  -> no CDS (no RefSeq NM_ in UniProt)
+[136/293] 9RSZ
+  UniProt: W1NXW4
+  -> no CDS (no RefSeq NM_ in UniProt)
+[137/293] 9RT0
+  UniProt: W1NXW4
+  -> no CDS (no RefSeq NM_ in UniProt)
+[138/293] 9RT1
+  UniProt: W1NXW4
+  -> no CDS (no RefSeq NM_ in UniProt)
+[139/293] 9RT5
+  UniProt: W1NXW4
+  -> no CDS (no RefSeq NM_ in UniProt)
+[140/293] 9RTB
+  UniProt: P02787
+  -> 26 residues, 14 unique AAs with codon annotation
+[141/293] 9RTC
+  -> no UniProt linkage
+[142/293] 9RTD
+  UniProt: Q27743
+  -> no CDS (no RefSeq NM_ in UniProt)
+[143/293] 9RTF
+  UniProt: P02787
+  -> 26 residues, 14 unique AAs with codon annotation
+[144/293] 9RTH
+  UniProt: P02787
+  -> 25 residues, 13 unique AAs with codon annotation
+[145/293] 9RTP
+  UniProt: P0C024
+  -> 9 residues, 6 unique AAs with codon annotation
+[146/293] 9RTQ
+  UniProt: P15056
+  -> 152 residues, 10 unique AAs with codon annotation
+[147/293] 9RTR
+  UniProt: Q02750
+  -> 46 residues, 4 unique AAs with codon annotation
+[148/293] 9RTS
+  UniProt: Q02750
+  -> 41 residues, 4 unique AAs with codon annotation
+[149/293] 9RU6
+  UniProt: Q9BSH4
+  -> 627 residues, 20 unique AAs with codon annotation
+[150/293] 9RUD
+  UniProt: P0CG47
+  -> 4 residues, 4 unique AAs with codon annotation
+[151/293] 9RUE
+  UniProt: Q14849
+  -> 12 residues, 4 unique AAs with codon annotation
+[152/293] 9RUF
+  UniProt: P01909
+  -> 40 residues, 15 unique AAs with codon annotation
+[153/293] 9RUG
+  UniProt: Q29967
+  -> no CDS (no RefSeq NM_ in UniProt)
+[154/293] 9RUH
+  UniProt: Q5Y7D6
+  -> 51 residues, 17 unique AAs with codon annotation
+[155/293] 9RUM
+  -> no UniProt linkage
+[156/293] 9RUN
+  -> no UniProt linkage
+[157/293] 9RUZ
+  UniProt: P00918
+  -> 13 residues, 7 unique AAs with codon annotation
+[158/293] 9RV0
+  UniProt: P00915
+  -> 26 residues, 10 unique AAs with codon annotation
+[159/293] 9S0Y
+  UniProt: A9J7C0
+  -> no CDS (no RefSeq NM_ in UniProt)
+[160/293] 9S5J
+  -> no UniProt linkage
+[161/293] 9S9B
+  UniProt: A9J7B7
+  -> no CDS (no RefSeq NM_ in UniProt)
+[162/293] 9SFD
+  UniProt: A9J7C3
+  -> no CDS (no RefSeq NM_ in UniProt)
+[163/293] 9SFN
+  UniProt: A9J7C3
+  -> no CDS (no RefSeq NM_ in UniProt)
+[164/293] 9SN0
+  UniProt: O15146
+  -> 9 residues, 7 unique AAs with codon annotation
+[165/293] 9SNU
+  UniProt: O15146
+  -> 8 residues, 7 unique AAs with codon annotation
+[166/293] 9SWT
+  UniProt: Q9SIF2
+  -> 70 residues, 4 unique AAs with codon annotation
+[167/293] 9SX3
+  UniProt: Q9SIF2
+  -> 42 residues, 3 unique AAs with codon annotation
+[168/293] 9SYS
+  UniProt: A9J7B7
+  -> no CDS (no RefSeq NM_ in UniProt)
+[169/293] 9T5H
+  UniProt: A0AAG2TJB2
+  -> 191 residues, 20 unique AAs with codon annotation
+[170/293] 9T5J
+  UniProt: Q8IXW5
+  -> 43 residues, 14 unique AAs with codon annotation
+[171/293] 9TF9
+  UniProt: P16234
+  -> 25 residues, 4 unique AAs with codon annotation
+[172/293] 9TFA
+  UniProt: P16234
+  -> 22 residues, 4 unique AAs with codon annotation
+[173/293] 9TFB
+  UniProt: P16234
+  -> 27 residues, 4 unique AAs with codon annotation
+[174/293] 9TFC
+  UniProt: P16234
+  -> 24 residues, 4 unique AAs with codon annotation
+[175/293] 9TFD
+  UniProt: P10721
+  -> 44 residues, 6 unique AAs with codon annotation
+[176/293] 9TFE
+  UniProt: P10721
+  -> 46 residues, 6 unique AAs with codon annotation
+[177/293] 9TFF
+  UniProt: P10721
+  -> 50 residues, 6 unique AAs with codon annotation
+[178/293] 9TFG
+  UniProt: P10721
+  -> 49 residues, 6 unique AAs with codon annotation
+[179/293] 9TFH
+  UniProt: P10721
+  -> 47 residues, 6 unique AAs with codon annotation
+[180/293] 9TFI
+  UniProt: P10721
+  -> 43 residues, 6 unique AAs with codon annotation
+[181/293] 9TFJ
+  UniProt: P10721
+  -> 48 residues, 6 unique AAs with codon annotation
+[182/293] 9TFK
+  UniProt: P10721
+  -> 50 residues, 6 unique AAs with codon annotation
+[183/293] 9TFL
+  UniProt: P10721
+  -> 50 residues, 6 unique AAs with codon annotation
+[184/293] 9TFM
+  UniProt: P10721
+  -> 50 residues, 6 unique AAs with codon annotation
+[185/293] 9TVT
+  UniProt: P0DTC2
+  -> no CDS (no RefSeq NM_ in UniProt)
+[186/293] 9TZM
+  UniProt: Q9NZQ7
+  -> 12 residues, 5 unique AAs with codon annotation
+[187/293] 9UE5
+  UniProt: A0A1L5NNW1
+  -> no CDS (no RefSeq NM_ in UniProt)
+[188/293] 9UEH
+  UniProt: Q6XEC0
+  -> no CDS (no RefSeq NM_ in UniProt)
+[189/293] 9VEP
+  UniProt: A6TCF4
+  -> no CDS (no RefSeq NM_ in UniProt)
+[190/293] 9VIW
+  UniProt: A0A1M6SI41
+  -> no CDS (no RefSeq NM_ in UniProt)
+[191/293] 9VJD
+  UniProt: P69474
+  -> no CDS (no RefSeq NM_ in UniProt)
+[192/293] 9VKJ
+  UniProt: D0ZXR5
+  -> no CDS (no RefSeq NM_ in UniProt)
+[193/293] 9VLV
+  UniProt: P56658
+  -> 17 residues, 4 unique AAs with codon annotation
+[194/293] 9VM0
+  -> no UniProt linkage
+[195/293] 9VMH
+  UniProt: I6YEU0
+  -> no CDS (no RefSeq NM_ in UniProt)
+[196/293] 9VOX
+  UniProt: P00533
+  -> 25 residues, 4 unique AAs with codon annotation
+[197/293] 9VOY
+  UniProt: P00533
+  -> 26 residues, 4 unique AAs with codon annotation
+[198/293] 9VOZ
+  UniProt: P00533
+  -> 25 residues, 4 unique AAs with codon annotation
+[199/293] 9VRT
+  UniProt: Q99958
+  -> 9 residues, 7 unique AAs with codon annotation
+[200/293] 9VRY
+  -> no UniProt linkage
+[201/293] 9VRZ
+  -> no UniProt linkage
+[202/293] 9VS0
+  -> no UniProt linkage
+[203/293] 9VS2
+  UniProt: Q13469
+  -> 17 residues, 9 unique AAs with codon annotation
+[204/293] 9VSE
+  UniProt: P9WNV1
+  -> no CDS (no RefSeq NM_ in UniProt)
+[205/293] 9VSF
+  UniProt: A0A521GUH6
+  -> no CDS (no RefSeq NM_ in UniProt)
+[206/293] 9VSG
+  UniProt: A0A1B8B574
+  -> no CDS (no RefSeq NM_ in UniProt)
+[207/293] 9VSH
+  UniProt: A0A1B8B574
+  -> no CDS (no RefSeq NM_ in UniProt)
+[208/293] 9VSI
+  UniProt: A0A1B8B574
+  -> no CDS (no RefSeq NM_ in UniProt)
+[209/293] 9VSO
+  UniProt: Q53Z42
+  -> no CDS (no RefSeq NM_ in UniProt)
+[210/293] 9VT5
+  UniProt: P03372
+  -> 23 residues, 8 unique AAs with codon annotation
+[211/293] 9VT7
+  UniProt: O75874
+  -> 80 residues, 4 unique AAs with codon annotation
+[212/293] 9VTF
+  UniProt: P35520
+  -> 72 residues, 5 unique AAs with codon annotation
+[213/293] 9VTG
+  UniProt: A0A1S3Y379
+  -> no CDS (no RefSeq NM_ in UniProt)
+[214/293] 9VTH
+  UniProt: A0A1U7W513
+  -> no CDS (no RefSeq NM_ in UniProt)
+[215/293] 9VTI
+  UniProt: A0A1U7W513
+  -> no CDS (no RefSeq NM_ in UniProt)
+[216/293] 9VTJ
+  UniProt: A0A1S3Y379
+  -> no CDS (no RefSeq NM_ in UniProt)
+[217/293] 9VTL
+  UniProt: P0DTD1
+  -> no CDS (no RefSeq NM_ in UniProt)
+[218/293] 9VTU
+  UniProt: P03372
+  -> 26 residues, 4 unique AAs with codon annotation
+[219/293] 9VTW
+  UniProt: P02766
+  -> 45 residues, 7 unique AAs with codon annotation
+[220/293] 9VTX
+  UniProt: P02766
+  -> 144 residues, 7 unique AAs with codon annotation
+[221/293] 9VTY
+  UniProt: P02766
+  -> 153 residues, 7 unique AAs with codon annotation
+[222/293] 9VTZ
+  UniProt: Q8NER1
+  -> 111 residues, 4 unique AAs with codon annotation
+[223/293] 9VU0
+  UniProt: Q8NER1
+  -> 116 residues, 4 unique AAs with codon annotation
+[224/293] 9VU1
+  UniProt: O75762
+  -> 240 residues, 4 unique AAs with codon annotation
+[225/293] 9VUD
+  UniProt: A0A1S6XXK1
+  -> no CDS (no RefSeq NM_ in UniProt)
+[226/293] 9VUH
+  UniProt: P21127
+  -> 28 residues, 12 unique AAs with codon annotation
+[227/293] 9VUP
+  UniProt: A0A1S6XXK1
+  -> no CDS (no RefSeq NM_ in UniProt)
+[228/293] 9VUS
+  UniProt: P59768
+  -> 11 residues, 7 unique AAs with codon annotation
+[229/293] 9VV6
+  UniProt: P0ABE7
+  -> no CDS (no RefSeq NM_ in UniProt)
+[230/293] 9VVC
+  UniProt: P0C6W4
+  -> no CDS (no RefSeq NM_ in UniProt)
+[231/293] 9VVF
+  UniProt: P0C6W4
+  -> no CDS (no RefSeq NM_ in UniProt)
+[232/293] 9W6X
+  UniProt: I3NN71
+  -> no CDS (no RefSeq NM_ in UniProt)
+[233/293] 9WC2
+  UniProt: P61769
+  -> 14 residues, 9 unique AAs with codon annotation
+[234/293] 9WC3
+  UniProt: P61769
+  -> 13 residues, 8 unique AAs with codon annotation
+[235/293] 9WE7
+  UniProt: O75477
+  -> 520 residues, 12 unique AAs with codon annotation
+[236/293] 9WFO
+  UniProt: P00740
+  -> 17 residues, 10 unique AAs with codon annotation
+[237/293] 9WNV
+  UniProt: P02754
+  -> 11 residues, 9 unique AAs with codon annotation
+[238/293] 9WNW
+  UniProt: P02754
+  -> 10 residues, 8 unique AAs with codon annotation
+[239/293] 9WNX
+  UniProt: P02754
+  -> 11 residues, 9 unique AAs with codon annotation
+[240/293] 9WNY
+  UniProt: G8TV28
+  -> no CDS (no RefSeq NM_ in UniProt)
+[241/293] 9WNZ
+  UniProt: G8TV28
+  -> no CDS (no RefSeq NM_ in UniProt)
+[242/293] 9WV5
+  UniProt: Q8NET8
+  -> 116 residues, 4 unique AAs with codon annotation
+[243/293] 9WV6
+  UniProt: Q8NET8
+  -> 116 residues, 4 unique AAs with codon annotation
+[244/293] 9WV7
+  UniProt: Q8NET8
+  -> 116 residues, 4 unique AAs with codon annotation
+[245/293] 9X0B
+  UniProt: Q9SCX5
+  -> 116 residues, 4 unique AAs with codon annotation
+[246/293] 9X0C
+  UniProt: Q9SCX5
+  -> 124 residues, 4 unique AAs with codon annotation
+[247/293] 9X4F
+  UniProt: P06733
+  -> 68 residues, 10 unique AAs with codon annotation
+[248/293] 9X64
+  UniProt: Q9UBT3
+  -> 1 residues, 1 unique AAs with codon annotation
+[249/293] 9XGB
+  UniProt: Q9NR09
+  -> 68 residues, 17 unique AAs with codon annotation
+[250/293] 9XGC
+  UniProt: Q9NR09
+  -> 72 residues, 17 unique AAs with codon annotation
+[251/293] 9XJD
+  UniProt: Q809S5
+  -> no CDS (no RefSeq NM_ in UniProt)
+[252/293] 9XMR
+  UniProt: A0A143Y239
+  -> no CDS (no RefSeq NM_ in UniProt)
+[253/293] 9XNL
+  UniProt: A0A144LKL4
+  -> no CDS (no RefSeq NM_ in UniProt)
+[254/293] 9XOR
+  -> no UniProt linkage
+[255/293] 9XPQ
+  -> no UniProt linkage
+[256/293] 9XPR
+  -> no UniProt linkage
+[257/293] 9XPU
+  -> no UniProt linkage
+[258/293] 9XQ6
+  -> no UniProt linkage
+[259/293] 9XQ7
+  -> no UniProt linkage
+[260/293] 9XQL
+  -> no UniProt linkage
+[261/293] 9XRA
+  -> no UniProt linkage
+[262/293] 9XRB
+  -> no UniProt linkage
+[263/293] 9Y56
+  UniProt: Q06187
+  -> 25 residues, 4 unique AAs with codon annotation
+[264/293] 9Y57
+  UniProt: Q06187
+  -> 25 residues, 4 unique AAs with codon annotation
+[265/293] 9Y58
+  UniProt: P03407
+  -> no CDS (no RefSeq NM_ in UniProt)
+[266/293] 9Y5A
+  UniProt: Q06187
+  -> 20 residues, 4 unique AAs with codon annotation
+[267/293] 9Y5B
+  UniProt: Q06187
+  -> 25 residues, 4 unique AAs with codon annotation
+[268/293] 9Y5D
+  UniProt: Q06187
+  -> 18 residues, 4 unique AAs with codon annotation
+[269/293] 9Y5E
+  UniProt: Q06187
+  -> 25 residues, 4 unique AAs with codon annotation
+[270/293] 9Y60
+  UniProt: O96028
+  -> 14 residues, 2 unique AAs with codon annotation
+[271/293] 9Y61
+  UniProt: O96028
+  -> 26 residues, 11 unique AAs with codon annotation
+[272/293] 9YCF
+  UniProt: P12568
+  -> no CDS (no RefSeq NM_ in UniProt)
+[273/293] 9YJI
+  UniProt: P0DTC2
+  -> no CDS (no RefSeq NM_ in UniProt)
+[274/293] 9YJJ
+  UniProt: A0A0U2MN53
+  -> no CDS (no RefSeq NM_ in UniProt)
+[275/293] 9YJK
+  UniProt: A0A0U2MN53
+  -> no CDS (no RefSeq NM_ in UniProt)
+[276/293] 9YNL
+  -> no UniProt linkage
+[277/293] 9YNM
+  -> no UniProt linkage
+[278/293] 9YT9
+  UniProt: Q06187
+  -> 19 residues, 4 unique AAs with codon annotation
+[279/293] 9YVX
+  -> no UniProt linkage
+[280/293] 9YVY
+  -> no UniProt linkage
+[281/293] 9YVZ
+  -> no UniProt linkage
+[282/293] 9YYG
+  -> no UniProt linkage
+[283/293] 9YYH
+  -> no UniProt linkage
+[284/293] 9Z4I
+  UniProt: Q6AXS0
+  -> 32 residues, 4 unique AAs with codon annotation
+[285/293] 9Z4J
+  UniProt: Q6AXS0
+  -> 87 residues, 4 unique AAs with codon annotation
+[286/293] 9Z7Q
+  UniProt: A0A7G1H3Q2
+  -> no CDS (no RefSeq NM_ in UniProt)
+[287/293] 9Z7V
+  UniProt: A0A7G1H3Q2
+  -> no CDS (no RefSeq NM_ in UniProt)
+[288/293] 9Z7X
+  UniProt: A0A7G1H3Q2
+  -> no CDS (no RefSeq NM_ in UniProt)
+[289/293] 9ZQ7
+  UniProt: Q70Z35
+  -> 79 residues, 4 unique AAs with codon annotation
+[290/293] 9ZQV
+  UniProt: Q06187
+  -> 23 residues, 4 unique AAs with codon annotation
+[291/293] 9ZY0
+  UniProt: Q9YTT9
+  -> no CDS (no RefSeq NM_ in UniProt)
+[292/293] 9ZY1
+  UniProt: Q9YTT9
+  -> no CDS (no RefSeq NM_ in UniProt)
+[293/293] 9ZYS
+  UniProt: A0AAE8B1C9
+  -> no CDS (no RefSeq NM_ in UniProt)
+
+======================================================================
+Data collection summary:
+  Entries in release:             293
+  Entries with UniProt linkage:   253
+  Entries with CDS:               258
+  Entries contributing triples:   129
+  Total (aa, |delta|, B) triples: 8507
+  Skipped - no UniProt:           40
+  Skipped - no CDS:               124
+  Skipped - no coord triples:     0
+
+======================================================================
+PDB-4: GLOBAL POOLED KENDALL TAU - Full July 15, 2026 Dataset
+======================================================================
+
+  Per-AA global pooled Kendall tau:
+  AA   n_residues  n_codons    pairs        C        D   tied      tau
+  ----------------------------------------------------------------------
+  A           197         3    12191     6201     5990      0   0.0173
+  C            32         3      277      170      107      0   0.2274
+  D           207         3    13142     6589     6553      0   0.0027
+  F           110         3     4021     2193     1828      0   0.0908
+  H           233         6    21436    10595    10841      0  -0.0115
+  I           336         3    33342    15252    18090      2  -0.0851
+  M           105         6     4203     2713     1490      0   0.2910
+  N           979         2     9690     2842     6848      0  -0.4134
+  P           198         3     9267     4430     4837      0  -0.0439
+  Q           125         3     4809     2837     1972     13   0.1799
+  R           242         4    19367    10200     9167      0   0.0533
+  S          1262         3   179630    74283   105347     11  -0.1729
+  T           154         3     7523     3655     3868      0  -0.0283
+  V          1839         6   709768   390666   319102     24   0.1008
+  W            73         3     1532      313     1219      0  -0.5914
+  Y           266         3    21704    11386    10318      1   0.0492
+  ----------------------------------------------------------------------
+  GLOBAL                       1051902   544325   507577     51   0.0349
+
+  Global Kendall tau = 0.034935
+  Total concordant (C) = 544325
+  Total discordant (D) = 507577
+  Total tied           = 51
+  C / (C+D)            = 0.5175  (0.50 = null; >0.50 = predicted)
+  Prediction: tau > 0, i.e. concordant fraction > 0.50
+  Observed:   tau = +0.034935  -> concordant fraction = 0.5175
+
+  -> PDB-4 VALIDATED: Global Kendall tau > 0  (C=544325 > D=507577, fraction=0.5175)
+
+  Permutation control (shuffled B-factors within AA): tau = +0.025924
+  Real tau = +0.034935  vs  shuffled = +0.025924
+  Real tau exceeds control in predicted direction: True

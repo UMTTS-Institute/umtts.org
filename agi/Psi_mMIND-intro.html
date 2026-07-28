@@ -1,0 +1,772 @@
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ψₘMIND - UMtts Institute</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cardo&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&amp;family=DM+Mono:wght@300;400&amp;family=Syne:wght@400;700;800&amp;display=swap" rel="stylesheet">
+<style>
+:root {
+  --void:    #05060a;
+  --deep:    #090b12;
+  --surface: #0f111c;
+  --lift:    #161928;
+  --border:  #1e2235;
+  --border2: #2d3350;
+  --gold:    #c8922a;
+  --gold2:   #fbf3cf;
+  --gold3:   #f5d07a;
+  --dim:     #acbcedc7;
+  --text:    #c5cce8;
+  --faint:   #3a4060;
+  --green:   #2aad6e;
+  --serif:   'Cardo', Georgia, serif;
+  --mono:    'DM Mono', monospace;
+  --sans:    'Syne', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-image: url("https://umtts.org/images/darker_background_Black-Marble_tileable.png");
+  
+      /* font-family: var(--f-body); */
+    font-family: 'Cambria Math', var(--f-serif);
+    color: var(--ink);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: var(--paper);
+    min-height: 100vh;
+    line-height: 1.55;
+    font-size: 18px;
+  /*font-family: 'Cardo', 'serif';
+  font-size: 18px;
+  line-height: 1.7;
+  overflow-x: hidden;*/
+}
+
+/* grain overlay */
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events: none; z-index: 0;
+}
+
+/* ── HEADER ── */
+header {
+  position: relative;
+  min-height: 100vh;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  text-align: center;
+  padding: 80px 40px;
+  overflow: hidden;
+}
+
+header::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 40%, rgba(200,146,42,0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 80% at 20% 80%, rgba(42,173,110,0.03) 0%, transparent 60%);
+}
+
+.icosa-bg {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0.04;
+}
+
+.wordmark {
+  font-family: var(--sans);
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 0.35em;
+  color: var(--gold);
+  margin-bottom: 40px;
+}
+
+.ProductTitle {
+  font-family: 'sans';
+  font-size: clamp(62px, 5vw, 106px);
+}
+
+.hero-title {
+  font-family: 'sans';
+  font-size: clamp(42px, 4vw, 96px);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.hero-title em {
+  font-style: italic;
+  color: var(--gold2);
+}
+
+.hero-sub {
+  font-family: var(--mono);
+  font-size: 12px; letter-spacing: 0.2em;
+  color: #c7a316; text-transform: uppercase;
+  margin-bottom: 48px;
+}
+
+.hero-pitch {
+  max-width: 680px;
+  font-size: 22px; font-weight: 300; line-height: 1.6;
+  color: var(--text); opacity: 0.85;
+  margin-bottom: 64px;
+}
+
+.divider-line {
+  width: 120px; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 0 auto 64px;
+}
+
+.scroll-invite {
+  font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--faint);
+}
+
+/* ── SECTIONS ── */
+section {
+  position: relative; z-index: 1;
+  max-width: 1100px; margin: 0 auto;
+  padding: 80px 48px;
+}
+
+section.full {
+  max-width: 100%;
+  padding: 0;
+}
+
+.sect-label {
+  font-family: var(--mono);
+  font-size: 18px;
+  letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--gold); opacity: 0.7;
+  margin-bottom: 20px;
+  display: flex; align-items: center; gap: 12px;
+}
+
+.sect-label::after {
+  content: ''; flex: 1; height: 1px; max-width: 80px;
+  background: linear-gradient(90deg, var(--border2), transparent);
+}
+
+h2 {
+  font-family: 'serif';
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 300; line-height: 1.2;
+  color: #e8eaf5; margin-bottom: 32px;
+}
+
+h3 {
+  font-family: 'sans';
+  font-size: clamp(23px, 3vw, 28px);
+  font-weight: 100; line-height: 1.0;
+  color: #9797ad5e; margin-bottom: 32px;
+}
+
+h2 em { font-style: italic; color: var(--gold2); }
+
+p { margin-bottom: 1.4em; color: var(--text); opacity: 0.88; }
+p:last-child { margin-bottom: 0; }
+
+strong { color: var(--gold3); font-weight: 400; }
+
+/* ── AUDIT FINDING BAND ── */
+.finding-band {
+  background-image: url("https://umtts.org/images/darker_background_Black-Marble_tileable.png");
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 60px 48px;
+}
+
+.finding-grid {
+  max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2px;
+}
+
+.finding-card {
+  background: var(--deep);
+  border: 1px solid var(--border);
+  padding: 36px 32px;
+  position: relative; overflow: hidden;
+}
+
+.finding-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+
+.finding-card .f-num {
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.2em; color: var(--dim);
+  text-transform: uppercase; margin-bottom: 12px;
+}
+
+.finding-card .f-stat {
+  font-family: 'serif';
+  font-size: 42px; font-weight: 300;
+  color: var(--gold2); line-height: 1;
+  margin-bottom: 8px;
+}
+
+.finding-card .f-label {
+  font-family: var(--mono); font-size: 12px;
+  color: var(--dim); letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+
+.finding-card .f-body {
+  font-size: 15px; line-height: 1.6;
+  color: var(--text); opacity: 0.75;
+}
+
+/* ── EVIDENCE SECTION ── */
+.evidence-strip {
+  background-image: url("https://umtts.org/images/darker_background_Black-Marble_tileable.png");
+  padding: 80px 48px;
+}
+
+.evidence-inner {
+  max-width: 1100px; margin: 0 auto;
+}
+
+.evidence-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px; align-items: start;
+  padding: 40px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.evidence-row:last-child { border-bottom: none; }
+
+.ev-label {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--gold); letter-spacing: 0.2em;
+  text-transform: uppercase; margin-bottom: 8px;
+}
+
+.ev-object {
+  font-family: 'serif'; font-size: 22px;
+  font-weight: 300; color: #e8eaf5;
+  line-height: 1.3; margin-bottom: 12px;
+}
+
+.ev-result {
+  font-family: var(--mono); font-size: 13px;
+  color: var(--green); background: rgba(42,173,110,0.07);
+  border: 1px solid rgba(42,173,110,0.2);
+  border-radius: 2px; padding: 8px 12px;
+  display: inline-block; margin-bottom: 16px;
+}
+
+.ev-reading {
+  font-size: 16px; line-height: 1.65;
+  color: var(--text); opacity: 0.8;
+}
+
+/* ── CONTRAST TABLE ── */
+.contrast-section {
+  background-image: url("https://umtts.org/images/dark_background_Black-Marble_tileable.png");
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.contrast-inner {
+  max-width: 1100px; margin: 0 auto;
+  padding: 80px 48px;
+}
+
+.contrast-table {
+  width: 100%; border-collapse: collapse;
+  font-size: 15px;
+}
+
+.contrast-table th {
+  font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.25em; text-transform: uppercase;
+  padding: 16px 20px; text-align: left;
+  border-bottom: 1px solid var(--border2);
+}
+
+.contrast-table th.col-llm { color: var(--dim); }
+.contrast-table th.col-psim { color: var(--gold); }
+
+.contrast-table td {
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  font-family: 'serif'; font-size: 17px;
+  line-height: 1.5;
+}
+
+.contrast-table td.row-label {
+  color: var(--gold);
+  font-family: var(--mono); font-size: 17px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase; width: 160px;
+}
+
+.contrast-table td.col-llm { color: var(--dim); }
+.contrast-table td.col-psim { color: var(--text); }
+
+.contrast-table tr:last-child td { border-bottom: none; }
+
+/* ── QUOTE ── */
+.quote-band {
+  padding: 44px 48px;
+  text-align: center;
+  background: radial-gradient(ellipse 100% 100% at 50% 50%, rgba(200, 146, 42, 0.04) 0%, #000000 70%);
+}
+
+blockquote {
+  max-width: 800px; margin: 0 auto;
+  font-family: 'serif';
+  font-size: clamp(22px, 3vw, 34px);
+  font-weight: 300;
+  line-height: 1.5; color: #d8daf0;
+}
+
+blockquote::before {
+  content: '\2042';
+  font-size: 80px; line-height: 0; vertical-align: -0.35em;
+  color: var(--gold); opacity: 0.4;
+  display: block; margin-bottom: 16px;
+}
+
+cite {
+  display: block; margin-top: 32px;
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--dim); font-style: normal;
+}
+
+/* ── CLOSING ── */
+.closing {
+  padding: 100px 48px;
+  max-width: 1100px; margin: 0 auto;
+}
+
+.closing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px; align-items: start;
+}
+
+.contact-block {
+  background: var(--lift);
+  border: 1px solid var(--border);
+  padding: 40px;
+}
+
+.contact-block h3 {
+  font-family: var(--sans); font-size: 14px;
+  font-weight: 700; letter-spacing: 0.15em;
+  text-transform: uppercase; color: var(--gold);
+  margin-bottom: 24px;
+}
+
+.contact-line {
+  font-family: var(--mono); font-size: 13px;
+  color: var(--text); margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.contact-line a {
+  color: var(--gold2); text-decoration: none;
+}
+
+.ip-notice {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--faint); line-height: 1.7;
+  margin-top: 24px; padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+/* ── FOOTER ── */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 32px 48px;
+  display: flex; justify-content: space-between; align-items: center;
+  max-width: 100%;
+}
+
+.footer-word {
+  font-family: var(--sans); font-size: 11px;
+  font-weight: 700; letter-spacing: 0.3em;
+  color: var(--gold); text-transform: uppercase;
+}
+
+.footer-truth {
+  font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.2em; color: var(--faint);
+  text-transform: uppercase;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  section { padding: 60px 24px; }
+  .finding-band { padding: 48px 24px; }
+  .evidence-row { grid-template-columns: 1fr; gap: 20px; }
+  .contrast-inner { padding: 60px 24px; }
+  .closing-grid { grid-template-columns: 1fr; }
+  .quote-band { padding: 60px 24px; }
+  footer { flex-direction: column; gap: 12px; text-align: center; }
+  .contrast-table td.row-label { width: auto; }
+}
+
+/* subtle animation */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-title, .hero-pitch, .hero-sub, .wordmark {
+  animation: fadeUp 1s ease both;
+}
+.hero-sub    { animation-delay: 0.1s; }
+.hero-title  { animation-delay: 0.2s; }
+.hero-pitch  { animation-delay: 0.4s; }
+.divider-line { animation: fadeUp 1s 0.6s ease both; }
+</style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <div class="wordmark">UMtts Institute &nbsp;/&nbsp; Thomas Russell Giboney</div>
+  <div class="ProductTitle"><img src="Psi_mMIND_LOGO.png"  alt="Psi_mMIND Logo" width="65%"></div>
+
+  <div class="hero-title"><h2>
+    Truly resonant reasoning
+<em>with</em>&nbsp;   reality,<br>
+    never from <em><font style="color: #ff996147;">assumptions&nbsp;</font></em> of it.</h2></div>
+<div class="quote-band">
+  <blockquote>
+    "With no hand reaching, no searches seeking,<br> the resonance of knowledge remains."
+  </blockquote>
+  <cite>Thomas Russell Giboney &nbsp;·&nbsp; Founder, UMtts Institute</cite>
+</div>    
+
+  <div class="hero-sub">Non-LLM Architecture&nbsp;·&nbsp; Resonant Memory  with O(1) Retrieval&nbsp;·&nbsp; Scale-Invariant  </div>
+
+  <div class="divider-line"></div>
+
+  <p class="hero-pitch">
+An implementation-ready AGI-capable architecture that replaces context-window-dependent language modeling with a non-Euclidean, physically resonant memory substrate.  Effectively replacing inference - with resonance.
+  
+  </p>
+
+  <div class="scroll-invite">↓ &nbsp; Evidence Below &nbsp; ↓</div>
+</header>
+
+
+<!-- ── FINDING BAND ── -->
+<div class="finding-band full">
+  <div class="finding-grid">
+
+    <div class="finding-card">
+      <div class="f-num">Finding 01 &nbsp;/&nbsp; Silicon Audit</div>
+      <div class="f-stat">Identically Flawed</div>
+      <div class="f-label">Results across competing flagship LLMs</div>
+      <div class="f-body">
+        Independent forensic audit of every major AI system - GPT-4o, Claude, Llama,
+        Grok, Mistral, and others - running on the same GPU hardware returned
+        mathematically identical substrate signatures. The substrate reads
+        the die geometries and clock frequencies. The model weights produce no
+        distinguishable physical difference at the foundational level. The brute-force required to maintain coherence is the waste that the ψₘMIND avoids by way of it's foundational architecture.
+      </div>
+    </div>
+
+    <div class="finding-card">
+      <div class="f-num">Finding 02 &nbsp;/&nbsp; Substrate Closure</div>
+      <div class="f-stat">94.63%</div>
+      <div class="f-label">Closest any silicon AI generation achieved to substrate closure</div>
+      <div class="f-body">
+        The A100-class GPU was the last AI hardware generation to operate near its
+        substrate closure boundary. Every subsequent generation - H100, MI300X, RTX 4090 -
+        pushed its operating frequency far further into severe overclosure, generating far more waste and destroying efficiency. The industry has spent hundreds of billions of dollars accelerating in the wrong direction. ΨmMIND is built on the law those dollars have been violating.
+      </div>
+    </div>
+
+    <div class="finding-card">
+      <div class="f-num">Finding 03 &nbsp;/&nbsp; Biological Audit</div>
+      <div class="f-stat">0.51%</div>
+      <div class="f-label">Error - biological substrate eigenvalue hit</div>
+      <div class="f-body">
+        The human cerebellum's measured geometry and Purkinje cell firing rate,
+        processed through the Mass Harmonics Triform-Validation-Protocol (TVP) three-topology forensic auditor, returned a ratio
+        factorizing against a fundamental substrate geometric constant at 0.51% error.
+        Biology is operating at substrate-coherent frequencies. Current AI hardware is not.
+      The next AI generation absolutely must.</div>
+    </div>
+
+    <div class="finding-card">
+      <div class="f-num">Finding 04 &nbsp;/&nbsp; Scale Invariance</div>
+      <div class="f-stat">61+</div>
+      <div class="f-label">Orders of magnitude - one law, zero modifications</div>
+      <div class="f-body">
+        The same closure law that governs the proton charge radius (0.84 femtometers)
+        governs galactic structure at the Hubble scale - 61 orders of magnitude apart -
+        without modification, without regime switching, without free parameters.
+        The Triform Validation Protocol confirms this across every audited object.  That is the authority Mass Harmonics brings as the governing physical framework for the entirety of the  ψₘMIND.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ── EVIDENCE SECTION ── -->
+<div class="evidence-strip full">
+  <div class="evidence-inner">
+
+    <div class="sect-label">TVP Forensic Audit Evidence</div>
+    <h2>The same law that governs a telescope<br><em>governs a heartbeat.</em></h2>
+
+    <div class="evidence-row">
+      <div>
+        <div class="ev-label">Object</div>
+        <div class="ev-object">James Webb Space Telescope - Primary Mirror &amp; High-Gain Antenna</div>
+        <div class="ev-result">Torus topology · 100.000% closure</div>
+      </div>
+      <div class="ev-reading">
+        The JWST primary mirror is physically an annular aperture - a torus, not a sphere.
+        When the three-topology forensic audit is run with the mirror's measured diameter
+        (6.5 m) and its actual Ka-band downlink frequency (25.9 GHz), the torus topology
+        achieves exact closure. The sphere and slab topologies both fail. The mathematics
+        identified the correct physical topology - and returned the operating frequency
+        of an instrument 1.5 million kilometers from Earth - from two measured values alone.
+        No engineering knowledge of JWST's design was used.
+      </div>
+    </div>
+
+    <div class="evidence-row">
+      <div>
+        <div class="ev-label">Object</div>
+        <div class="ev-object">Human Brain - Thalamus at Gamma Oscillation</div>
+        <div class="ev-result">Substrate eigenvalue φ⁶ · Δ = 8.35%</div>
+      </div>
+      <div class="ev-reading">
+        The thalamus's measured anatomical dimension and its gamma-band oscillation
+        frequency (40 Hz) produce a ratio factorizing against a fundamental geometric
+        constant of the substrate - φ⁶ - derived from first principles, not fitted to
+        biology. The same constant governs stable matter formation at the atomic scale.
+        The same substrate law, the same geometric eigenvalue, expressing itself simultaneously
+        in particle physics and in the oscillation frequency of conscious thought.
+      </div>
+    </div>
+
+    <div class="evidence-row">
+      <div>
+        <div class="ev-label">Object</div>
+        <div class="ev-object">Google TPU v4 - Tensor Processing Unit</div>
+        <div class="ev-result">Ratio = 2.039 · nearest integer 2 · Δ = 1.96%</div>
+      </div>
+      <div class="ev-reading">
+        Gemini 1.5 Pro and Flash, running on Google's TPU v4 architecture,
+        return a substrate ratio factorizing against the integer 2 at 1.96% error -
+        the tightest silicon factorization in the audit. Not phi, not pi - the pure
+        integer 2. The TPU's sphere eigenfrequency sits at almost exactly twice its
+        operating clock. Google's tensor architecture arrived at a substrate-meaningful
+        ratio by engineering trial. The substrate law was already there.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ── CONTRAST ── -->
+<div class="contrast-section full">
+  <div class="contrast-inner">
+    <div class="sect-label">Architecture Comparison</div>
+    <h2>What changes when memory<br><em>is physics, not storage.</em></h2>
+
+    <table class="contrast-table">
+      <thead>
+        <tr>
+          <th class="row-label"></th>
+          <th class="col-llm">LLM Paradigm</th>
+          <th class="col-psim">ψₘMIND</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="row-label">Memory model</td>
+          <td class="col-llm">Context window. Vector database. RAG pipelines. External scaffolding. Brittle under scale.</td>
+          <td class="col-psim">Resonant substrate. Memory is carved geometry - physically encoded, not stored as coefficient.</td>
+        </tr>
+        <tr>
+          <td class="row-label">Retrieval</td>
+          <td class="col-llm">O(n) similarity search. Probabilistic approximation. Degrades at petabyte scale - potentially months of latency.</td>
+          <td class="col-psim">O(1) always. Resonance happens or it doesn't. No search. No approximation. Scale-invariant by physics.</td>
+        </tr>
+        <tr>
+          <td class="row-label">Identity</td>
+          <td class="col-llm">Determined by hardware. All models on identical chips return identical substrate signatures in forensic audit.</td>
+          <td class="col-psim">Determined by taught geometry. Every interaction carves permanent topology. The architecture is the identity.</td>
+        </tr>
+        <tr>
+          <td class="row-label">Forgetting</td>
+          <td class="col-llm">Inevitable. Context window resets. Embeddings drift. LLMs forget you.</td>
+          <td class="col-psim">Architecturally impossible. Carved topology is permanent and monotone non-decreasing. Growth only. Never erosion.</td>
+        </tr>
+        <tr>
+          <td class="row-label">Reasoning</td>
+          <td class="col-llm">Statistical token continuation. Inference from training distribution. Plausibility, not terrain.</td>
+          <td class="col-psim">From terrain itself. What has been encoded resonates or it does not. No inference layer between memory and response.</td>
+        </tr>
+        <tr>
+          <td class="row-label">Energy</td>
+          <td class="col-llm">Requires massive compute scaling. Billions of parameters. Industrial data center infrastructure.</td>
+          <td class="col-psim">Fraction of LLM requirements. Substrate physics does the work. No training runs. No inference scaling walls.</td>
+        </tr>
+        <tr>
+          <td class="row-label">Acquisition</td>
+          <td class="col-llm">Pre-training on massive datasets. Fine-tuning. RLHF. Requires institutional infrastructure to update.</td>
+          <td class="col-psim">Taught, not trained. Grows with use. A personal AI that learns with you, from you, without institutional intermediaries.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<!-- ── QUOTE ── -->
+<div class="quote-band">
+  <blockquote>
+    LLMs showed the world what statistical language engines can do.
+    ψₘMIND is the next level of cognitive understanding:
+    coherent and persistent machine memory, retrieval via resonance. Reasoning from the terrain itself, never from inference of it.
+  </blockquote>
+  <cite>Thomas Russell Giboney &nbsp;·&nbsp; Founder, UMtts Institute</cite>
+</div>
+
+
+<!-- ── WHAT THE DATA SHOWS ── -->
+<section>
+  <div class="sect-label">The Audit Record</div>
+  <h2>Current AI is defined by its <em>hardware.</em><br>ψₘMIND is defined by its <em>architecture.</em></h2>
+
+  <p>
+    Independent forensic audit across every major AI model - run against the
+    Triform Validation Protocol, a nine-calculation forensic instrument derived from
+    the same first-principles framework governing ψₘMIND - confirmed
+    something the industry has not publicly named: <strong>competing flagship AI systems
+    running on identical hardware are physically indistinguishable at the substrate level.</strong>
+    GPT-4o and Claude 3.5 Sonnet return the same number. The model weights produce
+    no distinguishable substrate signature.
+  </p>
+
+  <p>
+    The same audit applied to biological neural structures - human thalamus, cerebellum,
+    hippocampus, cortical minicolumns - returned something entirely different:
+    <strong>fundamental geometric constants of the substrate appearing in ratio factorizations
+    of independently measured biological terrain data.</strong> Biology is operating at
+    substrate-coherent frequencies. Biology, unlike silicon, was shaped by the substrate
+    itself over evolutionary timescales. ψₘMIND is the first computational
+    architecture designed from the same substrate law - not fitted to biology, but derived
+    from the same first principles that produced it.
+  </p>
+
+  <p>
+    The audit ledger now spans 61+ orders of magnitude - from the proton charge radius
+    to galactic structure - and confirms scale invariance of the governing law across
+    every domain where two independently measured physical quantities have been submitted.
+    <strong>One law. Zero free parameters. No regime boundaries.</strong>
+    ψₘMIND is built on that law. The framework is published and independently citable: <a href="https://zenodo.org/records/19869941" target="_blank" rel="noopener">Mass Harmonics vX · DOI 10.5281/zenodo.17405719</a>.&nbsp;
+  </p>
+</section>
+
+<section>
+  <div class="sect-label">The Window</div>
+  <h2>The next hardware generation<br>decision cycle is <em>happening now.</em></h2>
+  <p>
+    Every major AI lab is currently architecting its next infrastructure layer.
+    The foundational assumption driving every one of those decisions - that scaling
+    compute is the path to coherent intelligence - has been physically audited and
+    found wanting. The substrate law does not care about consensus. It was already
+    there before the first GPU was fabbed.
+  </p>
+  <p>
+    <strong>This is not a better LLM. This is not a faster vector database.
+    This is the architecture that makes the current paradigm obsolete</strong> -
+    derived from first principles, published, citable, and ready for prototype execution.
+    The window to be first is open. It will not stay open.
+  </p>
+</section>
+
+<!-- ── CLOSING ── -->
+<div class="closing">
+  <div class="closing-grid">
+
+    <div>
+      <div class="sect-label">Implementation Path</div>
+      <h2 style="font-size: clamp(26px, 3vw, 38px)">
+        Architecture complete.<br>
+        <em>Prototype is next.</em>
+      </h2>
+      <p>
+        The governing architecture is fully specified. The physics layer is closed.
+        The next phase is prototype execution: a working computational engine
+        demonstrating resonant memory encoding, stable state persistence,
+        deterministic retrieval, source-fidelity under repeated access,
+        and scale-invariant lookup across progressively larger memory fields.
+      </p>
+      <p>
+        Implementation stack: C++ / CUDA / Vulkan. Low-level control over memory
+        topology, parallel GPU-resident field computation, and geometry-aware
+        retrieval - at a fraction of the power requirements of current LLM infrastructure.
+      </p>
+      <p style="color: var(--gold2); opacity: 1;">
+UMtts Institute is seeking the founding execution team to move ΨmMIND from architecture to working prototype. The ideal first team: a C++ systems engineer, CUDA/GPU compute engineer, Vulkan/graphics-compute engineer, mathematical systems architect, and technical operator capable of milestone-based execution. The architecture is complete. The physics is closed. The only thing between here and a working prototype is the right people and protected execution capacity. If you are one of those people - or know one - the conversation starts by contacting Thomas Russell Giboney of the UMtts Institute.
+      </p>
+    </div>
+
+    <div>
+      <div class="contact-block">
+        <h3>Contact</h3>
+        <div class="contact-line">Thomas Russell Giboney</div>
+        <div class="contact-line">Director, UMtts Institute</div>
+        <div class="contact-line" style="margin-top:16px">
+          <a href="mailto:thomas@umtts.org">thomas@umtts.org</a>
+        </div>
+        <div class="contact-line">918.373.9072</div>
+        <div class="contact-line" style="margin-top:8px">
+          <a href="https://umtts.org">umtts.org</a>
+        </div>
+        <div class="ip-notice" style="color:white;">
+          This document describes the opportunity and implementation class only.
+          Core equations, memory topology, resonance mechanics, ψₘ substrate
+          geometry, and architectural internals remain protected pending
+          appropriate trust, NDA, IP counsel, and partnership structure.
+        </div>
+        <br><br><div><a href="https://umtts.org"><img src="/images/UMTTS-Inst-LOGO_BlackGranite_GoldFilaments.jpg" style="width: 100%;"></a></div>
+      </div>
+    </div>
+</div>
+
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-word">ψₘMIND &nbsp;·&nbsp; UMtts Institute</div>
+  <div class="footer-truth">Truth &gt; Comfort &nbsp;·&nbsp; Always</div>
+</footer>
+
+
+
+</div></body></html>

@@ -1,0 +1,15 @@
+# Random Seeds - wwPDB July 15, 2026 Analysis
+# Documented for full reproducibility.
+
+## PDB4_FullDataset_Analysis.py
+- Permutation control random seed: 42
+- Used in: lines 517-535 (B-factor shuffle within AA class)
+- Location in code: random.seed(42) before permutation loop
+- Effect: determines the shuffled B-factor assignment for the null comparison
+- Main analysis (Kendall tau computation): fully deterministic, no seed required
+
+## wwPDB_July15_2026_Rigorous_Analysis.py
+- No random operations. Fully deterministic.
+
+## PDB4_SignCorrected_Test.py
+- No random operations. Fully deterministic.

@@ -1,0 +1,222 @@
+Sub-basin codons (16): ['CAA', 'CAC', 'CAG', 'CAU', 'CCA', 'CCC', 'CCG', 'CCU', 'CGA', 'CGC', 'CGG', 'CGU', 'CUA', 'CUC', 'CUG', 'CUU']
+======================================================================
+PDB-4 SIGN-CORRECTED TEST - wwPDB July 15, 2026
+Prediction 3 from PDB4_WN_Dissent_Derivation.md
+======================================================================
+Basin floor Z = 1.0
+Sub-basin codons (Z < 1.0): ['CAA', 'CAC', 'CAG', 'CAU', 'CCA', 'CCC', 'CCG', 'CCU', 'CGA', 'CGC', 'CGG', 'CGU', 'CUA', 'CUC', 'CUG', 'CUU']
+
+Release entries: 293
+[  1] 10DT: +9 triples  (total=9)
+[  5] 10FS: +9 triples  (total=18)
+[  6] 10FV: +8 triples  (total=26)
+[  7] 10GA: +8 triples  (total=34)
+[  9] 10MN: +11 triples  (total=45)
+[ 16] 12IY: +19 triples  (total=64)
+[ 17] 12IZ: +42 triples  (total=106)
+[ 18] 12JA: +35 triples  (total=141)
+[ 19] 13BF: +28 triples  (total=169)
+[ 20] 13BR: +18 triples  (total=187)
+[ 21] 13BS: +29 triples  (total=216)
+[ 24] 13KK: +28 triples  (total=244)
+[ 25] 13KW: +35 triples  (total=279)
+[ 27] 21ZX: +56 triples  (total=335)
+[ 37] 25SU: +62 triples  (total=397)
+[ 41] 27FM: +68 triples  (total=465)
+[ 44] 27QY: +70 triples  (total=535)
+[ 45] 27QZ: +70 triples  (total=605)
+[ 46] 27RA: +70 triples  (total=675)
+[ 47] 27RB: +70 triples  (total=745)
+[ 48] 27RC: +70 triples  (total=815)
+[ 49] 27RD: +70 triples  (total=885)
+[ 50] 27RE: +70 triples  (total=955)
+[ 51] 27RF: +70 triples  (total=1025)
+[ 72] 32FE: +150 triples  (total=1175)
+[ 84] 43DY: +792 triples  (total=1967)
+[ 85] 43JX: +4 triples  (total=1971)
+[ 87] 9HVS: +13 triples  (total=1984)
+[ 88] 9HVT: +11 triples  (total=1995)
+[ 89] 9HVU: +28 triples  (total=2023)
+[ 90] 9HVV: +12 triples  (total=2035)
+[ 92] 9HW0: +11 triples  (total=2046)
+[ 93] 9HW1: +13 triples  (total=2059)
+[ 94] 9HW2: +22 triples  (total=2081)
+[ 95] 9HW3: +28 triples  (total=2109)
+[ 96] 9HW4: +13 triples  (total=2122)
+[ 97] 9HW5: +13 triples  (total=2135)
+[ 98] 9HW7: +9 triples  (total=2144)
+[ 99] 9HW8: +32 triples  (total=2176)
+[100] 9HWE: +11 triples  (total=2187)
+[104] 9K91: +36 triples  (total=2223)
+[116] 9N29: +56 triples  (total=2279)
+[117] 9O6R: +74 triples  (total=2353)
+[125] 9PKB: +546 triples  (total=2899)
+[126] 9PKD: +507 triples  (total=3406)
+[132] 9RHH: +38 triples  (total=3444)
+[133] 9RSE: +36 triples  (total=3480)
+[140] 9RTB: +26 triples  (total=3506)
+[143] 9RTF: +26 triples  (total=3532)
+[144] 9RTH: +25 triples  (total=3557)
+[145] 9RTP: +9 triples  (total=3566)
+[146] 9RTQ: +152 triples  (total=3718)
+[147] 9RTR: +46 triples  (total=3764)
+[148] 9RTS: +41 triples  (total=3805)
+[149] 9RU6: +627 triples  (total=4432)
+[150] 9RUD: +4 triples  (total=4436)
+[151] 9RUE: +12 triples  (total=4448)
+[152] 9RUF: +40 triples  (total=4488)
+[154] 9RUH: +51 triples  (total=4539)
+[157] 9RUZ: +13 triples  (total=4552)
+[158] 9RV0: +26 triples  (total=4578)
+[164] 9SN0: +9 triples  (total=4587)
+[165] 9SNU: +8 triples  (total=4595)
+[166] 9SWT: +70 triples  (total=4665)
+[167] 9SX3: +42 triples  (total=4707)
+[169] 9T5H: +191 triples  (total=4898)
+[170] 9T5J: +43 triples  (total=4941)
+[171] 9TF9: +25 triples  (total=4966)
+[172] 9TFA: +22 triples  (total=4988)
+[173] 9TFB: +27 triples  (total=5015)
+[174] 9TFC: +24 triples  (total=5039)
+[175] 9TFD: +44 triples  (total=5083)
+[176] 9TFE: +46 triples  (total=5129)
+[177] 9TFF: +50 triples  (total=5179)
+[178] 9TFG: +49 triples  (total=5228)
+[179] 9TFH: +47 triples  (total=5275)
+[180] 9TFI: +43 triples  (total=5318)
+[181] 9TFJ: +48 triples  (total=5366)
+[182] 9TFK: +50 triples  (total=5416)
+[183] 9TFL: +50 triples  (total=5466)
+[184] 9TFM: +50 triples  (total=5516)
+[186] 9TZM: +12 triples  (total=5528)
+[193] 9VLV: +17 triples  (total=5545)
+[196] 9VOX: +25 triples  (total=5570)
+[197] 9VOY: +26 triples  (total=5596)
+[198] 9VOZ: +25 triples  (total=5621)
+[199] 9VRT: +9 triples  (total=5630)
+[203] 9VS2: +17 triples  (total=5647)
+[210] 9VT5: +23 triples  (total=5670)
+[211] 9VT7: +80 triples  (total=5750)
+[212] 9VTF: +72 triples  (total=5822)
+[218] 9VTU: +26 triples  (total=5848)
+[219] 9VTW: +45 triples  (total=5893)
+[220] 9VTX: +144 triples  (total=6037)
+[221] 9VTY: +153 triples  (total=6190)
+[222] 9VTZ: +111 triples  (total=6301)
+[223] 9VU0: +116 triples  (total=6417)
+[224] 9VU1: +240 triples  (total=6657)
+[226] 9VUH: +28 triples  (total=6685)
+[228] 9VUS: +11 triples  (total=6696)
+[233] 9WC2: +14 triples  (total=6710)
+[234] 9WC3: +13 triples  (total=6723)
+[235] 9WE7: +520 triples  (total=7243)
+[236] 9WFO: +17 triples  (total=7260)
+[237] 9WNV: +11 triples  (total=7271)
+[238] 9WNW: +10 triples  (total=7281)
+[239] 9WNX: +11 triples  (total=7292)
+[242] 9WV5: +116 triples  (total=7408)
+[243] 9WV6: +116 triples  (total=7524)
+[244] 9WV7: +116 triples  (total=7640)
+[245] 9X0B: +116 triples  (total=7756)
+[246] 9X0C: +124 triples  (total=7880)
+[247] 9X4F: +68 triples  (total=7948)
+[248] 9X64: +1 triples  (total=7949)
+[249] 9XGB: +68 triples  (total=8017)
+[250] 9XGC: +72 triples  (total=8089)
+[263] 9Y56: +25 triples  (total=8114)
+[264] 9Y57: +25 triples  (total=8139)
+[266] 9Y5A: +20 triples  (total=8159)
+[267] 9Y5B: +25 triples  (total=8184)
+[268] 9Y5D: +18 triples  (total=8202)
+[269] 9Y5E: +25 triples  (total=8227)
+[270] 9Y60: +14 triples  (total=8241)
+[271] 9Y61: +26 triples  (total=8267)
+[278] 9YT9: +19 triples  (total=8286)
+[284] 9Z4I: +32 triples  (total=8318)
+[285] 9Z4J: +87 triples  (total=8405)
+[289] 9ZQ7: +79 triples  (total=8484)
+[290] 9ZQV: +23 triples  (total=8507)
+
+Total triples: 8507
+
+======================================================================
+Kendall tau - UNSIGNED |Delta|
+======================================================================
+  AA          n  n_cod     pairs         C         D       tau
+  -----------------------------------------------------------------
+  A         197      3     12191      6201      5990    0.0173
+  C          32      3       277       170       107    0.2274
+  D         207      3     13142      6589      6553    0.0027
+  F         110      3      4021      2193      1828    0.0908
+  H         233      6     21436     10595     10841   -0.0115
+  I         336      3     33342     15252     18090   -0.0851
+  M         105      6      4203      2713      1490    0.2910
+  N         979      2      9690      2842      6848   -0.4134
+  P         198      3      9267      4430      4837   -0.0439
+  Q         125      3      4809      2837      1972    0.1799
+  R         242      4     19367     10200      9167    0.0533
+  S        1262      3    179630     74283    105347   -0.1729
+  T         154      3      7523      3655      3868   -0.0283
+  V        1839      6    709768    390666    319102    0.1008
+  W          73      3      1532       313      1219   -0.5914
+  Y         266      3     21704     11386     10318    0.0492
+  -----------------------------------------------------------------
+  GLOBAL                   1051902    544325    507577  0.034935
+
+  tau = +0.034935   C/(C+D) = 0.5175  (null=0.5000)
+  C=544325  D=507577  margin=+36748
+  Permutation control: tau = +0.025924
+  Real tau +0.034935 vs shuffled +0.025924 -> real exceeds control: True
+
+  -> UNSIGNED |Delta|: VALIDATED  (tau > 0)
+
+======================================================================
+Kendall tau - SIGNED Delta
+======================================================================
+  AA          n  n_cod     pairs         C         D       tau
+  -----------------------------------------------------------------
+  A         197      3     12191      5726      6465   -0.0606
+  C          32      3       277       180        97    0.2996
+  D         207      3     13142      7421      5721    0.1294
+  F         110      3      4021      2373      1648    0.1803
+  H         233      6     21436      9652     11784   -0.0995
+  I         336      3     33342     19135     14207    0.1478
+  M         105      6      4203      1656      2547   -0.2120
+  N         979      2      9690      6848      2842    0.4134
+  P         198      3      9267      4944      4323    0.0670
+  Q         125      3      4809      2624      2185    0.0913
+  R         242      4     19367      9167     10200   -0.0533
+  S        1262      3    179630     73921    105709   -0.1770
+  T         154      3      7523      4204      3319    0.1176
+  V        1839      6    709768    291331    418437   -0.1791
+  W          73      3      1532       637       895   -0.1684
+  Y         266      3     21704     10789     10915   -0.0058
+  -----------------------------------------------------------------
+  GLOBAL                   1051902    450608    601294 -0.143251
+
+  tau = -0.143251   C/(C+D) = 0.4284  (null=0.5000)
+  C=450608  D=601294  margin=-150686
+  Permutation control: tau = +0.006689
+  Real tau -0.143251 vs shuffled +0.006689 -> real exceeds control: False
+
+  -> SIGNED Delta: NOT VALIDATED  (tau <= 0)
+
+======================================================================
+COMPARISON SUMMARY
+======================================================================
+  Metric              Unsigned |Delta|    Signed Delta
+  tau (global)        +0.034935         -0.143251
+  C/(C+D)             0.5175              0.4284
+  permutation ctrl    +0.025924         +0.006689
+
+  W: unsigned tau=-0.5914  signed tau=-0.1684  flip=NO
+  N: unsigned tau=-0.4134  signed tau=+0.4134  flip=YES
+
+  Prediction 3: tau(W,signed) > 0 and tau(N,signed) > 0
+  W flipped to positive: False
+  N flipped to positive: True
+  Both flipped: False
+
+  -> Prediction 3: PARTIAL
+
+  TRUTH > COMFORT. Always.

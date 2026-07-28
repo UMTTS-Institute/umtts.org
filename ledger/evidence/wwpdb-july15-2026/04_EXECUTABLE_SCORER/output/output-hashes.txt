@@ -1,0 +1,7 @@
+# Output File Hashes - wwPDB July 15, 2026 Analysis
+# Generated: 2026-07-20T19:36:35Z
+# Algorithm: SHA256
+
+976556fefd8c85b4e9f3005a329c8a3aa8731325e3ee00ef549e7719f6a0ff1c  MH_wwPDB_July15_2026_Analysis_Report.txt
+8ff20924e48dfaf85fb10a188989aeee80a571c522adcfdffe95407c57e0cf1e  PDB4_FullDataset_Report.txt
+6299f98c58a366691532ebb7ddaebf6d229fba5ca520e6e4c5e4b180fe8b868f  PDB4_SignCorrected_Report.txt

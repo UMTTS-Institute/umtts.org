@@ -1,0 +1,14 @@
+# Python Requirements - wwPDB July 15, 2026 Terrain Contact Analysis
+# Core scorer (PDB4_FullDataset_Analysis.py) uses standard library only.
+# Full analysis (wwPDB_July15_2026_Rigorous_Analysis.py) uses gemmi for CIF parsing.
+
+# Standard library (no install required):
+# os, sys, json, math, time, collections, itertools, statistics, urllib, hashlib, random
+
+# Optional (faster CIF parsing for full analysis):
+gemmi>=0.6.0
+
+# Install with:
+#   pip install gemmi
+# Or without gemmi (falls back to internal parser):
+#   python PDB4_FullDataset_Analysis.py  (works without gemmi)

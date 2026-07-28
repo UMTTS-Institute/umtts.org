@@ -1,0 +1,20 @@
+# Run Commands - wwPDB July 15, 2026 Analysis
+# Generated: 2026-07-20T19:36:35Z
+
+## PDB-4 Full Dataset Analysis (primary scorer)
+
+python PDB4_FullDataset_Analysis.py
+
+## Full Rigorous Analysis (PDB-1, PDB-2, PDB-3 primary entries)
+
+python wwPDB_July15_2026_Rigorous_Analysis.py
+
+## PDB-4 Sign-Corrected Test (sign verification)
+
+python PDB4_SignCorrected_Test.py
+
+## Notes
+- All scripts query RCSB live on first run; CIF files cached locally.
+- Output written to: ../wwPDB_July15_analysis/
+- PDB-4 primary scorer: output in PDB4_FullDataset_Report.txt
+- Full analysis: output in MH_wwPDB_July15_2026_Analysis_Report.txt

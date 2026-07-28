@@ -1,0 +1,11 @@
+name,R_km,f_Hz,vx_kms,note,fault_hint
+Earth PCF (R=6371 km vacuum-c),6371,,299792.458,Predict mode: R + vx_VAC -> f_sphere; first-principles substrate closure,
+Earth surface cavity 7.83 Hz observed,,7.83,299792.458,Detect mode: consensus-observed f + vx_VAC -> R; deviation from Earth PCF is the forensic signal,
+Crab Pulsar R=10 km f=29.947 Hz,10,29.947,,Map mode: R + f -> vx_local; reveals dressing,
+Sun photosphere boundary,696340,,299792.458,Predict mode at vacuum-c reference,
+Bohr radius (H 1s),5.29177e-14,,299792.458,Predict mode in atomic units,
+Hydrogen Lyman-alpha transition,,2.466068e15,299792.458,Detect mode at electronic transition energy,C1
+Proton charge radius (Compton-scale),8.41e-19,2.27e23,,Map mode: nucleon scale,
+Deuteron charge radius,2.142e-18,,299792.458,Predict mode for light nucleus,
+He-4 alpha particle charge radius,1.6755e-18,,299792.458,Predict mode for alpha particle,
+Earth-Moon barycenter distance,384399,,299792.458,Predict mode for orbital boundary,

@@ -1,0 +1,294 @@
+index,pdb_id,uniprot_id,cds_status,included_pdb4,n_residues_with_codon,n_aa_classes,exclusion_reason,cif_downloaded,cif_size_bytes,cif_sha256
+1,10DT,P09769,available,yes,9,7,included,yes,684786,33569244c4544ae2ab26fc9833ffbfc11d9a42a9aa21794f3fbb2820c6b710b7
+2,10EC,A0AAE7VWW2,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+3,10FA,P0A847,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+4,10FB,P0A847,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+5,10FS,P09769,available,yes,9,7,included,yes,659910,f900c9343cf90db46fc3ec60d5d994d6b2148472fd0cd634bdeabd60d3d36b30
+6,10FV,P09769,available,yes,8,6,included,yes,592366,de1eefd86d6ed2cccf9226e3036ba5db8068c097fd27282824bcf4e2ebbce8ec
+7,10GA,P09769,available,yes,8,6,included,yes,638234,9493da681a69ea55cf330e5c27f396d9cf78ce241409e099cb55bdc72d836399
+8,10LJ,A0AAE8B7G6,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+9,10MN,O15527,available,yes,11,3,included,yes,652888,c31d750ba01b161d8acb5a8c951b3e6dca9c0f07dacc9880df83df7fee26a577
+10,10XW,A0AAE7VXB5,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+11,10ZK,A9H5W5,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),yes,2621140,addf873ed03074cdad95946f38187a151ddfa1fd0836d34fd76f82e1c27047f8
+12,10ZL,A9H5W8,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+13,10ZM,P07328,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+14,10ZN,A9H5W5,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+15,11MP,P77522,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+16,12IY,P34972,available,yes,19,4,included,yes,292680,1145925ede3c056a3d8e5462e0e9cbc394f3539cce73915aa46b261fe8e15edb
+17,12IZ,P63096,available,yes,42,16,included,yes,978224,82adba1059fe29489b1fa2991b03d5fccbb263edc68ce0f7d51042933efa1ddd
+18,12JA,P63096,available,yes,35,15,included,yes,806443,9dc7b7f2d7af6f3cd7336060b2e75f3c4fbc6c8c4687b9262c2f96e629e4e98f
+19,13BF,P12111,available,yes,28,12,included,yes,423323,fa8afe94dcfb53ad842d6c0299c7cdbe7031bd48b80acfab47fa3b9380ec4a0a
+20,13BR,P25311,available,yes,18,12,included,yes,376452,ba3a335ae2cd80e563c9b870cd32b485c831fb4de8abf493413ca414009ce6e8
+21,13BS,Q9UBH0,available,yes,29,12,included,yes,487073,f367fe4cda5ebac8db07bc9be1fdb4c87187f1d91230f6fa8e8d198a5c24c566
+22,13CT,D5AT91,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+23,13JV,A0A0A0WEU2,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+24,13KK,P61604,available,yes,28,2,included,yes,803476,ab7f0b43211241c86f160ffc02fb9ec303c402c77d301a8e02b5ae89b3c11aa4
+25,13KW,P61604,available,yes,35,2,included,yes,773266,70fa18223c3a11acdaf3ccd6f46a00d66206891b2aaeb4b02a9353ee9de12a05
+26,21ET,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+27,21ZX,Q03555,available,yes,56,9,included,yes,2376281,c4deb6f550702478b0b602caec63676cba3932181caac29c3e5e9c8bbaf11c58
+28,23EF,O27818,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+29,23EG,O27818,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+30,23EI,O27818,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+31,23EO,P83820,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+32,23EQ,P83820,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+33,23GD,A0AAE7VXB5,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+34,23WI,P0A7V0,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+35,24FO,Q57703,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+36,24GZ,Q57703,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+37,25SU,Q9NYW5,available,yes,62,13,included,yes,938543,2aa2f5b5822dd232c1ac363ad5fb9ad40c8fdb229f58bc18ae713bb12972673c
+38,26QX,Q79PF4,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+39,26RC,Q79PF4,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+40,26RV,A0A376LC84,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+41,27FM,P04406,available,yes,68,8,included,yes,2273601,28f7ba7276cb11ac6c26d3073c4f9b270fd87e3b4419c03ff94596655f148bc9
+42,27GY,Q9U556,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+43,27GZ,Q9U556,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+44,27QY,P04191,available,yes,70,4,included,yes,1041167,5fefccf22d8b20359ae6d124cb40eed523eefeea27cbb657eff96a05f4482b37
+45,27QZ,P04191,available,yes,70,4,included,yes,1004939,5e92025a3f3dd8355430854e8299de795b51b649902e7a3a48d799bb518767bf
+46,27RA,P04191,available,yes,70,4,included,yes,1034586,7c411a7286bab455b93becb88e0804fddf5e27840ab1cf8e144b8a5fba540f16
+47,27RB,P04191,available,yes,70,4,included,yes,1041767,84710e82eb2fce9c620b5981082a56ad598ba716b32d8b70b9ce104a0f1793b4
+48,27RC,P04191,available,yes,70,4,included,yes,1040691,f131fb48793e433d1a5ca378b765938cc8da2084f6c19070de64728355dcfcca
+49,27RD,P04191,available,yes,70,4,included,yes,1039885,a981845fc802f6ae77d53e33c7c752b7924ff15cefe93c9a9a2dd4ada13b14c8
+50,27RE,P04191,available,yes,70,4,included,yes,1041592,9821ba2288fd0098221b8c8c119d15ac6e4b9b85fc9bedeb7525d40c26ada2a4
+51,27RF,P04191,available,yes,70,4,included,yes,1039701,e02cfe8efe1978a222d80bd3c99c11d610b89bb0297925569db1b0e11ac9489d
+52,28DB,B2UPV2,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+53,28IL,A0A411J078,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+54,28IO,P9WGR1,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+55,28IP,P9WGR1,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+56,28IQ,P9WGR1,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+57,28IR,P9WGR1,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+58,28IS,P9WGR1,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+59,28IT,P9WGR1,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+60,28IU,P9WGR1,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+61,28IV,P9WGR1,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+62,28IW,P9WGR1,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+63,28IX,P9WGR1,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+64,28LL,P9WGR1,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+65,28LM,P9WGR1,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+66,28SD,A9J7B4,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+67,29KM,P07908,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+68,29TI,P03303,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+69,29TX,P03303,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+70,29UB,P03303,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+71,31AP,B8XCM9,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+72,32FE,P36776,available,yes,150,11,included,yes,3838851,fdecd62081dcccf481f791458db5d38beff13557d434422b452042e63306dbba
+73,35TE,A0A0A0WEU2,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+74,36AZ,P0DTC2,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+75,36BB,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+76,36HU,P54700,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+77,36HW,P40729,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+78,36IS,P54700,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+79,36LX,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+80,36LY,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+81,36MB,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+82,36OF,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+83,36ZF,Q13UJ9,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+84,43DY,P25688,available,yes,792,4,included,yes,5566564,6b7d088352e28fe030f3c84a80c50a24e5ac150991ef086ca15018b1619afe60
+85,43JX,Q9P2P5,available,yes,4,2,included,yes,3538736,fffc21bf0e302b222712288fb7eb1efeae3cd71b3dad71cdd70d727702b04360
+86,9HIG,Q3IIX4,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+87,9HVS,P11172,available,yes,13,3,included,yes,550219,cb5287ced69289672f5db0dbcd13052f29164f6bd419636333b64e56d259c994
+88,9HVT,P11172,available,yes,11,3,included,yes,608164,c4d19837ae8393de2c0ed3c1656ad82df1596cf14b4af7a03f1411ce3e23da91
+89,9HVU,P11172,available,yes,28,3,included,yes,1098268,9d65107714ce2ff1b6cf1e8a87f47bfc612ae268efa3be313e10d84f7842aa1e
+90,9HVV,P11172,available,yes,12,3,included,yes,576327,569eccf37f1b586a1e78e1fcfd3314d8f0164d814917b0f2d4a35af9a35197f1
+91,9HVZ,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+92,9HW0,P11172,available,yes,11,3,included,yes,709734,1d2b6c04560530e5c1d81b0dbfd806d14b80831a01d2d201b4b538bb46389eb7
+93,9HW1,P11172,available,yes,13,3,included,yes,766306,773e984f65e33356caa5b83b24eaa04a87ca78dacebbcfb7fc728113018d6361
+94,9HW2,P11172,available,yes,22,3,included,yes,1355266,076eb4a91b8a15e978ed1e1f63e1cf8e58f870436643c2f596cf2a4945616526
+95,9HW3,P11172,available,yes,28,3,included,yes,1243901,953e739f57aed1332145b93e7a735e5ff0328e2584bed2ec890415320d023823
+96,9HW4,P11172,available,yes,13,3,included,yes,721398,458320e20a07c254cdc02f04e25f69fd2f34da131f3530ef50bfc96e97b999a1
+97,9HW5,P11172,available,yes,13,3,included,yes,743623,1b8244bf8a0d4712d32a68a9fc97c5299ee8974ca3ebe02aa17d3cbde173a7e2
+98,9HW7,P11172,available,yes,9,3,included,yes,720540,0642baed61a2389b7350883b5d8fd6f0539643421094a4ab1fa8282b1a2fa931
+99,9HW8,P11172,available,yes,32,4,included,yes,1329880,dd069fc7245b3287e0693cc537f218f364670354d8f551132b47b84d79d5bdbe
+100,9HWE,Q13485,available,yes,11,4,included,yes,572574,64b43455aa1af13a224898b658cd37debc0e6607fdde1d22b6fb0b253b5f0503
+101,9HWH,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+102,9HWI,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+103,9IA1,A0A562ETV5,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+104,9K91,Q9UBN7,available,yes,36,4,included,yes,605868,98780c04d34ff1bef60ea613dd90b0d97b14f7a2c2ed4ad52704009b75d2845c
+105,9L0A,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+106,9L9C,I3R0V8,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+107,9LDN,G0Y276,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+108,9LE9,P0DTC2,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+109,9LF4,P0DTC2,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+110,9LF5,P0DTC2,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+111,9LFO,P0DTC2,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+112,9LFP,P0DTC2,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+113,9LJE,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+114,9LJF,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+115,9LWE,A0A142I751,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+116,9N29,P54311,available,yes,56,15,included,yes,857835,0147e889a05ae46f8b2ba4f09a9bbe09d640cd4be013caef9c1270b3abffa359
+117,9O6R,P12004,available,yes,74,4,included,yes,1476615,813c0acea25cb145a0607249f48bbc79e6eaa4029f34063991e511f80746b9ea
+118,9PH8,P0DTD1,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+119,9PH9,P0DTD1,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+120,9PHJ,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+121,9PIC,A0A7C2Z7G5,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+122,9PID,A0A7C2Z7G5,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+123,9PIR,A0A7C2Z7G5,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+124,9PJB,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+125,9PKB,Q8NC51,available,yes,546,19,included,yes,26036486,93db31c6c4f22a8995a90ee19ecf30ca031ae13f07b91bfa3f1a96b6159a82e4
+126,9PKD,P20290,available,yes,507,20,included,yes,24955511,7ae4270b07d3a350ae167b14edbf9d0b8cfc7fc0f4a940bede26d4be7ae8484f
+127,9PL3,Q8DYG3,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+128,9PL4,Q8DYG3,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+129,9PL6,Q8DYG3,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+130,9PVL,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+131,9Q07,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+132,9RHH,Q9BQI3,available,yes,38,9,included,yes,568808,4c0038e633f52205fb516c2daaa77d67c0e17b81c6e3886bb955db9610faf066
+133,9RSE,P15813,available,yes,36,10,included,yes,1714902,d88241480a1f2288b6ea1dcdab4cdb8d522cc767ed7a5820c60013e275caf6b0
+134,9RSF,F6TR81,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+135,9RSY,W1NXW4,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+136,9RSZ,W1NXW4,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+137,9RT0,W1NXW4,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+138,9RT1,W1NXW4,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+139,9RT5,W1NXW4,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+140,9RTB,P02787,available,yes,26,14,included,yes,732467,6be6b38a23e1b91c84d45d007c4249af91510d7ec4e97a2f9d6ba874940fdfe0
+141,9RTC,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+142,9RTD,Q27743,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+143,9RTF,P02787,available,yes,26,14,included,yes,683396,ed2376197a3340cfa1a78aeddc4c6fb3207828f8d0f02a8cd3b6b5e781fd257d
+144,9RTH,P02787,available,yes,25,13,included,yes,657748,41a72f22bcca27a4bb2f93257680443fb1509af0cf3c5aa6229dd8bdb8c2b650
+145,9RTP,P0C024,available,yes,9,6,included,yes,411368,be11fcde4cd314791c95f47d6adcf2d00c673f453e4fec1b9a6b5d9a7d25facc
+146,9RTQ,P15056,available,yes,152,10,included,yes,3873027,b5da2d7a33d0c31effcc9ead413aab24861089d3367785827be4fe15f9b5efca
+147,9RTR,Q02750,available,yes,46,4,included,yes,1987202,ecf8c7c8ce3e793ff92e00fb6cf7fea0d6c9051a2e8ea87ec62dbdd13b1c1f82
+148,9RTS,Q02750,available,yes,41,4,included,yes,1978809,7068eb02566bdb8edaccbc40baa970458df2fb70208c973acc6448b831023987
+149,9RU6,Q9BSH4,available,yes,627,20,included,yes,37581418,87c03f4148577fd9f94b84e1d043d75db019ab577604db0a0638b1e98ed7857d
+150,9RUD,P0CG47,available,yes,4,4,included,yes,286829,732c1cc9e6f47801398fa0e3ab41edb46caf28d85e8261d30764a2b392739899
+151,9RUE,Q14849,available,yes,12,4,included,yes,286352,ceec8941f59d9bc3964406626c4d7ba0b76bc2341581b8d6af00a27753087a79
+152,9RUF,P01909,available,yes,40,15,included,yes,644457,85a8bfb650c7ce949ee9e72599a0248313cb512f55dab4c51f176824ecd104da
+153,9RUG,Q29967,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+154,9RUH,Q5Y7D6,available,yes,51,17,included,yes,664916,313aff0e96db1ecab1964b5fd441903fa0e9ea2a70428e889e26ff64d47ea02f
+155,9RUM,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+156,9RUN,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+157,9RUZ,P00918,available,yes,13,7,included,yes,315532,8ce390ec37e0df66c56bebcefc68e0342afa36e77735afd99fcdc0312178768c
+158,9RV0,P00915,available,yes,26,10,included,yes,542641,780d372c1aa9e4ba3caa438b8c575b2b3a11c7c7bbaab69044dc23da4d67ed75
+159,9S0Y,A9J7C0,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+160,9S5J,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+161,9S9B,A9J7B7,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+162,9SFD,A9J7C3,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+163,9SFN,A9J7C3,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+164,9SN0,O15146,available,yes,9,7,included,yes,311094,bed7b633ea974b37ea1098e23fb1a777a35054a2e6aef5a565ba010e2b9af0b1
+165,9SNU,O15146,available,yes,8,7,included,yes,463737,fd903717e522cc1db8be7dfcf9a3de9bd3fe2fb43480db4d5177f2c1e39d25e8
+166,9SWT,Q9SIF2,available,yes,70,4,included,yes,1297402,86f5482d55fffa763e570dadf61db6af0c96f92ed4f676972c907816d489b751
+167,9SX3,Q9SIF2,available,yes,42,3,included,yes,852725,e8f1f96fdb73d9141b8c1000f9a62ef7234b7172f51624cc18d67b4e457e793d
+168,9SYS,A9J7B7,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+169,9T5H,A0AAG2TJB2,available,yes,191,20,included,yes,3572866,22149e82348cc045e5a99ac1c1930cb8a705ff1a3ca6b5ae745533c7f138b927
+170,9T5J,Q8IXW5,available,yes,43,14,included,yes,676182,fe8fd76c8fbfcc9e90fbd7a9a92f49dcd30321bfcfc3c85d4e82aa91c21ec301
+171,9TF9,P16234,available,yes,25,4,included,yes,606572,d62ece7cf43d4e2df999c1ef98524259e8a75fdf94a202aa7ba264e842f899ec
+172,9TFA,P16234,available,yes,22,4,included,yes,597833,1302523ca81b7571216421611919941a302559e5f1d373da5cb908e7b68f2c7e
+173,9TFB,P16234,available,yes,27,4,included,yes,641249,d6dc4c391ed4054e8925c600f842379f3640312482447406b28a058702351338
+174,9TFC,P16234,available,yes,24,4,included,yes,615019,0903f31886de8fc498124d767f3e7fb2c8bc1d3321946c092009070c2ba3d6fe
+175,9TFD,P10721,available,yes,44,6,included,yes,1079001,8fd2feb96f74bfd44de38cb128a9412f947feb9413138dca811a11d9cec6c569
+176,9TFE,P10721,available,yes,46,6,included,yes,1111687,7253c32e41e6c106e54796142b29121c8d41062adc7f1b84159676d7ef990855
+177,9TFF,P10721,available,yes,50,6,included,yes,1126087,169c7e56a83ba9c7148e1bd8f14633b6726f5b59afdecb5b9f022d3e4bb715b1
+178,9TFG,P10721,available,yes,49,6,included,yes,1193357,081a6d60ef58aa06bfb46a5829dd43e2ad5ae7265e939566fd3f9b00367923e0
+179,9TFH,P10721,available,yes,47,6,included,yes,1142226,c810086e57b1cfe200f9d604db527ec71dd62d8c2d7043a5f0e5292137ce1252
+180,9TFI,P10721,available,yes,43,6,included,yes,1074000,6966eb566baac5062717189e1ff046a6dffc62114c1bc4dc8e80966eb9ae67d5
+181,9TFJ,P10721,available,yes,48,6,included,yes,1124568,23a98d0a4afe1ebf69d3391ac4bbc8b9812d16ae2bdb8bfd3c9111bcc9d5020a
+182,9TFK,P10721,available,yes,50,6,included,yes,1117427,9f0626ac5487e2f3df1ffc9d5ecf75c9b6e89964eb32da5b4b56af63979ea58c
+183,9TFL,P10721,available,yes,50,6,included,yes,1101485,5ed899fcfe2987fc04f0b8c4e1c7a95b0b866ec6af330792f14dcb96349f3521
+184,9TFM,P10721,available,yes,50,6,included,yes,1085980,4e6f0eb11ff16224e830df1fee9c488d55960b14a54a3a73d14d00bdd137603c
+185,9TVT,P0DTC2,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+186,9TZM,Q9NZQ7,available,yes,12,5,included,yes,274795,e1ccea99906edf543ab7b6b6af828f7ba1d4d5d2f4274d1572f899f6bf2de46d
+187,9UE5,A0A1L5NNW1,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+188,9UEH,Q6XEC0,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+189,9VEP,A6TCF4,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+190,9VIW,A0A1M6SI41,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+191,9VJD,P69474,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+192,9VKJ,D0ZXR5,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+193,9VLV,P56658,available,yes,17,4,included,yes,379348,02eea95aa144292a5811bbd083a12d158ce1b24091c1cfb14fff8e709659c50b
+194,9VM0,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+195,9VMH,I6YEU0,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+196,9VOX,P00533,available,yes,25,4,included,yes,337505,406b21f9f6bd834115e18dd9b14f59409dbfe79611ae1179e6b71927713b9194
+197,9VOY,P00533,available,yes,26,4,included,yes,334616,d25d9c7d510be64996fd6a5138fc2bf8be75f8696a76aa2ecca49a6db161758d
+198,9VOZ,P00533,available,yes,25,4,included,yes,332095,023cf3d69345ff350f9a6abf31e1433ddb558fd44c7e3858b9a96fe4ce280bdb
+199,9VRT,Q99958,available,yes,9,7,included,yes,856104,eb05bba3acad067fb550089ec0b438fd44db4035f91090453db13de02c616dcc
+200,9VRY,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+201,9VRZ,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+202,9VS0,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+203,9VS2,Q13469,available,yes,17,9,included,yes,499942,7a13bcbc1755bcee843ffc10133649b5e91ff6590452c738c328d7a876d1581e
+204,9VSE,P9WNV1,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+205,9VSF,A0A521GUH6,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+206,9VSG,A0A1B8B574,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+207,9VSH,A0A1B8B574,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+208,9VSI,A0A1B8B574,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+209,9VSO,Q53Z42,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+210,9VT5,P03372,available,yes,23,8,included,yes,451827,343cf1b21a447488b15f8242e985ef47d30c362aca3c9926c522baa2d196fc38
+211,9VT7,O75874,available,yes,80,4,included,yes,1323014,e2602739294db66827c66abe93a5df9da79cf0e66a1ae73388205ce80a33f4ea
+212,9VTF,P35520,available,yes,72,5,included,yes,1860779,50da736b1aca79861d20db7e5a6c64d1055e6eb7b70c4fa9d4eae209bbe99223
+213,9VTG,A0A1S3Y379,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+214,9VTH,A0A1U7W513,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+215,9VTI,A0A1U7W513,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+216,9VTJ,A0A1S3Y379,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+217,9VTL,P0DTD1,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+218,9VTU,P03372,available,yes,26,4,included,yes,468080,bbbdcb4b80e32ebf10f6a866aa26dd847cd75d92177e6f9160504818b6026271
+219,9VTW,P02766,available,yes,45,7,included,yes,393666,d2a4070cde40c40d91e64c1e3f2fd8e4952e62ab9dc69e185fa5987e07e9e635
+220,9VTX,P02766,available,yes,144,7,included,yes,1308061,d17cf3504990922e02c572e783c89e1594edae82e93c7fc22ead48d1d103ab48
+221,9VTY,P02766,available,yes,153,7,included,yes,1347657,4d2e4c0f7485431861b85b25200cb0bc48b33507c15ef0c4d3a3167eb6f7ef78
+222,9VTZ,Q8NER1,available,yes,111,4,included,yes,2111253,9380a8ae4fc687343138db8682a9c8e9dde095caa350b5fe3cbac17526303757
+223,9VU0,Q8NER1,available,yes,116,4,included,yes,2063299,d44d362fe73edd48502568e4ff94b21d49f2281f558597e3a10d0881beef3994
+224,9VU1,O75762,available,yes,240,4,included,yes,2236211,21e8fa04ece007715a0fbd907cc082ecc2b5bf9309fcf4d11feb732555a27add
+225,9VUD,A0A1S6XXK1,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+226,9VUH,P21127,available,yes,28,12,included,yes,614300,f986ab45d3b27e133950a729851de32e4f189180f8ddac9bbc4167a07925ed8a
+227,9VUP,A0A1S6XXK1,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+228,9VUS,P59768,available,yes,11,7,included,yes,1121618,b2ac65308a9f33785d93b24c37a80d76e82a716981dd364ee492a152d8213dc4
+229,9VV6,P0ABE7,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+230,9VVC,P0C6W4,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+231,9VVF,P0C6W4,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+232,9W6X,I3NN71,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+233,9WC2,P61769,available,yes,14,9,included,yes,1460941,020d94cc0530d8293878088b591720a431becb46f2bed89b425cbe6fdccb7aab
+234,9WC3,P61769,available,yes,13,8,included,yes,1472162,b4511568dcd56b4abf40c66617743b2978b3a6ed22efae1c3e2d78c837207d6a
+235,9WE7,O75477,available,yes,520,12,included,yes,5671830,a0c7b7688af0e602b72e5959e9b632132d4de7303a7b1fbd03a8d03682263b8a
+236,9WFO,P00740,available,yes,17,10,included,yes,642700,cc55d07dad19712c7fe2cda3beb006567340aacc4d38719bdedac61ce585797c
+237,9WNV,P02754,available,yes,11,9,included,yes,367189,b2df32c7d077e4d843b10ee86599b4521e04d4ff3d45adaae427f7661ec69c0c
+238,9WNW,P02754,available,yes,10,8,included,yes,380091,e4c3c761e87eb3a9ba6f5d440290f8dd1bfda3f09f722f43d029b102e25f5576
+239,9WNX,P02754,available,yes,11,9,included,yes,346042,90d01782a416af0e8f8c4e9154e1fd4bbf1583ee71122311cbac64a568de6767
+240,9WNY,G8TV28,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+241,9WNZ,G8TV28,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+242,9WV5,Q8NET8,available,yes,116,4,included,yes,2045727,403dacf748cbff3162461fdbd9514e0abee9b96f07b27032e3933ba69c35a85e
+243,9WV6,Q8NET8,available,yes,116,4,included,yes,2184680,e5cda7cc36fb671e14281fbb84c59c6b044f975f86eb7c0703da6dd6eb166ef2
+244,9WV7,Q8NET8,available,yes,116,4,included,yes,2165564,0695bcb410177f820c648ea655ff10344c69494afbe1e7f6d6923ddd6b7214cd
+245,9X0B,Q9SCX5,available,yes,116,4,included,yes,1420529,ed61b24572796df99167e4a586427d1bc606f267e930f919431e79599cb8739f
+246,9X0C,Q9SCX5,available,yes,124,4,included,yes,1571583,06fec79e99fd47a9da632ea850d0fb516a6151418a2a94070d96c25afdd3981e
+247,9X4F,P06733,available,yes,68,10,included,yes,1414026,4a6ddc240ec74316a5f0b199b794132caebeb9bebdb222f814991e2dfc03d99e
+248,9X64,Q9UBT3,available,yes,1,1,included,yes,258691,3f92f04383b459d5050482f883eac7773ace63f3a7066c94358efe60bbb3c3c0
+249,9XGB,Q9NR09,available,yes,68,17,included,yes,1124108,12ae10508fbd9b6e449e93882d2a4eb669585b718b4730da925ceab46115c242
+250,9XGC,Q9NR09,available,yes,72,17,included,yes,1182414,5da4cc5963a9b4c512c93bf2e8daad6611bc1c8ac79ef89e262c6754284593be
+251,9XJD,Q809S5,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+252,9XMR,A0A143Y239,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+253,9XNL,A0A144LKL4,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+254,9XOR,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+255,9XPQ,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+256,9XPR,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+257,9XPU,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+258,9XQ6,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+259,9XQ7,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+260,9XQL,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+261,9XRA,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+262,9XRB,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+263,9Y56,Q06187,available,yes,25,4,included,yes,374347,eacfdd37056b7b999184911964205f037bc45a1da3bc35df97de10376c846634
+264,9Y57,Q06187,available,yes,25,4,included,yes,380348,4972a55d1f460b40929560307842bb08dad59958f15cfd99bf2e844e928ff2a0
+265,9Y58,P03407,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+266,9Y5A,Q06187,available,yes,20,4,included,yes,386942,388849f6c09d1af53d2ba126370330a9331ae743c1469b9e732da2608c8af4dd
+267,9Y5B,Q06187,available,yes,25,4,included,yes,323673,9d6590fe0294cec4ea43019266a336b422f2af5247849cea0259c29fab427b33
+268,9Y5D,Q06187,available,yes,18,4,included,yes,369537,ac2e3a8e16e0ba9057fccaf3bf628cd5957a46dce5f57c441d683920e67b9d35
+269,9Y5E,Q06187,available,yes,25,4,included,yes,318971,babdb7670c313b32e9399a7867825adc9d7fa9da6afbace9eea3ce4cdf1ed7ee
+270,9Y60,O96028,available,yes,14,2,included,yes,456917,4b553c812e162e925df06f6e4d5e33264f8adb59f5d92b6cf07608e3cad4751f
+271,9Y61,O96028,available,yes,26,11,included,yes,457496,b68558412207ff82db6a055b5354343f64a77fd5d59ee6a39853175df70dd947
+272,9YCF,P12568,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+273,9YJI,P0DTC2,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+274,9YJJ,A0A0U2MN53,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+275,9YJK,A0A0U2MN53,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+276,9YNL,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+277,9YNM,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+278,9YT9,Q06187,available,yes,19,4,included,yes,481552,9339da400d5d1aada360b614ce784f7923914511f17eccf9a24bd87322ee1502
+279,9YVX,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+280,9YVY,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+281,9YVZ,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+282,9YYG,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+283,9YYH,,no_uniprot,no,0,0,no UniProt linkage,no,0,
+284,9Z4I,Q6AXS0,available,yes,32,4,included,yes,438294,c823b9a27dffb91001632a7b05177ee26db254a636c2e0ba53667caf1904f9a5
+285,9Z4J,Q6AXS0,available,yes,87,4,included,yes,1164245,0631852aed7ca21638801880a8719538bc582b57c481c96f3a573236f4ab37e2
+286,9Z7Q,A0A7G1H3Q2,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+287,9Z7V,A0A7G1H3Q2,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+288,9Z7X,A0A7G1H3Q2,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+289,9ZQ7,Q70Z35,available,yes,79,4,included,yes,1723463,66693531b55337472527c682b781a519d4ff535551faa898cd4fc80f6563457f
+290,9ZQV,Q06187,available,yes,23,4,included,yes,561417,0a83150b93fa6195554029f542bfe532701597725ca3579ee94765399c7e0091
+291,9ZY0,Q9YTT9,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+292,9ZY1,Q9YTT9,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),no,0,
+293,9ZYS,A0AAE8B1C9,no_cds,no,0,0,no CDS (no RefSeq NM_ in UniProt),yes,1895887,3e7002ae2b8b0a74506251839510a581961b4d4a5bd129148622af74fefb6251

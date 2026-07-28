@@ -1,0 +1,53 @@
+name,R_pm,R_fm,R_m,R_km,f_eV,f_MeV,f_Hz,vx_kms,note,fault_hint
+Muonic Hydrogen (μp),,,,,,,,,Bohr radius scaled by m_e/m_μ ≈ 1/207; muonic Lyman-α ≈ 2.0 keV,
+Muonic Hydrogen (μp),0.2562,,,,2000,,,,Bohr-scale R=0.5292/207 pm; f_E ≈ 2 keV Lyman-α,C1
+Positronium (e+e-) ground,,,,,,,,,Bohr radius x2 because reduced mass = m_e/2; ionization 6.8 eV,
+Positronium (e+e-) ground,105.84,,,,6.8028,,,,R=2*0.5292 Bohr=105.84pm; IE=6.8028eV ground state,C1
+Antiprotonic Helium pHe,,,,,,,,,Atomic system: p-bar in He at n=39 metastable state,
+Antiprotonic Helium pHe,38.0,,,,1.2,,,,n=39 orbit ~38pm; transition energies ~1eV scale; conservative IE estimate,C1
+Hydrogen (H Z=1 ground),31,,,,13.5984,,,,Z=1 cov=31pm IE=13.5984eV groundstate baseline,C1
+Hydrogen Lyman-alpha (n=2),105.84,,,,10.2,,,,Bohr radius n=2: 4*0.5292 = 2.117 Bohr = 112pm; transition 10.2 eV,C1
+Hydrogen Balmer-alpha (n=3),238.14,,,,1.89,,,,Bohr radius n=3: 9*0.5292 = 4.76 Bohr = 252pm; transition 1.89eV,C1
+Hydrogen excited n=10,5292,,,,0.136,,,,Highly excited Rydberg state; R ~ n^2 * Bohr; binding 13.6/100 eV,C1
+Helium-Plus ion (He+),26.5,,,,54.4,,,,Hydrogen-like He+: R=Bohr/2; IE=4*13.6=54.4eV,C1
+Lithium-Plus-Plus (Li2+),17.6,,,,122.4,,,,Hydrogen-like Li2+: R=Bohr/3; IE=9*13.6=122.4eV,C1
+H-minus ion,77,,,,0.754,,,,Hydrogen anion bound state R~77pm electron affinity 0.754eV,C1
+Sun (photosphere boundary),,,696340,,,,,,Solar photospheric R=696340km; substrate frequency unknown - Map vx mode requires both,
+Sun coherence boundary at f=2.45GHz,,,,696340,,,,2.45e9,Sun R + WiFi resonance test - what vx makes Sun close at 2.45GHz,
+Earth core boundary,,,3485,,,,,,R_inner_core=1220km outer core ends at 3485km from center,
+Earth at PCF 7.4892 Hz,,,,6371,,,7.4892,,Canonical PCF for Earth - vacuum-ref input,
+Mars at predicted PCF,,,,3390,,,14.07,,Canonical Mars PCF prediction R=3390km f=14.07Hz,
+Moon at predicted PCF,,,,1737,,,27.47,,Lunar PCF: f = c/(2pi*R*1000m) but in km units = 47713/1737,
+Jupiter at predicted PCF,,,,69911,,,0.6826,,Jovian PCF: K_psim/R = 47713.45/69911,
+Neutron Star (canonical 10 km),,,,10,,,,,Canonical neutron star R=10km - Predict mode requires vx,
+Neutron Star at vacuum c,,,,10,,,,299792.458,Predict mode: NS at vacuum reference,
+Crab Pulsar (R=10km),,,,10,,,29.947,,Map mode: R=10km f=29.947Hz canonical neutron star,
+Crab Pulsar at actual R,,,,11.62,,,29.947,,Map mode at AG-determined R=11.62km giving 137.0,
+White Dwarf Sirius B,,,,5840,,,,299792.458,Predict mode: WD R=5840km vacuum ref,
+Earth-Moon system 384400 km,,,,384400,,,,299792.458,Predict mode: Earth-Moon distance,
+H2 molecule bond length,74,,,,15.4259,,,,H2 molecular ionization 15.4259eV bond 74pm,C1
+H2O bond O-H,96,,,,12.621,,,,Water O-H bond 96pm IE 12.621eV,C1
+N2 triple bond,109.76,,,,15.581,,,,Nitrogen molecule bond 109.76pm IE 15.581eV,C1
+O2 double bond,120.74,,,,12.0697,,,,Oxygen molecule bond 120.74pm IE 12.0697eV,C1
+CO2 C-O bond,116.3,,,,13.777,,,,Carbon dioxide C-O 116.3pm IE 13.777eV,C1
+CH4 methane C-H bond,108.7,,,,12.61,,,,Methane C-H 108.7pm IE 12.61eV,C1
+NH3 ammonia N-H,101.7,,,,10.07,,,,Ammonia N-H 101.7pm IE 10.07eV,C1
+HCl molecule,127.5,,,,12.74,,,,Hydrogen chloride 127.5pm IE 12.74eV,C1
+NaCl bond,236.1,,,,9.2,,,,Sodium chloride bond 236.1pm IE ~9.2eV,C1
+Diamond C-C bond,154,,,,11.27,,,,Diamond carbon-carbon bond 154pm bandgap-related ~11eV,C1
+Graphene C-C in-plane,142,,,,4.6,,,,Graphene C-C 142pm work function 4.6eV,C1
+Benzene C-C aromatic,139,,,,9.24,,,,Benzene aromatic 139pm IE 9.24eV,C1
+DNA base pair distance,340,,,,3.5,,,,DNA stacking 340pm pi-stacking energy ~3.5eV scale,C1
+Alpha particle (He-4 nucleus),,1.6755,,,,28.2957,,,Same as He-4 nuclide entry but flagged as alpha - reference check,C1
+Deuteron (D nucleus),,2.1421,,,,2.2246,,,Deuteron R=2.1421fm BE=2.2246MeV,C1
+Triton (H-3),,1.7591,,,,8.4818,,,Tritium nucleus R=1.7591fm BE=8.4818MeV src=Angeli2013,C1
+He-6 (halo nucleus),,2.068,,,,29.272,,,He-6 neutron-halo nucleus Rc=2.068fm BE=29.272MeV,C1
+Li-11 (halo nucleus),,3.434,,,,76.20,,,Li-11 two-neutron halo Rc=3.434fm BE=76.20MeV,C1
+Be-11 (halo nucleus),,2.463,,,,65.479,,,Be-11 one-neutron halo,C1
+C-14 radioactive,,2.5025,,,,105.285,,,Carbon-14 Rc=2.5025fm BE=105.285MeV,C1
+Tc-99 metastable,,4.514,,,,852.743,,,Technetium-99 nuclear isomer,C1
+Cs-137 fission product,,4.804,,,,1149.293,,,Cesium-137 long-lived fission product,C1
+I-131 fission product,,4.766,,,,1103.319,,,Iodine-131 medical isotope,C1
+Pu-239 fissile,,5.751,,,,1806.921,,,Plutonium-239 fissile isotope,C1
+Pu-244 (longest-lived Pu),,5.785,,,,1836.058,,,Plutonium-244 longest-lived isotope of element 94,C1
+Cm-247,,5.843,,,,1859.245,,,Curium-247 long-lived Z=96,C1

@@ -1,0 +1,17 @@
+# Execution Environment - wwPDB July 15, 2026 Analysis
+# Captured from analysis run 2026-07-19
+
+Operating system: Windows (10/11)
+Python version: 3.10+ (standard library features used)
+gemmi version: 0.6.x (used in full analysis; optional for PDB-4 scorer)
+
+Output directory: D:\ProjectBuilds\Projects\MH_Indexed\wwPDB_July15_analysis\
+Scripts directory: D:\ProjectBuilds\Projects\MH_Indexed\Scripts\
+
+Analysis run timestamp: 2026-07-19 (CIF download timestamps: ~05:45-06:00 UTC)
+CIF download source: https://files.rcsb.org/download/
+UniProt source: https://rest.uniprot.org/uniprotkb/
+CDS source: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
+
+Network: Required for first run (RCSB, UniProt, NCBI queries).
+         Subsequent runs use local cache.

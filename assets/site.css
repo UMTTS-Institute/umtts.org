@@ -1,0 +1,1757 @@
+/* =======================================================================
+   The UMtts Institute - shared design system
+   Advancing Coherence · Engineering Tomorrow
+   ======================================================================= */
+
+:root {
+  /* palette - deep royal blues + marble neutrals + restrained silver */
+  --ink:        #0a1a33;          /* deepest navy, body copy on light */
+  --ink-soft:   #1a2d52;
+  --royal:      #12326b;          /* primary royal blue */
+  --royal-2:    #1e4a9e;          /* lighter royal for hover */
+  --cobalt:     #2c5aa8;
+  --lapis:      #0d2454;
+  --silver:     #b8bec8;
+  --silver-2:   #8a91a0;
+  --vein:       #4a6fa5;          /* marble vein blue */
+
+  --paper:      #f8f9fb;
+  --paper-2:    #eef1f5;
+  --panel:      rgba(246, 243, 235, 0.965);
+  --panel-solid:#f6f3eb;
+  --panel-edge: rgba(18, 50, 107, 0.22);
+  --panel-shadow: 0 30px 80px -30px rgba(10, 26, 51, 0.45),
+                  0 2px 10px -2px rgba(10, 26, 51, 0.2);
+
+  --accent-gold: #8a7a3f;         /* subdued, not gaudy */
+  --accent-rule: rgba(18, 50, 107, 0.35);
+
+  /* typography */
+  --f-display: 'Cinzel', 'Trajan Pro', 'Cormorant Garamond', serif;
+  --f-serif:   'Cormorant Garamond', 'EB Garamond', Georgia, serif;
+  --f-body:    'Cormorant Garamond', 'EB Garamond', Georgia, serif;
+  --f-ui:      'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --f-mono:    'JetBrains Mono', 'Fira Code', ui-monospace, Menlo, monospace;
+
+  /* scale */
+  --shell-max: 1280px;
+  --read-max:  820px;
+}
+
+/* ---------- reset-lite ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+img { max-width: 100%; display: block; }
+button { font: inherit; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  /* font-family: var(--f-body); */
+  font-family: 'Cambria Math', var(--f-serif);
+  color: var(--ink);
+  background-image: url('../images/blue_silver_marble_bg.png');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: var(--paper);
+  min-height: 100vh;
+  line-height: 1.55;
+  font-size: 18px;
+}
+
+/* a translucent wash over the marble so long-form text stays readable */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(245,241,232,0.10) 0%, rgba(245,241,232,0.25) 60%, rgba(235,229,214,0.35) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+main, header, footer { position: relative; z-index: 1; }
+
+/* ---------- type ---------- */
+h1, h2, h3, h4, h5, h6 { 
+    /* font-family: var(--f-display); */
+    font-family: 'Cambria Math', var(--f-serif);
+    font-weight: 500;
+    color: var(--lapis);
+    letter-spacing: 0.02em;
+    line-height: 1.15;
+    text-wrap: balance; 
+}
+h1 { font-size: clamp(2.2rem, 4.2vw, 3.6rem); }
+h2 { font-size: clamp(1.6rem, 2.6vw, 2.2rem); }
+h3 { font-size: clamp(1.25rem, 1.8vw, 1.55rem); }
+h4 { font-size: 1.1rem; font-family: var(--f-ui); text-transform: uppercase; letter-spacing: 0.18em; color: var(--royal); }
+
+p { text-wrap: pretty; }
+
+a { color: var(--royal); text-decoration: none; border-bottom: 1px solid rgba(18,50,107,0.25); transition: color .15s, border-color .15s; }
+a:hover { color: var(--royal-2); border-color: var(--royal-2); }
+
+.eyebrow {
+  font-family: var(--f-ui);
+  font-size: 0.72rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--royal);
+  font-weight: 500;
+}
+
+.rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-rule) 20%, var(--accent-rule) 80%, transparent);
+  border: 0;
+  margin: 2rem 0;
+}
+
+/* ---------- header / nav ---------- */
+.site-header {
+  backdrop-filter: blur(10px);
+  background: rgba(245, 241, 232, 0.72);
+  border-bottom: 1px solid rgba(18, 50, 107, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.site-header__inner {
+  max-width: var(--shell-max);
+  margin: 0 auto;
+  padding: 0.9rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.brand {
+  font-family: 'Cambria Math', var(--f-serif);
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--lapis);
+  border: 0;
+  white-space: nowrap;
+}
+.brand small { display: block; font-family: var(--f-ui); font-size: 0.55rem; letter-spacing: 0.22em; color: var(--royal); font-weight: 400; margin-top: 2px; opacity: 0.78; }
+.site-nav {
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+  align-items: center;
+}
+.site-nav a {
+  font-family: var(--f-ui);
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--lapis);
+  border: 0;
+  padding: 0.4rem 0;
+  position: relative;
+}
+.site-nav a::after {
+  content: ''; position: absolute; left: 0; right: 100%; bottom: -2px;
+  height: 1px; background: var(--royal); transition: right .25s;
+}
+.site-nav a:hover::after, .site-nav a.is-active::after { right: 0; }
+.site-nav a.is-active { color: var(--royal); }
+
+.btn-pill {
+  display: inline-flex; align-items: center; gap: .5rem;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid var(--lapis);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--lapis);
+  font-family: var(--f-ui);
+  font-size: 0.68rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background .2s, color .2s;
+}
+.btn-pill:hover { background: var(--lapis); color: var(--paper); }
+
+/* ---------- panels (the signature marble glass cards) ---------- */
+.panel {
+  background: var(--panel);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--panel-edge);
+  box-shadow: var(--panel-shadow);
+  border-radius: 2px;
+  position: relative;
+}
+.panel--bordered::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid rgba(18,50,107,0.15);
+  pointer-events: none;
+  border-radius: 1px;
+}
+
+.shell {
+  max-width: var(--shell-max);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ---------- hero ---------- */
+.hero {
+  padding: 6rem 2rem 5rem;
+  min-height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.hero__logo-wrap {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto 2.2rem;
+}
+.hero__logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 8px 28px rgba(10, 26, 51, 0.35));
+}
+.hero__plate {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.4rem 3rem;
+}
+.hero__motto {
+  font-family: var(--f-ui);
+  font-size: 0.74rem;
+  letter-spacing: 0.38em;
+  text-transform: uppercase;
+  color: var(--royal);
+  margin: 0 0 1.2rem;
+}
+.hero__motto::before, .hero__motto::after { content: none !important; }
+.hero__motto::after { content: none !important; }
+
+.hero__line {
+  font-family: 'Cambria Math', var(--f-serif);
+  font-style: italic;
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  color: var(--lapis);
+  margin: 0 0 1.6rem;
+  text-wrap: balance;
+}
+
+/* Mobile-first: Buttons stack vertically */
+.hero__ctas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 3rem auto 0;
+  width: 100%;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.hero__ctas a.btn-solid,
+.hero__ctas a.btn-ghost {
+  width: 100%;
+  box-sizing: border-box;
+  
+  /* Flexbox Centering */
+  display: flex;
+  justify-content: center; /* Horizontally center text */
+  align-items: center;     /* Vertically center text */
+  text-align: center;
+  
+  white-space: nowrap; 
+  font-size: clamp(0.6rem, 3.5vw, 0.72rem);
+  padding: 0 1rem; /* Uniform horizontal padding */
+  min-height: 3rem; /* Optional: ensures a consistent height for all buttons */
+}
+
+/* Desktop: Buttons switch to side-by-side */
+@media (min-width: 600px) {
+  .hero__ctas {
+    grid-template-columns: repeat(2, 240px);
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .hero__ctas a.btn-solid,
+  .hero__ctas a.btn-ghost {
+    width: auto;
+    font-size: 0.72rem;
+    padding: 0 1.6rem;
+  }
+}
+
+.btn-solid, .btn-ghost {
+  display: inline-flex; align-items: center; gap: .6rem;
+  padding: 0.9rem 1.6rem;
+  font-family: var(--f-ui);
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: transform .15s, background .2s, color .2s, box-shadow .2s;
+  border: 1px solid var(--lapis);
+}
+.btn-solid {
+  background: var(--lapis);
+  color: var(--paper);
+  box-shadow: 0 4px 18px -6px rgba(10,26,51,0.6);
+}
+.btn-solid:hover { background: var(--royal-2); border-color: var(--royal-2); transform: translateY(-1px); }
+.btn-ghost {
+  background: transparent;
+  color: #1a2d52;
+}
+.btn-ghost:hover { background: var(--lapis); color: var(--paper); }
+
+/* ---------- section scaffolding ---------- */
+.section { padding: 6rem 0; position: relative; }
+.section--tight { padding: 3rem 0; }
+.section-head {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 3rem;
+}
+.section-head .eyebrow { display: block; margin-bottom: 1rem; }
+.section-head h2 { margin: 0 0 0.8rem; }
+.section-head p { font-family: 'Cambria Math', var(--f-serif); font-size: 1.2rem; color: var(--ink-soft); font-style: italic; margin: 0; }
+
+/* ---------- pillars grid (landing) ---------- */
+.pillars {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.pillar {
+  padding: 2rem 1.8rem 2.2rem;
+}
+.pillar__glyph {
+  width: 48px; height: 48px;
+  margin-bottom: 1rem;
+  color: var(--royal);
+}
+.pillar h3 {
+  font-family: 'Cambria Math', var(--f-serif);
+  font-size: 1.3rem;
+  margin: 0 0 0.6rem;
+  color: var(--lapis);
+}
+.pillar__n {
+  font-family: var(--f-ui);
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  color: var(--royal);
+  display: block;
+  margin-bottom: 0.4rem;
+}
+.pillar p { margin: 0; font-size: 1rem; color: var(--ink-soft); line-height: 1.55; }
+
+/* ---------- MFE spotlight ---------- */
+.mfe {
+  padding: 3rem 2.4rem;
+  text-align: center;
+}
+.mfe__eq {
+  font-family: 'Cambria Math', var(--f-serif);
+  font-size: clamp(1.4rem, 3.2vw, 2.4rem);
+  letter-spacing: 0.01em;
+  color: var(--lapis);
+  margin: 1.2rem 0;
+  font-style: normal;
+}
+.mfe__legend {
+  display: flex; justify-content: center; flex-wrap: wrap; gap: 1.8rem;
+  font-family: var(--f-ui); font-size: 0.72rem; color: var(--ink-soft);
+  letter-spacing: 0.12em; text-transform: uppercase;
+  margin-top: 1.6rem;
+}
+.mfe__legend span strong { color: var(--royal); font-weight: 600; }
+
+/* ---------- publication row ---------- */
+.pubs { display: grid; gap: 1.5rem; grid-template-columns: 1fr 1fr; }
+
+
+.pub {
+  padding: 2rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.pub__kicker { font-family: var(--f-ui); font-size: 0.68rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--royal); }
+.pub h3 { margin: 0; font-size: 1.5rem; color: var(--lapis); }
+.pub__meta { font-family: var(--f-ui); font-size: 0.75rem; color: var(--ink-soft); letter-spacing: 0.05em; }
+.pub__meta code { font-family: var(--f-mono); background: rgba(18,50,107,0.08); padding: 2px 8px; border-radius: 2px; color: var(--lapis); }
+.pub p { margin: 0; color: var(--ink-soft); font-size: 1rem; }
+.pub__actions { margin-top: auto; display: flex; gap: 0.6rem; flex-wrap: wrap; }
+
+/* ---------- DOI callout ---------- */
+.doi-callout {
+  padding: 1.4rem 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+.doi-callout__label { font-family: var(--f-ui); font-size: 0.68rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--royal); }
+.doi-callout__link { font-family: var(--f-mono); font-size: 0.95rem; color: var(--lapis); }
+
+/* ---------- footer ---------- */
+.site-footer {
+  margin-top: 5rem;
+  padding: 3.5rem 2rem 2.5rem;
+  background: linear-gradient(180deg, rgba(10,26,51,0) 0%, rgba(10,26,51,0.92) 60%, #0a1a33 100%);
+  color: #c9d2e0;
+  font-size: 0.92rem;
+}
+.site-footer__inner {
+  max-width: var(--shell-max);
+  margin: 0 auto;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+
+.site-footer h5 { font-family: var(--f-ui); font-size: 0.68rem; letter-spacing: 0.28em; text-transform: uppercase; color: #c9d2e0; margin: 0 0 1rem; font-weight: 500; }
+.site-footer a { color: #c9d2e0; border: 0; display: block; padding: 0.25rem 0; font-family: var(--f-ui); font-size: 0.85rem; }
+.site-footer a:hover { color: #fff; }
+.site-footer__mark {
+  font-family: 'Cambria Math', var(--f-serif);
+  font-size: 0.95rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 0.6rem;
+}
+.site-footer__motto {
+  font-family: var(--f-ui);
+  font-size: 0.65rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #8ea2c7;
+}
+.site-footer__bottom {
+  max-width: var(--shell-max);
+  margin: 2.5rem auto 0;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  font-family: var(--f-ui); font-size: 0.72rem; letter-spacing: 0.12em; color: #8ea2c7;
+}
+
+/* ---------- long-form reading (monograph & tvp pages) ---------- */
+.doc-shell { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 3rem; max-width: 1360px; margin: 0 auto; padding: 3rem 2rem 6rem; }
+
+
+.doc-toc {
+  position: sticky;
+  top: 90px;
+  align-self: start;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+  padding: 1.5rem 1.4rem;
+  font-family: var(--f-ui);
+  font-size: 0.8rem;
+}
+.doc-toc h5 {
+  font-family: var(--f-ui);
+  font-size: 0.66rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--royal);
+  margin: 0 0 0.8rem;
+  font-weight: 500;
+}
+.doc-toc ol { list-style: none; padding: 0; margin: 0; }
+.doc-toc a {
+  display: block;
+  padding: 0.35rem 0.5rem;
+  color: var(--ink-soft);
+  border: 0;
+  border-left: 2px solid transparent;
+  line-height: 1.35;
+  font-size: 0.82rem;
+  transition: background .15s, border-color .15s, color .15s;
+}
+.doc-toc a:hover { color: var(--royal); background: rgba(18,50,107,0.05); border-left-color: var(--royal); }
+.doc-toc a.is-current { color: var(--royal); border-left-color: var(--royal); background: rgba(18,50,107,0.06); font-weight: 600; }
+.doc-toc li.lvl-3 a { padding-left: 1.4rem; font-size: 0.78rem; color: var(--silver-2); }
+
+.doc-body {
+  padding: 3rem clamp(1.5rem, 4vw, 4rem);
+  font-family: 'Cambria Math', var(--f-serif);
+  font-size: 1.12rem;
+  line-height: 1.68;
+  color: var(--ink);
+}
+.doc-body .doc-header {
+  text-align: center;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--accent-rule);
+}
+.doc-body .doc-header .eyebrow { display: block; margin-bottom: 0.8rem; }
+.doc-body .doc-header h1 { margin: 0 0 0.6rem; font-size: clamp(2rem, 3.6vw, 3rem); }
+.doc-body .doc-header .doc-subtitle { font-family: 'Cambria Math', var(--f-serif); font-style: italic; font-size: 1.2rem; color: var(--ink-soft); margin: 0; }
+.doc-body .doc-header .doc-meta { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 1.5rem; font-family: var(--f-ui); font-size: 0.75rem; letter-spacing: 0.1em; color: var(--ink-soft); }
+.doc-body .doc-header .doc-meta strong { color: var(--royal); font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.68rem; display: block; margin-bottom: 2px; }
+
+.doc-body h1, .doc-body h2 {
+  font-family: 'Cambria Math', var(--f-serif);
+  color: var(--lapis);
+  margin: 3rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(18,50,107,0.18);
+}
+.doc-body h2 { font-size: 1.8rem; }
+.doc-body h3 {
+  font-family: 'Cambria Math', var(--f-serif);
+  color: var(--royal);
+  font-size: 1.35rem;
+  margin: 2.4rem 0 0.8rem;
+}
+.doc-body h4 {
+  font-family: var(--f-ui);
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--royal);
+  margin: 1.8rem 0 0.6rem;
+}
+.doc-body p { margin: 0 0 1.1rem; max-width: 78ch; }
+.doc-body ul, .doc-body ol { padding-left: 1.4rem; margin: 0 0 1.1rem; max-width: 78ch; }
+.doc-body li { margin-bottom: 0.4rem; }
+
+.doc-body blockquote {
+  margin: 1.8rem 0;
+  padding: 1.2rem 1.8rem;
+  border-left: 3px solid var(--royal);
+  background: rgba(18,50,107,0.05);
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.doc-body code, .doc-body .eq {
+  font-family: 'Cambria Math', var(--f-serif);
+  font-style: normal;
+  background: rgba(18,50,107,0.06);
+  padding: 1px 5px;
+  border-radius: 2px;
+  font-size: 0.98em;
+  color: var(--lapis);
+}
+
+.doc-body .equation {
+  display: block;
+  margin: 1.4rem auto;
+  padding: 1rem 1.6rem;
+  font-family: 'Cambria Math', var(--f-serif);
+  font-style: normal;
+  font-size: 1.15rem;
+  color: var(--lapis);
+  background: rgba(18,50,107,0.05);
+  border-left: 3px solid var(--royal);
+  border-radius: 2px;
+  text-align: center;
+  max-width: 78ch;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.doc-body table {
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  width: 100%;
+  max-width: 78ch;
+  font-family: var(--f-ui);
+  font-size: 0.88rem;
+}
+.doc-body table th, .doc-body table td {
+  padding: 0.6rem 0.9rem;
+  border-bottom: 1px solid rgba(18,50,107,0.15);
+  text-align: left;
+  vertical-align: top;
+}
+.doc-body table th {
+  background: rgba(18,50,107,0.08);
+  color: var(--lapis);
+  font-weight: 600;
+  font-family: var(--f-ui);
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.doc-body hr { border: 0; height: 1px; background: var(--accent-rule); margin: 3rem 0; }
+
+.doc-body .callout {
+  margin: 2rem 0;
+  padding: 1.4rem 1.8rem;
+  border: 1px solid rgba(18,50,107,0.22);
+  background: rgba(245,241,232,0.75);
+  border-left: 4px solid var(--royal);
+  border-radius: 2px;
+}
+.doc-body .callout--stop { border-left-color: #8a2f2f; background: rgba(138,47,47,0.04); }
+.doc-body .callout--stop h4 { color: #8a2f2f; }
+
+.doc-body .doc-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--accent-rule);
+  text-align: center;
+  font-family: var(--f-ui);
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  color: var(--royal);
+  text-transform: uppercase;
+}
+
+/* ---------- forms (community page) ---------- */
+.form-row { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.2rem; }
+.form-row label { font-family: var(--f-ui); font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--royal); }
+.form-row input, .form-row textarea, .form-row select {
+  font: inherit;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid var(--panel-edge);
+  padding: 0.8rem 1rem;
+  color: var(--ink);
+  border-radius: 2px;
+  font-family: 'Cambria Math', var(--f-serif);
+  font-size: 1.05rem;
+  transition: border-color .15s, background .15s;
+}
+.form-row input:focus, .form-row textarea:focus { outline: none; border-color: var(--royal); background: #fff; }
+
+/* ---------- utilities ---------- */
+.text-center { text-align: center; }
+.mt-2 { margin-top: 2rem; }
+.mt-4 { margin-top: 4rem; }
+.mb-2 { margin-bottom: 2rem; }
+.flex-center { display: flex; align-items: center; justify-content: center; }
+
+/* ---------- print-friendly monograph ---------- */
+@media print {
+  body { background: #fff; color: #000; }
+  body::before { display: none; }
+  .site-header, .site-footer, .doc-toc, .btn-pill, .btn-solid, .btn-ghost { display: none !important; }
+  .panel { background: #fff; box-shadow: none; border: 0; }
+  .doc-shell { grid-template-columns: 1fr; }
+  .doc-body { padding: 0; font-size: 11pt; }
+  .doc-body h1, .doc-body h2, .doc-body h3 { page-break-after: avoid; }
+  .doc-body .equation, .doc-body .callout, .doc-body table { page-break-inside: avoid; }
+}
+
+
+/* =======================================================================
+   Frosted readability layer
+   Adds gray-blue frosted glass beneath naked text sections only.
+   It improves clarity without mutating canonical source content.
+   ======================================================================= */
+
+.frosted-glass {
+  background:
+    linear-gradient(135deg, rgba(38, 55, 76, 0.58), rgba(24, 40, 61, 0.50));
+  border: 1px solid rgba(219, 229, 239, 0.24);
+  box-shadow:
+    0 18px 54px -30px rgba(5, 18, 35, 0.72),
+    inset 0 1px 0 rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(27px) saturate(112%);
+  -webkit-backdrop-filter: blur(7px) saturate(112%);
+  border-radius: 18px;
+}
+
+.section-head.frosted-glass {
+  padding: 1.15rem clamp(1rem, 2.4vw, 1.55rem);
+  margin-bottom: 2.35rem;
+}
+
+.frosted-glass--center {
+  padding-top: 1.45rem;
+  padding-bottom: 1.45rem;
+}
+
+.section-head.frosted-glass h1,
+.section-head.frosted-glass h2,
+.frosted-glass--center h1,
+.frosted-glass--center h2 {
+  color: #eef5fb;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.30);
+}
+
+.section-head.frosted-glass p,
+.frosted-glass--center p,
+.frosted-glass--center blockquote {
+  color: #dbe7f0 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.26);
+}
+
+.section-head.frosted-glass .eyebrow,
+.frosted-glass--center .eyebrow {
+  color: #d7c98f;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.28);
+}
+
+.frosted-glass--center blockquote {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+/* =======================================================================
+   Ledger surface components
+   ======================================================================= */
+
+.ledger-card {
+  padding: 2rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ledger-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+}
+
+.ledger-file-group {
+  padding: 1.4rem 1.6rem;
+}
+
+.ledger-file-group h3 {
+  margin: 0 0 1rem;
+  color: var(--lapis);
+  font-family: 'Cambria Math', var(--f-serif);
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.ledger-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--f-ui);
+  font-size: .86rem;
+}
+
+.ledger-table th {
+  text-align: left;
+  padding: .72rem .65rem;
+  font-size: .68rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--royal);
+  border-bottom: 2px solid var(--royal);
+  white-space: nowrap;
+}
+
+.ledger-table td {
+  padding: .72rem .65rem;
+  border-bottom: 1px solid rgba(18,50,107,.12);
+  color: var(--ink-soft);
+  vertical-align: top;
+}
+
+.ledger-table td:first-child {
+  color: var(--lapis);
+  font-family: var(--f-mono);
+  font-size: .78rem;
+}
+
+.record-body p {
+  margin: 0 0 1rem;
+}
+
+.record-body h1,
+.record-body h2,
+.record-body h3 {
+  scroll-margin-top: 110px;
+}
+
+.record-body ul {
+  margin: 0 0 1rem 1.2rem;
+  padding: 0;
+}
+
+.record-body li {
+  margin: .4rem 0;
+}
+
+
+/* =======================================================================
+   All-inclusive layout correction
+   Fixes right-shift/header clipping and gives the document pages more room.
+   ======================================================================= */
+
+:root {
+  --shell-max: 1520px;
+}
+
+.site-header__inner {
+  width: min(100% - 2rem, 1680px);
+  max-width: none;
+  padding: 0.78rem 1rem;
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.brand {
+  flex: 0 1 440px;
+  min-width: 260px;
+  white-space: normal;
+  letter-spacing: clamp(0.16em, 0.8vw, 0.28em);
+  line-height: 1.25;
+}
+
+.brand small {
+  letter-spacing: clamp(0.12em, 0.55vw, 0.20em);
+}
+
+.site-nav {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin-left: 0;
+  justify-content: flex-end;
+  gap: clamp(0.85rem, 1.55vw, 1.55rem);
+}
+
+.site-nav a {
+  font-size: clamp(0.64rem, 0.62vw, 0.72rem);
+  letter-spacing: clamp(0.12em, 0.72vw, 0.21em);
+  white-space: nowrap;
+}
+
+.site-header .btn-pill {
+  display: none;
+}
+
+.doc-shell {
+  width: min(100% - 2rem, 1660px);
+  max-width: none;
+  grid-template-columns: minmax(210px, 260px) minmax(0, 1fr);
+  gap: clamp(1.2rem, 2.2vw, 2.3rem);
+  padding: 2.25rem 1rem 5rem;
+}
+
+.doc-body {
+  min-width: 0;
+  padding: 2.4rem clamp(1.25rem, 3vw, 3.2rem);
+}
+
+.doc-toc {
+  min-width: 0;
+  padding: 1.25rem 1rem;
+}
+
+.doc-toc a {
+  overflow-wrap: anywhere;
+}
+
+
+/* =======================================================================
+   Wide text/layout pass
+   Wider left content nav, wider Mass Harmonics content body, nav shifted left.
+   This changes layout only; canonical text/equations are untouched.
+   ======================================================================= */
+
+:root {
+  --shell-max: 1680px;
+  --read-max: 1280px;
+}
+
+.site-header__inner {
+  width: min(100% - 1rem, 1920px);
+  max-width: none;
+  margin-left: 0;
+  margin-right: auto;
+  padding-left: clamp(0.75rem, 1.1vw, 1.35rem);
+  padding-right: clamp(0.75rem, 1.1vw, 1.35rem);
+  justify-content: flex-start;
+  gap: clamp(0.7rem, 1.15vw, 1.4rem);
+}
+
+.brand {
+  flex: 0 0 clamp(300px, 23vw, 430px);
+  min-width: 280px;
+  max-width: 430px;
+  white-space: normal;
+  text-align: left;
+  letter-spacing: clamp(0.14em, 0.7vw, 0.26em);
+  line-height: 1.25;
+}
+
+.brand small {
+  letter-spacing: clamp(0.10em, 0.48vw, 0.18em);
+}
+
+.site-nav {
+  flex: 0 1 auto;
+  min-width: 0;
+  margin-left: clamp(0.15rem, 0.55vw, 0.75rem);
+  margin-right: auto;
+  justify-content: flex-start;
+  text-align: left;
+  gap: clamp(0.62rem, 1.05vw, 1.15rem);
+}
+
+.site-nav a {
+  text-align: left;
+  white-space: nowrap;
+  font-size: clamp(0.61rem, 0.56vw, 0.70rem);
+  letter-spacing: clamp(0.09em, 0.52vw, 0.16em);
+}
+
+.site-header .btn-pill {
+  display: none;
+}
+
+.doc-shell {
+  width: min(100% - 1rem, 1880px);
+  max-width: none;
+  grid-template-columns: minmax(360px, 430px) minmax(0, 1fr);
+  gap: clamp(1rem, 1.35vw, 1.7rem);
+  padding: 2rem 0.5rem 5rem;
+}
+
+.doc-toc {
+  min-width: 0;
+  padding: 1.35rem 1.35rem;
+}
+
+.doc-toc a {
+  font-size: 0.88rem;
+  line-height: 1.44;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.doc-body {
+  max-width: none;
+  min-width: 0;
+  padding-left: clamp(2rem, 3.4vw, 4.6rem);
+  padding-right: clamp(2rem, 3.4vw, 4.6rem);
+}
+
+.doc-body p,
+.doc-body li,
+.doc-body blockquote,
+.doc-body .doc-subtitle {
+  max-width: none;
+}
+
+.doc-body h1,
+.doc-body h2,
+.doc-body h3,
+.doc-body h4 {
+  max-width: none;
+}
+
+.doc-body table {
+  width: 100%;
+}
+
+.doc-body pre,
+.doc-body code {
+  max-width: 100%;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.section-head {
+  max-width: 980px;
+}
+
+.section-head p {
+  max-width: 82ch;
+}
+
+.table-scroll {
+  width: 100%;
+}
+
+
+/* =======================================================================
+   White-panel opacity refinement
+   Higher-opacity white div surfaces so internal boxed/equation sections
+   stand out against the marble field with cleaner contrast.
+   ======================================================================= */
+
+.panel,
+.doc-body,
+.doc-toc,
+.doi-callout,
+.pub,
+.ledger-card,
+.ledger-file-group,
+.hero__plate,
+.mfe {
+  background: rgba(246, 243, 235, 0.965);
+}
+
+.panel--bordered::before {
+  border-color: rgba(18, 50, 107, 0.18);
+}
+
+.doc-body blockquote,
+.doc-body .equation {
+  background: rgba(18, 50, 107, 0.068);
+  border-left-color: var(--royal);
+}
+
+.doc-body code,
+.doc-body .eq,
+.pub__meta code {
+  background: rgba(18, 50, 107, 0.088);
+}
+
+.doc-body .callout {
+  background: rgba(246, 243, 235, 0.80);
+  border-color: rgba(18, 50, 107, 0.26);
+}
+
+.doc-body table th {
+  background: rgba(18, 50, 107, 0.10);
+}
+
+.doc-body table td {
+  background: rgba(255, 255, 255, 0.26);
+}
+
+.mfe,
+.hero__plate,
+.doi-callout {
+  background: rgba(246, 243, 235, 0.965) !important;
+}
+
+@supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .panel,
+  .doc-body,
+  .doc-toc,
+  .doi-callout,
+  .pub,
+  .ledger-card,
+  .ledger-file-group,
+  .hero__plate,
+  .mfe {
+    backdrop-filter: blur(16px) saturate(108%);
+    -webkit-backdrop-filter: blur(16px) saturate(108%);
+  }
+}
+
+
+/* =======================================================================
+   Site-wide white-surface match
+   Matches the white div/panel surfaces to the screenshot treatment:
+   rgb(255 255 255 / 90%) throughout the site, including the top navbar.
+   ======================================================================= */
+
+:root {
+  --panel: rgba(255, 255, 255, 0.70);
+  --panel-solid: rgba(255, 255, 255, 0.90);
+}
+
+.site-header,
+.panel,
+.doc-body,
+.doc-toc,
+.doi-callout,
+.pub,
+.ledger-card,
+.ledger-file-group,
+.hero__plate,
+.mfe,
+.doc-body .callout {
+  background: rgba(255, 255, 255, 0.80) !important;
+}
+
+.site-header {
+  backdrop-filter: blur(16px) saturate(108%);
+  -webkit-backdrop-filter: blur(16px) saturate(108%);
+  border-bottom: 1px solid rgba(18, 50, 107, 0.18);
+  box-shadow: 0 10px 38px -30px rgba(10, 26, 51, 0.55);
+}
+
+.site-header__inner {
+  background: transparent;
+}
+
+/* Keep the internal emphasis boxes distinct against the white panels. */
+.doc-body blockquote,
+.doc-body .equation {
+  background: rgba(18, 50, 107, 0.068);
+  border-left-color: var(--royal);
+}
+
+.doc-body code,
+.doc-body .eq,
+.pub__meta code {
+  background: rgba(18, 50, 107, 0.088);
+}
+
+.doc-body table th {
+  background: rgba(18, 50, 107, 0.10);
+}
+
+.doc-body table td {
+  background: rgba(255, 255, 255, 0.26);
+}
+
+
+/* =======================================================================
+   Homepage P3GG section refinement
+   Replaces the tall five-card wall with compact ledger rows.
+   Keeps the section as a source index, not a promotional claim layer.
+   ======================================================================= */
+
+#pillars.section {
+  padding-top: 4.25rem;
+  padding-bottom: 4.25rem;
+}
+
+#pillars .section-head {
+  max-width: 900px;
+  margin-bottom: 1.7rem;
+}
+
+#pillars .section-head.frosted-glass {
+  padding: 1.05rem 1.35rem;
+}
+
+#pillars .section-head p {
+  max-width: 72ch;
+  font-size: 1.04rem;
+  line-height: 1.46;
+}
+
+.pillars--ledger {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.72rem;
+}
+
+.pillars--ledger .pillar {
+  display: grid;
+  grid-template-columns: minmax(190px, 0.75fr) minmax(210px, 0.85fr) minmax(0, 1.55fr);
+  align-items: baseline;
+  gap: 1rem;
+  padding: 1.02rem 1.28rem;
+  min-height: 0;
+}
+
+.pillars--ledger .pillar__n {
+  margin: 0;
+  font-size: 0.64rem;
+  line-height: 1.35;
+  letter-spacing: 0.18em;
+}
+
+.pillars--ledger .pillar h3 {
+  margin: 0;
+  font-size: clamp(1.05rem, 1.45vw, 1.34rem);
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+}
+
+.pillars--ledger .pillar p {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.42;
+  max-width: none;
+}
+
+
+/* =======================================================================
+   Header / hero wrapping correction
+   Keep Institute + motto text on fewer lines and remove decorative dash wrapping.
+   ======================================================================= */
+
+.site-header__inner {
+  width: min(100% - 1rem, 1920px);
+  margin-left: auto;
+  margin-right: auto;
+  gap: clamp(0.65rem, 1vw, 1.15rem);
+}
+
+.brand {
+  flex: 0 0 clamp(520px, 36vw, 690px);
+  max-width: 690px;
+  min-width: 480px;
+  white-space: nowrap;
+  letter-spacing: clamp(0.18em, 0.55vw, 0.26em);
+}
+
+.brand small {
+  white-space: nowrap;
+  letter-spacing: clamp(0.10em, 0.34vw, 0.16em);
+  font-size: clamp(0.50rem, 0.45vw, 0.58rem);
+}
+
+.site-nav {
+  flex: 1 1 auto;
+  justify-content: flex-start;
+  gap: clamp(0.58rem, 0.95vw, 1.05rem);
+}
+
+.site-nav a {
+  font-size: clamp(0.60rem, 0.54vw, 0.68rem);
+  letter-spacing: clamp(0.08em, 0.46vw, 0.14em);
+}
+
+.hero__logo-wrap {
+  max-width: min(960px, 86vw);
+}
+
+.hero__plate {
+  max-width: min(1040px, 86vw);
+  padding-left: clamp(1.6rem, 4vw, 4.2rem);
+  padding-right: clamp(1.6rem, 4vw, 4.2rem);
+}
+
+.hero__motto {
+  white-space: nowrap;
+  letter-spacing: clamp(0.14em, 0.55vw, 0.24em);
+  font-size: clamp(0.58rem, 0.9vw, 0.76rem);
+}
+
+.hero__motto::before, .hero__motto::after { content: none !important; }
+
+.hero__line {
+  max-width: 24ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =======================================================================
+   Final MFE, motto, and visitor counter pass
+   ======================================================================= */
+
+/* No decorative dash wrappers around the Institute motto. */
+.hero__motto::before,
+.hero__motto::after {
+  content: none !important;
+}
+
+.brand small,
+.hero__motto,
+.site-footer__motto,
+.footer__tagline {
+  white-space: nowrap;
+}
+
+/* The homepage MFE must stay legible without giant broken browser wrapping. */
+.mfe {
+  max-width: min(1160px, calc(100vw - 3rem));
+  margin-left: auto;
+  margin-right: auto;
+  padding: clamp(1.2rem, 2vw, 1.85rem);
+}
+
+.mfe__eq {
+  font-family: 'Cambria Math', var(--f-serif);
+  font-size: clamp(1.5rem, 2.6vw, 2.7rem);
+  line-height: 1.18;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+
+.mfe__equation {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 1.4rem;
+  color: var(--lapis);
+  font-family: 'Cambria Math', var(--f-serif);
+  font-size: clamp(1.5rem, 2.7vw, 2.85rem);
+  line-height: 1.18;
+  letter-spacing: -0.012em;
+  text-align: center;
+}
+
+.mfe__line {
+  display: block;
+  white-space: nowrap;
+}
+
+.mfe__line + .mfe__line {
+  font-family: 'Cambria Math', var(--f-serif);
+  margin-top: 0.12em;
+}
+
+.mfe p,
+.mfe .mfe__note {
+  max-width: 54ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mfe__legend {
+  font-family: 'Cambria Math', var(--f-serif);
+  gap: 0.9rem 1.35rem;
+}
+
+/* Site-wide visitor counter display. */
+.umtts-counter {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.25rem;
+  align-items: center;
+  justify-content: center;
+  color: #c9d2e0;
+  font-family: var(--f-ui);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.umtts-counter span {
+  white-space: nowrap;
+}
+
+.umtts-counter--offline {
+  opacity: 0.75;
+}
+
+
+/* =======================================================================
+   Mobile scroll repair
+   Prevents long document pages from jumping back to the top on phones.
+   The TOC highlighter must never call page-level scroll behavior.
+   ======================================================================= */
+
+
+/* =======================================================================
+   MFE single-line lock
+   The homepage MFE is a single canonical display string. No forced split,
+   no separated line spans, no visual line break inside the equation.
+   ======================================================================= */
+
+.mfe {
+  max-width: min(1320px, calc(100vw - 3rem));
+  margin-left: auto;
+  margin-right: auto;
+  padding: clamp(1.15rem, 1.8vw, 1.75rem);
+}
+
+.mfe__equation,
+.mfe__eq {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 1.35rem;
+  color: var(--lapis);
+  font-family: 'Cambria Math', var(--f-serif);
+  font-size: clamp(1.15rem, 3.05vw, 3.35rem);
+  line-height: 1.08;
+  letter-spacing: -0.018em;
+  text-align: center;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: keep-all;
+  hyphens: none;
+}
+
+.mfe__line {
+  display: inline !important;
+  white-space: nowrap !important;
+  margin: 0 !important;
+}
+
+.mfe__line + .mfe__line::before {
+  content: "";
+}
+
+
+/* =======================================================================
+   MFE single-line fit repair
+   The equation remains one canonical display string. It must fit inside
+   the white panel instead of overflowing or wrapping.
+   ======================================================================= */
+
+.mfe {
+  max-width: min(1500px, calc(100vw - 3rem));
+  overflow: hidden;
+}
+
+.mfe__equation,
+.mfe__eq {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 1.25rem;
+  padding: 0 0.25rem;
+  color: var(--lapis);
+  font-family: 'Cambria Math', 'STIX Two Math', var(--f-serif);
+  font-size: clamp(1.05rem, 2.15vw, 2.45rem);
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+  text-align: center;
+  white-space: nowrap !important;
+  overflow: visible;
+  overflow-wrap: normal !important;
+  word-break: keep-all !important;
+  hyphens: none !important;
+}
+
+/* =======================================================================
+   CONSOLIDATED RESPONSIVE SYSTEM
+   All scattered mobile/tablet media rules have been moved here.
+   Background behavior is handled once, without transform stacking or repeats.
+   ======================================================================= */
+
+@media (min-width: 1500px) {
+.doc-body {
+    font-size: 1.16rem;
+  }
+}
+
+@media (max-width: 1360px) {
+.brand {
+    flex-basis: clamp(260px, 26vw, 360px);
+  }
+
+  .site-nav {
+    gap: clamp(0.48rem, .85vw, .9rem);
+  }
+
+  .site-nav a {
+    font-size: 0.62rem;
+    letter-spacing: 0.09em;
+  }
+
+  .doc-shell {
+    grid-template-columns: minmax(310px, 360px) minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 1220px) {
+.brand {
+    flex-basis: clamp(430px, 41vw, 560px);
+    min-width: 390px;
+  }
+
+  .site-nav {
+    gap: clamp(0.45rem, 0.75vw, 0.75rem);
+  }
+
+  .site-nav a {
+    font-size: 0.58rem;
+    letter-spacing: 0.075em;
+  }
+}
+
+@media (max-width: 1180px) {
+.site-header__inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .brand {
+    flex-basis: auto;
+  }
+
+  .site-nav {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 981px) {
+  body::before {
+    background: none !important;
+  }
+}
+
+@media (max-width: 980px) {
+  /* Mobile browser UI changes height while scrolling.
+     Use a pre-rotated mobile image and pin it to the large viewport height. */
+
+  html {
+    scroll-behavior: auto;
+    background-color: var(--paper) !important;
+  }
+
+  html,
+  body {
+    min-height: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    background-image: none !important;
+    background-color: var(--paper) !important;
+    background-attachment: scroll !important;
+    overflow-y: auto;
+  }
+
+  body::before {
+    content: '' !important;
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100lvh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    pointer-events: none !important;
+    z-index: 0 !important;
+    transform: none !important;
+    filter: none !important;
+    will-change: auto !important;
+
+    background-image: url('../images/blue_silver_marble_bg_mobile.png') !important;
+    background-size: 100vw 100lvh !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-color: transparent !important;
+  }
+
+  main,
+  header,
+  footer {
+    position: relative;
+    z-index: 1;
+  }
+
+.doc-shell { grid-template-columns: 1fr; }
+
+.doc-shell {
+    width: min(100% - 1rem, 100%);
+    grid-template-columns: 1fr;
+    padding: 1rem .5rem 4rem;
+  }
+
+  .doc-toc {
+    position: relative;
+    top: auto;
+    max-height: 260px;
+  }
+
+.site-header__inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .brand {
+    flex-basis: auto;
+  }
+
+  .site-nav {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .doc-shell {
+    width: min(100% - 1rem, 100%);
+    grid-template-columns: 1fr;
+    padding: 1rem 0.5rem 4rem;
+  }
+
+  .doc-toc {
+    position: relative;
+    top: auto;
+    max-height: 320px;
+  }
+
+  .doc-body {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+
+.site-header__inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .brand {
+    flex-basis: auto;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .brand small,
+  .hero__motto {
+    white-space: normal;
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
+  }
+
+html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    background-attachment: scroll;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  body::before {
+    position: fixed;
+  }
+
+  .doc-shell,
+  .doc-body,
+  .doc-toc {
+    overflow: visible;
+  }
+
+  .doc-toc {
+    position: relative !important;
+    top: auto !important;
+    max-height: none !important;
+  }
+
+.mfe {
+    max-width: calc(100vw - 1rem);
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+  }
+
+  .mfe__equation,
+  .mfe__eq {
+    font-size: clamp(0.72rem, 3.35vw, 1.32rem);
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+  }
+
+.mfe {
+    max-width: calc(100vw - 1rem);
+  }
+
+  .mfe__equation,
+  .mfe__eq {
+    font-size: clamp(0.58rem, 2.8vw, 1.25rem);
+    letter-spacing: -0.045em;
+  }
+}
+
+@media (max-width: 920px) {
+.brand small,
+  .hero__motto,
+  .site-footer__motto,
+  .footer__tagline {
+    white-space: normal;
+  }
+
+  .mfe {
+    max-width: calc(100vw - 1.2rem);
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
+
+  .mfe__eq,
+  .mfe__equation {
+    font-size: clamp(1.15rem, 4.5vw, 2rem);
+  }
+
+  .mfe__line {
+    white-space: nowrap !important;
+  }
+}
+
+@media (max-width: 900px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }    
+    
+.pillars--ledger .pillar {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .pillars--ledger .pillar h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 860px) {
+.site-footer__inner { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 820px) {
+.pubs { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px) {
+.ledger-card,
+  .ledger-file-group {
+    padding: 1.2rem 1rem;
+  }
+
+  .ledger-table {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 720px) {
+.section-head.frosted-glass {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    padding: 1rem;
+  }
+
+  .frosted-glass--center {
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+@media (max-width: 620px) {
+.brand,
+  .brand small {
+    white-space: normal;
+  }
+
+  .hero__plate {
+    max-width: calc(100vw - 1.5rem);
+  }
+
+  .hero__motto {
+    white-space: normal;
+    letter-spacing: 0.12em;
+  }
+}
+
+@media (max-width: 420px) {
+.mfe__equation,
+  .mfe__eq {
+    font-size: clamp(0.58rem, 3.05vw, 0.95rem);
+  }
+}
