@@ -85,9 +85,13 @@ VII.
 ## More Poetic Prose
 =====================
 Tulips in the tantalizing twilight twinkle like the most titillating, terrestrial transcendence,
+
 holding vigil for the arrival of peace, prosperity, and abundance - a future day of remembrance
+
 but while these refreshingly fragrant flowers flow freely in a lunar-lit landscape of full moon bloom
+
 the choice of mindful mediation by way of masterful meditation is only ever mitigated by you-know-whom
+
 =====================
 
 The Current and the Keeper
