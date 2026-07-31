@@ -83,7 +83,9 @@ VII.
 <img src="https://umtts.org/qpp/QPP_8back.png"alt="True innovation requires a foundation deeper than code. The UMTTS Institute was founded on the principle that the geometry of physics and the rhythm of poetry arise from the same substrate. The First Light presents the philosophical blueprint for our technological pursuits, proving that before we could engineer the future, we first had to harmonize with the past. -Thomas Russell Giboney, Founder and Director of The UMtts Institute - Advancing Coherence. Engineering Tomorrow.">
 <!-- /RAWHTML -->
 ## More Poetic Prose
+
 =====================
+
 Tulips in the tantalizing twilight twinkle like the most titillating, terrestrial transcendence,
 
 holding vigil for the arrival of peace, prosperity, and abundance - a future day of remembrance
